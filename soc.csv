@@ -7,12 +7,12 @@ SOC_ADC_SUPPORTED	y	y	y	y	y	y	y		y	y
 SOC_DAC_SUPPORTED	y	y										
 SOC_UART_SUPPORTED	y	y	y	y	y	y	y	y	y	y		
 SOC_MCPWM_SUPPORTED	y		y			y	y		y	y		
-SOC_GPTIMER_SUPPORTED	y	y	y	y	y	y	y		y	y		
+SOC_GPTIMER_SUPPORTED	y	y	y	y	y	y	y	y	y	y		
 SOC_SDMMC_HOST_SUPPORTED	y		y							y		
-SOC_BT_SUPPORTED	y		y	y	y		y		y			
+SOC_BT_SUPPORTED	y		y	y	y	y	y		y			
 SOC_PCNT_SUPPORTED	y	y	y			y	y		y	y		
-SOC_PHY_SUPPORTED	y	y	y	y	y		y		y			
-SOC_WIFI_SUPPORTED	y	y	y	y	y		y					
+SOC_PHY_SUPPORTED	y	y	y	y	y	y	y		y			
+SOC_WIFI_SUPPORTED	y	y	y	y	y	y	y					
 SOC_SDIO_SLAVE_SUPPORTED	y						y					
 SOC_TWAI_SUPPORTED	y	y	y		y		y		y	y		
 SOC_EFUSE_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	
@@ -221,15 +221,15 @@ SOC_CLK_RC_FAST_SUPPORT_CALIBRATION	y	y	y	y	y	y	y		y	y
 SOC_CLK_XTAL32K_SUPPORTED	y	y	y		y	y	y	y	y	y		
 SOC_SDMMC_USE_IOMUX	y									y		
 SOC_SDMMC_NUM_SLOTS	2		2							2		
-SOC_WIFI_WAPI_SUPPORT	y	y	y		y		y					
-SOC_WIFI_CSI_SUPPORT	y	y	y		y		y					
-SOC_WIFI_MESH_SUPPORT	y	y	y		y		y					
+SOC_WIFI_WAPI_SUPPORT	y	y	y		y	y	y					
+SOC_WIFI_CSI_SUPPORT	y	y	y		y	y	y					
+SOC_WIFI_MESH_SUPPORT	y	y	y		y	y	y					
 SOC_WIFI_SUPPORT_VARIABLE_BEACON_WINDOW	y	y	y	y	y							
 SOC_WIFI_NAN_SUPPORT	y	y										
-SOC_BLE_SUPPORTED	y		y	y	y		y		y			
+SOC_BLE_SUPPORTED	y		y	y	y	y	y		y			
 SOC_BLE_MESH_SUPPORTED	y		y	n	y		y		y			
 SOC_BT_CLASSIC_SUPPORTED	y											
-SOC_BLE_DEVICE_PRIVACY_SUPPORTED	n		y	y	y		y		y			
+SOC_BLE_DEVICE_PRIVACY_SUPPORTED	n		y	y	y	y	y		y			
 SOC_BLUFI_SUPPORTED	y		y	y	y		y					
 SOC_BT_H2C_ENC_KEY_CTRL_ENH_VSC_SUPPORTED	y											
 SOC_ULP_HAS_ADC	y	y	y									
@@ -325,19 +325,19 @@ SOC_UART_SUPPORT_PLL_F40M_CLK				y
 SOC_UART_SUPPORT_RTC_CLK			y	y	y	y	y	y	y	y		
 SOC_UART_SUPPORT_XTAL_CLK			y	y	y	y	y	y	y	y		
 SOC_UART_SUPPORT_FSM_TX_WAIT_SEND			y	y	y	y	y	y	y	y		
-SOC_COEX_HW_PTI		y	y	y	y		y	y	y	y		
+SOC_COEX_HW_PTI		y	y	y	y	y	y	y	y	y		
 SOC_EXTERNAL_COEX_ADVANCE		n	n	y	n		y	y	y			
 SOC_EXTERNAL_COEX_LEADER_TX_LINE		y	y	n	n		n	n	n			
-SOC_WIFI_LIGHT_SLEEP_CLK_WIDTH		12	12	12	12		12	12		12		
+SOC_WIFI_LIGHT_SLEEP_CLK_WIDTH		12	12	12	12	12	12	12		12		
 SOC_PM_SUPPORT_WIFI_WAKEUP		y	y	y	y		y	y		y		
 SOC_PM_SUPPORT_BT_WAKEUP			y	y	y		y	y	y			
 SOC_CLK_OSC_SLOW_SUPPORTED				y		y	y	y	y			
-SOC_WIFI_HW_TSF		y	y	y	y		y					
-SOC_WIFI_FTM_SUPPORT		y	y	y	y		y					
+SOC_WIFI_HW_TSF		y	y	y	y	y	y					
+SOC_WIFI_FTM_SUPPORT		y	y	y	y	n	y					
 SOC_WIFI_PHY_NEEDS_USB_WORKAROUND			y	y	y							
-SOC_ESP_NIMBLE_CONTROLLER				y			y		y			
-SOC_BLE_50_SUPPORTED			y	y	y		y		y			
-SOC_BLE_PERIODIC_ADV_ENH_SUPPORTED				y			y		y			
+SOC_ESP_NIMBLE_CONTROLLER				y		y	y		y			
+SOC_BLE_50_SUPPORTED			y	y	y	y	y		y			
+SOC_BLE_PERIODIC_ADV_ENH_SUPPORTED				y		y	y		y			
 SOC_PHY_IMPROVE_RX_11B				y								
 SOC_USB_SERIAL_JTAG_SUPPORTED			y		y	y	y		y	y		
 SOC_XT_WDT_SUPPORTED		y	y		y							
@@ -393,7 +393,7 @@ SOC_PM_CPU_RETENTION_BY_RTCCNTL			y		y
 SOC_PM_MODEM_RETENTION_BY_BACKUPDMA			y		y							
 SOC_TEMPERATURE_SENSOR_SUPPORT_FAST_RC		y	y		y		y		y			
 SOC_TEMPERATURE_SENSOR_SUPPORT_XTAL					y		y		y			
-SOC_WIFI_GCMP_SUPPORT			y		y		y					
+SOC_WIFI_GCMP_SUPPORT			y		y	y	y					
 SOC_ETM_SUPPORTED						y	y		y	y		
 SOC_PARLIO_SUPPORTED						y	y		y	y		
 SOC_LP_CORE_SUPPORTED						y	y			y		
@@ -425,6 +425,7 @@ SOC_LP_IO_CLOCK_IS_INDEPENDENT						y	y		y
 SOC_GPIO_SUPPORT_HOLD_SINGLE_IO_IN_DSLP						y	y	y	y	y		
 SOC_I2C_SUPPORT_HW_FSM_RST						y	y		y	y		
 SOC_I2C_SLAVE_SUPPORT_SLAVE_UNMATCH						y	y		y	y		
+SOC_I2S_SUPPORTS_ETM						y	y		y	y		
 SOC_I2S_SUPPORTS_TX_SYNC_CNT						y				y		
 SOC_I2S_SUPPORTS_PLL_F240M						y						
 SOC_I2S_TDM_FULL_DATA_WIDTH						y			y	y		
@@ -458,7 +459,7 @@ SOC_SYSTIMER_SUPPORT_RC_FAST						y	y	y	y	y
 SOC_SYSTIMER_SUPPORT_ETM						y	y		y	y		
 SOC_LP_TIMER_BIT_WIDTH_LO						32	32	32	32	32		
 SOC_LP_TIMER_BIT_WIDTH_HI						16	16	16	16	16		
-SOC_TIMER_GROUP_SUPPORT_RC_FAST						y	y		y	y		
+SOC_TIMER_GROUP_SUPPORT_RC_FAST						y	y	y	y	y		
 SOC_TIMER_SUPPORT_ETM						y	y		y	y		
 SOC_EFUSE_ECDSA_KEY						y		y	y	y		
 SOC_APM_CTRL_FILTER_SUPPORTED						y	y		y			
@@ -476,6 +477,10 @@ SOC_MODEM_CLOCK_IS_INDEPENDENT						y	y	y	y	n
 SOC_CLK_RC32K_SUPPORTED						y	y	y	y	y		
 SOC_CLK_LP_FAST_SUPPORT_XTAL						y						
 SOC_RCC_IS_INDEPENDENT						y	y	y	y			
+SOC_WIFI_HE_SUPPORT						y	y					
+SOC_WIFI_HE_SUPPORT_5G						y						
+SOC_BLE_POWER_CONTROL_SUPPORTED						y	y		y			
+SOC_BLE_MULTI_CONN_OPTIMIZATION						y	y		y			
 SOC_LP_CORE_SINGLE_INTERRUPT_VECTOR						y	y					
 SOC_LP_CORE_SUPPORT_ETM						y	y			y		
 SOC_IEEE802154_SUPPORTED							y		y			
@@ -510,11 +515,9 @@ SOC_PM_PAU_LINK_NUM							4	4	4	4
 SOC_TEMPERATURE_SENSOR_INTR_SUPPORT							y		y	y		
 SOC_TEMPERATURE_SENSOR_SUPPORT_ETM							y		y	y		
 SOC_RNG_CLOCK_IS_INDEPENDENT							y		y			
-SOC_WIFI_HE_SUPPORT							y					
-SOC_BLE_POWER_CONTROL_SUPPORTED							y		y			
-SOC_BLE_MULTI_CONN_OPTIMIZATION							y		y			
 SOC_BLE_USE_WIFI_PWR_CLK_WORKAROUND							y					
 SOC_CAPS_NO_RESET_BY_ANA_BOD							y					
+SOC_REG_I2C_SUPPORTED								y				
 SOC_ANA_CMPR_SUPPORTED									y	y		
 SOC_IEEE802154_BLE_ONLY									y			
 SOC_XTAL_SUPPORT_32M									y			
