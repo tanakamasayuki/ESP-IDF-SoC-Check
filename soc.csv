@@ -98,7 +98,7 @@ SOC_I2C_SUPPORT_APB	y	y
 SOC_I2C_STOP_INDEPENDENT	y											
 SOC_I2S_NUM	2	1	2		1	1	1		1	3		
 SOC_I2S_HW_VERSION_1	y	y										
-SOC_I2S_SUPPORTS_APLL	y	y										
+SOC_I2S_SUPPORTS_APLL	y	y								y		
 SOC_I2S_SUPPORTS_PLL_F160M	y	y	y		y	y	y					
 SOC_I2S_SUPPORTS_PDM	y		y		y	y	y		y	y		
 SOC_I2S_SUPPORTS_PDM_TX	y		y		y	y	y		y	y		
@@ -216,7 +216,7 @@ SOC_PM_SUPPORT_RC_FAST_PD	y	y	y	y	y	y	y	y	y	y
 SOC_PM_SUPPORT_VDDSDIO_PD	y	y	y	y	y	y	y	y	y	y		
 SOC_PM_SUPPORT_MODEM_PD	y		y			y	y	y	y			
 SOC_CONFIGURABLE_VDDSDIO_SUPPORTED	y	y	y									
-SOC_CLK_APLL_SUPPORTED	y	y										
+SOC_CLK_APLL_SUPPORTED	y	y								y		
 SOC_CLK_RC_FAST_D256_SUPPORTED	y	y	y	y	y							
 SOC_RTC_SLOW_CLK_SUPPORT_RC_FAST_D256	y	y	y	y	y							
 SOC_CLK_RC_FAST_SUPPORT_CALIBRATION	y	y	y	y	y	y	y	y	y	y		
