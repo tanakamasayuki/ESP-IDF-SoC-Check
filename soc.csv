@@ -9,7 +9,7 @@ SOC_UART_SUPPORTED	y	y	y	y	y	y	y	y	y	y
 SOC_MCPWM_SUPPORTED	y		y			y	y		y	y		
 SOC_GPTIMER_SUPPORTED	y	y	y	y	y	y	y	y	y	y		
 SOC_SDMMC_HOST_SUPPORTED	y		y							y		
-SOC_BT_SUPPORTED	y		y	y	y	y	y		y			
+SOC_BT_SUPPORTED	y		y	y	y	y	y	y	y			
 SOC_PCNT_SUPPORTED	y	y	y			y	y		y	y		
 SOC_PHY_SUPPORTED	y	y	y	y	y	y	y	y	y			
 SOC_WIFI_SUPPORTED	y	y	y	y	y	y	y	y				
@@ -229,11 +229,11 @@ SOC_WIFI_CSI_SUPPORT	y	y	y		y	y	y	y
 SOC_WIFI_MESH_SUPPORT	y	y	y		y	y	y	y				
 SOC_WIFI_SUPPORT_VARIABLE_BEACON_WINDOW	y	y	y	y	y							
 SOC_WIFI_NAN_SUPPORT	y	y										
-SOC_BLE_SUPPORTED	y		y	y	y	y	y		y			
+SOC_BLE_SUPPORTED	y		y	y	y	y	y	y	y			
 SOC_BLE_MESH_SUPPORTED	y		y	n	y	y	y		y			
 SOC_BT_CLASSIC_SUPPORTED	y											
-SOC_BLE_DEVICE_PRIVACY_SUPPORTED	n		y	y	y	y	y		y			
-SOC_BLUFI_SUPPORTED	y		y	y	y		y					
+SOC_BLE_DEVICE_PRIVACY_SUPPORTED	n		y	y	y	y	y	y	y			
+SOC_BLUFI_SUPPORTED	y		y	y	y		y	y				
 SOC_BT_H2C_ENC_KEY_CTRL_ENH_VSC_SUPPORTED	y											
 SOC_ULP_HAS_ADC	y	y	y									
 SOC_PHY_COMBO_MODULE	y	n	y	y	y		y	y				
@@ -338,9 +338,9 @@ SOC_CLK_OSC_SLOW_SUPPORTED				y		y	y	y	y
 SOC_WIFI_HW_TSF		y	y	y	y	y	y	y				
 SOC_WIFI_FTM_SUPPORT		y	y	y	y	n	y	n				
 SOC_WIFI_PHY_NEEDS_USB_WORKAROUND			y	y	y							
-SOC_ESP_NIMBLE_CONTROLLER				y		y	y		y			
-SOC_BLE_50_SUPPORTED			y	y	y	y	y		y			
-SOC_BLE_PERIODIC_ADV_ENH_SUPPORTED				y		y	y		y			
+SOC_ESP_NIMBLE_CONTROLLER				y		y	y	y	y			
+SOC_BLE_50_SUPPORTED			y	y	y	y	y	y	y			
+SOC_BLE_PERIODIC_ADV_ENH_SUPPORTED				y		y	y	y	y			
 SOC_PHY_IMPROVE_RX_11B				y								
 SOC_USB_SERIAL_JTAG_SUPPORTED			y		y	y	y	y	y	y		
 SOC_XT_WDT_SUPPORTED		y	y		y							
@@ -509,8 +509,8 @@ SOC_TEMPERATURE_SENSOR_INTR_SUPPORT						y	y		y	y
 SOC_WIFI_HE_SUPPORT						y	y	y				
 SOC_WIFI_HE_SUPPORT_5G						y						
 SOC_WIFI_MAC_VERSION_NUM						3	2	3				
-SOC_BLE_POWER_CONTROL_SUPPORTED						y	y		y			
-SOC_BLE_MULTI_CONN_OPTIMIZATION						y	y		y			
+SOC_BLE_POWER_CONTROL_SUPPORTED						y	y	y	y			
+SOC_BLE_MULTI_CONN_OPTIMIZATION						y	y	y	y			
 SOC_LP_CORE_SINGLE_INTERRUPT_VECTOR						y	y					
 SOC_LP_CORE_SUPPORT_ETM						y	y			y		
 SOC_ADC_CALIB_CHAN_COMPENS_SUPPORTED							y		y			
