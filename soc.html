@@ -410,7 +410,7 @@
       <tr><td>SOC_EFUSE_SOFT_DIS_JTAG</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td><td>y</td><td>n</td><td>y</td><td>y</td><td>y</td></tr>
       <tr><td>SOC_EFUSE_DIS_ICACHE</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td>y</td></tr>
       <tr><td>SOC_EFUSE_BLOCK9_KEY_PURPOSE_QUIRK</td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td>y</td><td></td><td>y</td><td></td><td></td></tr>
-      <tr><td>SOC_SECURE_BOOT_V2_RSA</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td><td>y</td><td>n</td><td>y</td><td>y</td><td>y</td></tr>
+      <tr><td>SOC_SECURE_BOOT_V2_RSA</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>n</td><td>y</td><td>y</td><td>y</td></tr>
       <tr><td>SOC_EFUSE_REVOKE_BOOT_KEY_DIGESTS</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr>
       <tr><td>SOC_SUPPORT_SECURE_BOOT_REVOKE_KEY</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr>
       <tr><td>SOC_MEMPROT_CPU_PREFETCH_PAD_SIZE</td><td></td><td>16</td><td>16</td><td></td><td>16</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -442,6 +442,7 @@
       <tr><td>SOC_ECDSA_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td>n</td><td></td></tr>
       <tr><td>SOC_MODEM_CLOCK_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_XTAL_SUPPORT_48M</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>SOC_AES_SUPPORT_PSEUDO_ROUND_FUNCTION</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_ADC_TEMPERATURE_SHARE_INTR</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_CACHE_WRITEBACK_SUPPORTED</td><td></td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_CACHE_FREEZE_SUPPORTED</td><td></td><td></td><td>y</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
@@ -502,6 +503,7 @@
       <tr><td>SOC_PARLIO_TRANS_BIT_ALIGN</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_PARLIO_TX_SIZE_BY_DMA</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_PARLIO_SUPPORT_SLEEP_RETENTION</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td></tr>
+      <tr><td>SOC_PARLIO_SUPPORT_SPI_LCD</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_ECC_CONSTANT_TIME_POINT_MUL</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td></td></tr>
       <tr><td>SOC_ECDSA_SUPPORT_EXPORT_PUBKEY</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_SDM_CLK_SUPPORT_PLL_F80M</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td></tr>
@@ -523,6 +525,7 @@
       <tr><td>SOC_EFUSE_ECDSA_KEY</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_KEY_MANAGER_ECDSA_KEY_DEPLOY</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_KEY_MANAGER_FE_KEY_DEPLOY</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td>y</td><td></td></tr>
+      <tr><td>SOC_FLASH_ENCRYPTION_XTS_AES_SUPPORT_PSEUDO_ROUND</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td></td></tr>
       <tr><td>SOC_APM_CTRL_FILTER_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_APM_LP_APM0_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_CRYPTO_DPA_PROTECTION_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr>
@@ -689,6 +692,7 @@
       <tr><td>SOC_LCD_SUPPORT_RGB_YUV_CONV</td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_USB_OTG_PERIPH_NUM</td><td></td><td>1</td><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td>2</td><td></td></tr>
       <tr><td>SOC_USB_UTMI_PHY_NUM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td><td></td></tr>
+      <tr><td>SOC_PARLIO_SUPPORT_I80_LCD</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_SDMMC_USE_GPIO_MATRIX</td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_SDMMC_DELAY_PHASE_NUM</td><td></td><td></td><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td>4</td><td></td></tr>
       <tr><td>SOC_SDMMC_IO_POWER_EXTERNAL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
