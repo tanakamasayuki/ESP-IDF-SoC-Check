@@ -30,7 +30,7 @@ SOC_LEDC_SUPPORTED	y	y	y	y	y	y	y	y	y		y
 SOC_I2C_SUPPORTED	y	y	y	y	y	y	y	y	y		y		
 SOC_SUPPORT_COEXISTENCE	y	n	y	y	y		y		y				
 SOC_AES_SUPPORTED	y	y	y		y	y	y		y		y		
-SOC_MPI_SUPPORTED	y	y	y		y	y	y		y		y		
+SOC_MPI_SUPPORTED	y	y	y		y	y	y		y	y	y		
 SOC_SHA_SUPPORTED	y	y	y	y	y	y	y	y	y		y		
 SOC_FLASH_ENC_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y		
 SOC_SECURE_BOOT_SUPPORTED	y	y	y	y	y	y	y	y	y		y		
@@ -420,6 +420,7 @@ SOC_LP_I2C_SUPPORTED						y	y				y
 SOC_ULP_LP_UART_SUPPORTED						y	y				y		
 SOC_ECDSA_SUPPORTED						y		y	y		n		
 SOC_MODEM_CLOCK_SUPPORTED						y	y	y	y				
+SOC_BITSCRAMBLER_SUPPORTED						y					y		
 SOC_XTAL_SUPPORT_48M						y							
 SOC_AES_SUPPORT_PSEUDO_ROUND_FUNCTION						y			y				
 SOC_ADC_CALIB_CHAN_COMPENS_SUPPORTED						y	y		y		y		
@@ -488,7 +489,7 @@ SOC_PARLIO_TRANS_BIT_ALIGN						y			y		y
 SOC_PARLIO_TX_SIZE_BY_DMA						y					y		
 SOC_PARLIO_SUPPORT_SLEEP_RETENTION						y	y		y		y		
 SOC_PARLIO_SUPPORT_SPI_LCD						y			y		y		
-SOC_ECC_CONSTANT_TIME_POINT_MUL						y		y		y			
+SOC_ECC_CONSTANT_TIME_POINT_MUL						y		y	y	y			
 SOC_ECDSA_SUPPORT_EXPORT_PUBKEY						y		y			y		
 SOC_SDM_CLK_SUPPORT_PLL_F80M						y	y				y		
 SOC_SDM_CLK_SUPPORT_XTAL						y	y		y		y		
@@ -612,7 +613,6 @@ SOC_LP_VAD_SUPPORTED											y
 SOC_DEBUG_PROBE_SUPPORTED											y		
 SOC_GP_LDO_SUPPORTED											y		
 SOC_PPA_SUPPORTED											y		
-SOC_BITSCRAMBLER_SUPPORTED											y		
 SOC_SIMD_INSTRUCTION_SUPPORTED			y								y		
 SOC_AES_SUPPORT_GCM		y									y		
 SOC_CACHE_INTERNAL_MEM_VIA_L1CACHE											y		
