@@ -146,7 +146,7 @@
       <tr><td>SOC_LEDC_SUPPORT_REF_TICK</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_LEDC_SUPPORT_HS_MODE</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_LEDC_TIMER_NUM</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td></td><td>4</td><td></td></tr>
-      <tr><td>SOC_LEDC_CHANNEL_NUM</td><td>8</td><td>8</td><td>8</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td></td><td>8</td><td></td></tr>
+      <tr><td>SOC_LEDC_CHANNEL_NUM</td><td>8</td><td>8</td><td>8</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>8</td><td></td></tr>
       <tr><td>SOC_LEDC_TIMER_BIT_WIDTH</td><td>20</td><td>14</td><td>14</td><td>14</td><td>14</td><td>20</td><td>20</td><td>20</td><td>20</td><td></td><td>20</td><td></td></tr>
       <tr><td>SOC_MCPWM_GROUPS</td><td>2</td><td></td><td>2</td><td></td><td></td><td>1</td><td>1</td><td></td><td>1</td><td></td><td>2</td><td></td></tr>
       <tr><td>SOC_MCPWM_TIMERS_PER_GROUP</td><td>3</td><td></td><td>3</td><td></td><td></td><td>3</td><td>3</td><td></td><td>3</td><td></td><td>3</td><td></td></tr>
@@ -215,6 +215,7 @@
       <tr><td>SOC_UART_SUPPORT_REF_TICK</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_UART_FIFO_LEN</td><td>128</td><td>128</td><td>128</td><td>128</td><td>128</td><td>128</td><td>128</td><td>128</td><td>128</td><td>128</td><td>128</td><td></td></tr>
       <tr><td>SOC_UART_BITRATE_MAX</td><td>5000000</td><td>5000000</td><td>5000000</td><td>2500000</td><td>5000000</td><td>5000000</td><td>5000000</td><td>5000000</td><td>5000000</td><td>5000000</td><td>5000000</td><td></td></tr>
+      <tr><td>SOC_UART_WAKEUP_SUPPORT_ACTIVE_THRESH_MODE</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_SPIRAM_SUPPORTED</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_SPI_MEM_SUPPORT_CONFIG_GPIO_BY_EFUSE</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_SHA_SUPPORT_PARALLEL_ENG</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -315,7 +316,7 @@
       <tr><td>SOC_SPI_SLAVE_SUPPORT_SEG_TRANS</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_SPI_SUPPORT_CD_SIG</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_SPI_SUPPORT_CONTINUOUS_TRANS</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td><td></td></tr>
-      <tr><td>SOC_SPI_SUPPORT_SLAVE_HD_VER2</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
+      <tr><td>SOC_SPI_SUPPORT_SLAVE_HD_VER2</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_SPI_SUPPORT_CLK_XTAL</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_SPI_SUPPORT_CLK_PLL_F40M</td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_SPI_PERIPH_SUPPORT_CONTROL_DUMMY_OUT</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
@@ -325,7 +326,7 @@
       <tr><td>SOC_SPI_SCT_CONF_BITLEN_MAX</td><td></td><td>0x7FFFFD</td><td>0x3FFFA</td><td>0x3FFFA</td><td>0x3FFFA</td><td></td><td>0x3FFFA</td><td></td><td>0x3FFFA</td><td>0x3FFFA</td><td></td><td></td></tr>
       <tr><td>SOC_MEMSPI_IS_INDEPENDENT</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_SPI_MEM_SUPPORT_AUTO_WAIT_IDLE</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
-      <tr><td>SOC_SPI_MEM_SUPPORT_AUTO_SUSPEND</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
+      <tr><td>SOC_SPI_MEM_SUPPORT_AUTO_SUSPEND</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_SPI_MEM_SUPPORT_AUTO_RESUME</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_SPI_MEM_SUPPORT_IDLE_INTR</td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_SPI_MEM_SUPPORT_SW_SUSPEND</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
@@ -450,6 +451,7 @@
       <tr><td>SOC_ADC_TEMPERATURE_SHARE_INTR</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td></tr>
       <tr><td>SOC_CACHE_WRITEBACK_SUPPORTED</td><td></td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_CACHE_FREEZE_SUPPORTED</td><td></td><td></td><td>y</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
+      <tr><td>SOC_CPU_SUPPORT_WFE</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_INT_CLIC_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_INT_HW_NESTED_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_BRANCH_PREDICTOR_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td>y</td><td></td></tr>
@@ -549,6 +551,11 @@
       <tr><td>SOC_UART_SUPPORT_PLL_F80M_CLK</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_UART_HAS_LP_UART</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_UART_SUPPORT_SLEEP_RETENTION</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
+      <tr><td>SOC_UART_WAKEUP_CHARS_SEQ_MAX_LEN</td><td></td><td></td><td></td><td></td><td></td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td></td></tr>
+      <tr><td>SOC_UART_WAKEUP_SUPPORT_FIFO_THRESH_MODE</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
+      <tr><td>SOC_UART_WAKEUP_SUPPORT_START_BIT_MODE</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
+      <tr><td>SOC_UART_WAKEUP_SUPPORT_CHAR_SEQ_MODE</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
+      <tr><td>SOC_RTC_MEM_SUPPORT_SPEED_MODE_SWITCH</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_PM_SUPPORT_BEACON_WAKEUP</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_PM_SUPPORT_EXT1_WAKEUP_MODE_PER_PIN</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_PM_SUPPORT_XTAL32K_PD</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
@@ -598,7 +605,6 @@
       <tr><td>SOC_I2S_SUPPORTS_PLL_F120M</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_ECDSA_SUPPORT_DETERMINISTIC_MODE</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_SPI_SUPPORT_CLK_PLL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td></tr>
-      <tr><td>SOC_PM_MMU_TABLE_RETENTION_WHEN_TOP_PD</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_IEEE802154_BLE_ONLY</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td></tr>
       <tr><td>SOC_VBAT_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_XTAL_SUPPORT_32M</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td></td></tr>
@@ -638,6 +644,7 @@
       <tr><td>SOC_GP_LDO_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_PPA_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_SIMD_INSTRUCTION_SUPPORTED</td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
+      <tr><td>SOC_I3C_MASTER_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_AES_SUPPORT_GCM</td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_CACHE_INTERNAL_MEM_VIA_L1CACHE</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_CPU_COPROC_NUM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>3</td><td></td></tr>
@@ -753,6 +760,9 @@
       <tr><td>SOC_LCDCAM_CAM_SUPPORT_RGB_YUV_CONV</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_LCDCAM_CAM_PERIPH_NUM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td><td></td></tr>
       <tr><td>SOC_LCDCAM_CAM_DATA_WIDTH_MAX</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>16</td><td></td></tr>
+      <tr><td>SOC_I3C_MASTER_PERIPH_NUM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
+      <tr><td>SOC_I3C_MASTER_ADDRESS_TABLE_NUM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>12</td><td></td></tr>
+      <tr><td>SOC_I3C_MASTER_COMMAND_TABLE_NUM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>12</td><td></td></tr>
       <tr><td>SOC_LP_CORE_SUPPORT_LP_ADC</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_LP_CORE_SUPPORT_LP_VAD</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_CP_DMA_SUPPORTED</td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
