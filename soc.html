@@ -271,9 +271,9 @@
       <tr><td>SOC_PHY_COMBO_MODULE</td><td>y</td><td>n</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_EMAC_RMII_CLK_OUT_INTERNAL_LOOPBACK</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_DEDICATED_GPIO_SUPPORTED</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td></tr>
-      <tr><td>SOC_GDMA_SUPPORTED</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td></tr>
-      <tr><td>SOC_AHB_GDMA_SUPPORTED</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td></tr>
-      <tr><td>SOC_ASYNC_MEMCPY_SUPPORTED</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td></tr>
+      <tr><td>SOC_GDMA_SUPPORTED</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
+      <tr><td>SOC_AHB_GDMA_SUPPORTED</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
+      <tr><td>SOC_ASYNC_MEMCPY_SUPPORTED</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_SUPPORTS_SECURE_DL_MODE</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_EFUSE_KEY_PURPOSE_FIELD</td><td></td><td>y</td><td>y</td><td>n</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr>
       <tr><td>SOC_EFUSE_CONSISTS_OF_ONE_KEY_BLOCK</td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -290,7 +290,7 @@
       <tr><td>SOC_CPU_HAS_CSR_PC</td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td><td>y</td><td>y</td><td></td><td></td><td></td></tr>
       <tr><td>SOC_CPU_IDRAM_SPLIT_USING_PMP</td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_ECC_SUPPORT_POINT_VERIFY_QUIRK</td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-      <tr><td>SOC_AHB_GDMA_VERSION</td><td></td><td></td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td></td><td></td><td>2</td><td></td></tr>
+      <tr><td>SOC_AHB_GDMA_VERSION</td><td></td><td></td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>1</td><td></td><td>2</td><td></td></tr>
       <tr><td>SOC_GDMA_NUM_GROUPS_MAX</td><td></td><td></td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td></td><td>2</td><td></td></tr>
       <tr><td>SOC_GDMA_PAIRS_PER_GROUP_MAX</td><td></td><td></td><td>5</td><td>1</td><td>3</td><td>3</td><td>3</td><td>2</td><td>3</td><td>3</td><td></td><td>3</td><td></td></tr>
       <tr><td>SOC_GPIO_SUPPORT_PIN_GLITCH_FILTER</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td></tr>
@@ -445,7 +445,7 @@
       <tr><td>SOC_LP_I2C_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_ULP_LP_UART_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_ECDSA_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td></td><td></td><td>n</td><td></td></tr>
-      <tr><td>SOC_MODEM_CLOCK_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>SOC_MODEM_CLOCK_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td></tr>
       <tr><td>SOC_BITSCRAMBLER_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_XTAL_SUPPORT_48M</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_AES_SUPPORT_PSEUDO_ROUND_FUNCTION</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td></tr>
@@ -462,7 +462,7 @@
       <tr><td>SOC_CPU_HAS_LOCKUP_RESET</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_DMA_CAN_ACCESS_FLASH</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_GDMA_SUPPORT_ETM</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td></tr>
-      <tr><td>SOC_GDMA_SUPPORT_SLEEP_RETENTION</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td></tr>
+      <tr><td>SOC_GDMA_SUPPORT_SLEEP_RETENTION</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_AHB_GDMA_SUPPORT_PSRAM</td><td></td><td></td><td>y</td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_ETM_GROUPS</td><td></td><td></td><td></td><td></td><td></td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td></td><td>1</td><td></td></tr>
       <tr><td>SOC_ETM_CHANNELS_PER_GROUP</td><td></td><td></td><td></td><td></td><td></td><td>50</td><td>50</td><td>50</td><td>50</td><td>50</td><td></td><td>50</td><td></td></tr>

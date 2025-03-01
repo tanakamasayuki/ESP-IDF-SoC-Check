@@ -248,9 +248,9 @@ SOC_ULP_HAS_ADC	y	y	y
 SOC_PHY_COMBO_MODULE	y	n	y	y	y		y	y						
 SOC_EMAC_RMII_CLK_OUT_INTERNAL_LOOPBACK	y													
 SOC_DEDICATED_GPIO_SUPPORTED		y	y	y	y	y	y	y	y			y		
-SOC_GDMA_SUPPORTED			y	y	y	y	y	y	y			y		
-SOC_AHB_GDMA_SUPPORTED			y	y	y	y	y	y	y			y		
-SOC_ASYNC_MEMCPY_SUPPORTED		y	y	y	y	y	y	y	y			y		
+SOC_GDMA_SUPPORTED			y	y	y	y	y	y	y	y		y		
+SOC_AHB_GDMA_SUPPORTED			y	y	y	y	y	y	y	y		y		
+SOC_ASYNC_MEMCPY_SUPPORTED		y	y	y	y	y	y	y	y	y		y		
 SOC_SUPPORTS_SECURE_DL_MODE		y	y	y	y	y	y	y	y			y		
 SOC_EFUSE_KEY_PURPOSE_FIELD		y	y	n	y	y	y	y	y	y	y	y	y	
 SOC_EFUSE_CONSISTS_OF_ONE_KEY_BLOCK				y										
@@ -267,7 +267,7 @@ SOC_CPU_HAS_FLEXIBLE_INTC				y	y	y	y	y	y	y	y	y
 SOC_CPU_HAS_CSR_PC				y	y		y		y	y				
 SOC_CPU_IDRAM_SPLIT_USING_PMP				y		y	y	y	y	y	y	y		
 SOC_ECC_SUPPORT_POINT_VERIFY_QUIRK				y										
-SOC_AHB_GDMA_VERSION			1	1	1	2	1	2	1			2		
+SOC_AHB_GDMA_VERSION			1	1	1	2	1	2	1	1		2		
 SOC_GDMA_NUM_GROUPS_MAX			1	1	1	1	1	1	1	1		2		
 SOC_GDMA_PAIRS_PER_GROUP_MAX			5	1	3	3	3	2	3	3		3		
 SOC_GPIO_SUPPORT_PIN_GLITCH_FILTER		y	y	y	y	y	y	y	y			y		
@@ -422,7 +422,7 @@ SOC_LP_PERIPHERALS_SUPPORTED						y	y					y
 SOC_LP_I2C_SUPPORTED						y	y					y		
 SOC_ULP_LP_UART_SUPPORTED						y	y					y		
 SOC_ECDSA_SUPPORTED						y		y	y			n		
-SOC_MODEM_CLOCK_SUPPORTED						y	y	y	y					
+SOC_MODEM_CLOCK_SUPPORTED						y	y	y	y	y				
 SOC_BITSCRAMBLER_SUPPORTED						y						y		
 SOC_XTAL_SUPPORT_48M						y								
 SOC_AES_SUPPORT_PSEUDO_ROUND_FUNCTION						y			y					
@@ -439,7 +439,7 @@ SOC_CPU_PMP_REGION_GRANULARITY						128	4	128	4	4		128
 SOC_CPU_HAS_LOCKUP_RESET						y		y				y		
 SOC_DMA_CAN_ACCESS_FLASH						y		y				y		
 SOC_GDMA_SUPPORT_ETM						y	y	y	y			y		
-SOC_GDMA_SUPPORT_SLEEP_RETENTION						y	y	y	y			y		
+SOC_GDMA_SUPPORT_SLEEP_RETENTION						y	y	y	y	y		y		
 SOC_AHB_GDMA_SUPPORT_PSRAM			y			y								
 SOC_ETM_GROUPS						1	1	1	1	1		1		
 SOC_ETM_CHANNELS_PER_GROUP						50	50	50	50	50		50		
