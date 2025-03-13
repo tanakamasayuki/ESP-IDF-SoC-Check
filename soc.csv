@@ -29,9 +29,9 @@ SOC_GPSPI_SUPPORTED	y	y	y	y	y	y	y	y	y			y
 SOC_LEDC_SUPPORTED	y	y	y	y	y	y	y	y	y			y		
 SOC_I2C_SUPPORTED	y	y	y	y	y	y	y	y	y			y		
 SOC_SUPPORT_COEXISTENCE	y	n	y	y	y		y		y					
-SOC_AES_SUPPORTED	y	y	y		y	y	y		y			y		
+SOC_AES_SUPPORTED	y	y	y		y	y	y		y	y		y		
 SOC_MPI_SUPPORTED	y	y	y		y	y	y		y	y		y		
-SOC_SHA_SUPPORTED	y	y	y	y	y	y	y	y	y			y		
+SOC_SHA_SUPPORTED	y	y	y	y	y	y	y	y	y	y		y		
 SOC_FLASH_ENC_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_SECURE_BOOT_SUPPORTED	y	y	y	y	y	y	y	y	y			y		
 SOC_TOUCH_SENSOR_SUPPORTED	y	y	y									y		
@@ -425,7 +425,7 @@ SOC_ECDSA_SUPPORTED						y		y	y			n
 SOC_MODEM_CLOCK_SUPPORTED						y	y	y	y	y				
 SOC_BITSCRAMBLER_SUPPORTED						y						y		
 SOC_XTAL_SUPPORT_48M						y								
-SOC_AES_SUPPORT_PSEUDO_ROUND_FUNCTION						y			y					
+SOC_AES_SUPPORT_PSEUDO_ROUND_FUNCTION						y			y	y				
 SOC_ADC_CALIB_CHAN_COMPENS_SUPPORTED						y	y		y			y		
 SOC_ADC_TEMPERATURE_SHARE_INTR						y	y	y	y					
 SOC_CACHE_WRITEBACK_SUPPORTED		y	y			y		y				y		
