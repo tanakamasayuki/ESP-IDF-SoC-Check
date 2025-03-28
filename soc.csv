@@ -584,6 +584,7 @@ SOC_REG_I2C_SUPPORTED								y
 SOC_I2S_SUPPORTS_PLL_F120M								y						
 SOC_ECDSA_SUPPORT_DETERMINISTIC_MODE								y				y		
 SOC_SPI_SUPPORT_CLK_PLL								y						
+SOC_BLE_CTE_SUPPORTED								y	y					
 SOC_IEEE802154_BLE_ONLY									y					
 SOC_VBAT_SUPPORTED									y			y		
 SOC_XTAL_SUPPORT_32M									y	y	y			
