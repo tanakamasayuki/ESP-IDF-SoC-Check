@@ -14,7 +14,7 @@ SOC_PCNT_SUPPORTED	y	y	y			y	y		y			y
 SOC_PHY_SUPPORTED	y	y	y	y	y	y	y	y	y					
 SOC_WIFI_SUPPORTED	y	y	y	y	y	y	y	y						
 SOC_SDIO_SLAVE_SUPPORTED	y						y							
-SOC_TWAI_SUPPORTED	y	y	y		y		y		y			y		
+SOC_TWAI_SUPPORTED	y	y	y		y	y	y		y			y		
 SOC_EFUSE_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y	
 SOC_EMAC_SUPPORTED	y											y		
 SOC_ULP_SUPPORTED	y	y	y			y	y					y		
