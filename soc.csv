@@ -25,7 +25,7 @@ SOC_RTC_MEM_SUPPORTED	y	y	y		y	y	y		y	y		y
 SOC_I2S_SUPPORTED	y	y	y		y	y	y	y	y			y		
 SOC_RMT_SUPPORTED	y	y	y		y	y	y		y			y		
 SOC_SDM_SUPPORTED	y	y	y		y	y	y		y			y		
-SOC_GPSPI_SUPPORTED	y	y	y	y	y	y	y	y	y			y		
+SOC_GPSPI_SUPPORTED	y	y	y	y	y	y	y	y	y	y		y		
 SOC_LEDC_SUPPORTED	y	y	y	y	y	y	y	y	y			y		
 SOC_I2C_SUPPORTED	y	y	y	y	y	y	y	y	y	y		y		
 SOC_SUPPORT_COEXISTENCE	y	n	y	y	y		y		y					
@@ -293,11 +293,11 @@ SOC_RTC_CNTL_CPU_PD_DMA_BUS_WIDTH			128	128	128
 SOC_RTC_CNTL_CPU_PD_REG_FILE_NUM			549	108	108									
 SOC_SHA_SUPPORT_RESUME		y	y	y	y	y	y	y	y	y		y		
 SOC_SHA_SUPPORT_SHA224		y	y	y	y	y	y	y	y	y		y		
-SOC_SPI_SUPPORT_DDRCLK		y	y	y	y	y	y		y	y		y		
+SOC_SPI_SUPPORT_DDRCLK		y	y	y	y	y	y		y			y		
 SOC_SPI_SLAVE_SUPPORT_SEG_TRANS		y	y	y	y	y	y		y	y		y		
 SOC_SPI_SUPPORT_CD_SIG		y	y	y	y	y	y		y	y		y		
 SOC_SPI_SUPPORT_CONTINUOUS_TRANS		y	y	y	y	y	y		y	y				
-SOC_SPI_SUPPORT_SLAVE_HD_VER2		y	y	y	y	y	y	y	y			y		
+SOC_SPI_SUPPORT_SLAVE_HD_VER2		y	y	y	y	y	y	y	y	y		y		
 SOC_SPI_SUPPORT_CLK_XTAL			y	y	y	y	y	y	y	y		y		
 SOC_SPI_SUPPORT_CLK_PLL_F40M				y										
 SOC_SPI_PERIPH_SUPPORT_CONTROL_DUMMY_OUT		y	y	y	y							y		
