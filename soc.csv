@@ -7,7 +7,7 @@ SOC_ADC_SUPPORTED	y	y	y	y	y	y	y	y	y			y
 SOC_DAC_SUPPORTED	y	y												
 SOC_UART_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_MCPWM_SUPPORTED	y		y			y	y		y			y		
-SOC_GPTIMER_SUPPORTED	y	y	y	y	y	y	y	y	y	y		y		
+SOC_GPTIMER_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_SDMMC_HOST_SUPPORTED	y		y									y		
 SOC_BT_SUPPORTED	y		y	y	y	y	y	y	y					
 SOC_PCNT_SUPPORTED	y	y	y			y	y		y			y		
@@ -510,7 +510,7 @@ SOC_SYSTIMER_SUPPORT_RC_FAST						y	y	y	y	y	y	y
 SOC_SYSTIMER_SUPPORT_ETM						y	y	y	y			y		
 SOC_TIMER_GROUP_SUPPORT_RC_FAST						y	y	y	y	y	y	y		
 SOC_TIMER_SUPPORT_ETM						y	y	y	y			y		
-SOC_TIMER_SUPPORT_SLEEP_RETENTION						y	y	y	y	y		y		
+SOC_TIMER_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y		
 SOC_MWDT_SUPPORT_SLEEP_RETENTION						y	y	y	y			y		
 SOC_TWAI_MASK_FILTER_NUM						3								
 SOC_TWAI_RANGE_FILTER_NUM						1								
@@ -550,6 +550,7 @@ SOC_PM_PAU_LINK_NUM						5	4	4	4	5	4	4
 SOC_PM_PAU_REGDMA_LINK_CONFIGURABLE						y				y				
 SOC_PM_PAU_REGDMA_LINK_IDX_WIFIMAC						4								
 SOC_PM_PAU_REGDMA_UPDATE_CACHE_BEFORE_WAIT_COMPARE						y	y	y	y			y		
+SOC_PM_PMU_MIN_SLP_SLOW_CLK_CYCLE_FIXED						y	y	y						
 SOC_PM_RETENTION_MODULE_NUM						32	32	32	32	32		64		
 SOC_MODEM_CLOCK_IS_INDEPENDENT						y	y	y	y	y	y			
 SOC_CLK_LP_FAST_SUPPORT_XTAL						y		y				y		
