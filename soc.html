@@ -108,7 +108,7 @@
       <tr><td>SOC_GPIO_VALID_GPIO_MASK</td><td>0xFFFFFFFFFF</td><td>0x7FFFFFFFFFFF</td><td>0x1FFFFFFFFFFFF</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0x007FFFFFFFFFFFFF</td><td></td></tr>
       <tr><td>SOC_GPIO_IN_RANGE_MAX</td><td>39</td><td>46</td><td>48</td><td>20</td><td>21</td><td>28</td><td>30</td><td>24</td><td>27</td><td>25</td><td>39</td><td>54</td><td>65535</td></tr>
       <tr><td>SOC_GPIO_OUT_RANGE_MAX</td><td>33</td><td>45</td><td>48</td><td>20</td><td>21</td><td>28</td><td>30</td><td>24</td><td>27</td><td>25</td><td>39</td><td>54</td><td>65535</td></tr>
-      <tr><td>SOC_GPIO_VALID_DIGITAL_IO_PAD_MASK</td><td>0xEF0FEA</td><td>0x00007FFFFC000000</td><td>0x0001FFFFFC000000</td><td>0x00000000001FFFC0</td><td>0x00000000003FFFC0</td><td>0x0000000001FFFF00</td><td>0x000000007FFFFF00</td><td>0x1FFFF80</td><td>0x000000000FFF807F</td><td>0x0000000003FFF81F</td><td>0x000000FFFFFFFFC0</td><td>0x007FFFFFFFFF0000</td><td></td></tr>
+      <tr><td>SOC_GPIO_VALID_DIGITAL_IO_PAD_MASK</td><td>0xEF0FEA</td><td>0x00007FFFFC000000</td><td>0x0001FFFFFC000000</td><td>0x00000000001FFFC0</td><td>0x00000000003FFFC0</td><td>0x0000000001FFFF80</td><td>0x000000007FFFFF00</td><td>0x1FFFF80</td><td>0x000000000FFF807F</td><td>0x0000000003FFF81F</td><td>0x000000FFFFFFFFC0</td><td>0x007FFFFFFFFF0000</td><td></td></tr>
       <tr><td>SOC_GPIO_CLOCKOUT_BY_IO_MUX</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_GPIO_CLOCKOUT_CHANNEL_NUM</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td></td><td></td><td>2</td><td></td></tr>
       <tr><td>SOC_GPIO_SUPPORT_HOLD_IO_IN_DSLP</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td></tr>
@@ -177,7 +177,7 @@
       <tr><td>SOC_RMT_SUPPORT_REF_TICK</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_RMT_SUPPORT_APB</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_RMT_CHANNEL_CLK_INDEPENDENT</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-      <tr><td>SOC_RTCIO_PIN_COUNT</td><td>18</td><td>22</td><td>22</td><td>0</td><td>0</td><td>8</td><td>8</td><td>7</td><td>8</td><td>7</td><td></td><td>16</td><td></td></tr>
+      <tr><td>SOC_RTCIO_PIN_COUNT</td><td>18</td><td>22</td><td>22</td><td>0</td><td>0</td><td>7</td><td>8</td><td>7</td><td>8</td><td>7</td><td></td><td>16</td><td></td></tr>
       <tr><td>SOC_RTCIO_INPUT_OUTPUT_SUPPORTED</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_RTCIO_HOLD_SUPPORTED</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_RTCIO_WAKE_SUPPORTED</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td>y</td><td></td></tr>
@@ -300,7 +300,7 @@
       <tr><td>SOC_GPIO_SUPPORT_FORCE_HOLD</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_GPIO_SUPPORT_DEEPSLEEP_WAKEUP</td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_GPIO_DEEP_SLEEP_WAKE_VALID_GPIO_MASK</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td>0</td><td>0</td><td></td></tr>
-      <tr><td>SOC_GPIO_DEEP_SLEEP_WAKE_SUPPORTED_PIN_CNT</td><td></td><td></td><td></td><td>6</td><td>6</td><td>8</td><td>8</td><td>7</td><td></td><td></td><td></td><td>16</td><td></td></tr>
+      <tr><td>SOC_GPIO_DEEP_SLEEP_WAKE_SUPPORTED_PIN_CNT</td><td></td><td></td><td></td><td>6</td><td>6</td><td>7</td><td>8</td><td>7</td><td></td><td></td><td></td><td>16</td><td></td></tr>
       <tr><td>SOC_GPIO_CLOCKOUT_BY_GPIO_MATRIX</td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_DEDIC_GPIO_OUT_CHANNELS_NUM</td><td></td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td></td><td>8</td><td></td></tr>
       <tr><td>SOC_DEDIC_GPIO_IN_CHANNELS_NUM</td><td></td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td></td><td>8</td><td></td></tr>
