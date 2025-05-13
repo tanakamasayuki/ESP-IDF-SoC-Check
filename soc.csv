@@ -327,8 +327,8 @@ SOC_SYSTIMER_ALARM_MISS_COMPENSATE			y	y	y	y	y	y	y	y	y	y
 SOC_TIMER_GROUP_SUPPORT_XTAL		y	y	y	y	y	y	y	y	y	y	y		
 SOC_MWDT_SUPPORT_XTAL				y	y		y		y	y	y	y		
 SOC_EFUSE_DIS_DOWNLOAD_ICACHE		y	y	y	y		y	n			n		y	
-SOC_EFUSE_DIS_PAD_JTAG				y	y		y	y	y	y	y	y		
-SOC_EFUSE_DIS_DIRECT_BOOT			y	y	y		y	y	y	y	y	y	y	
+SOC_EFUSE_DIS_PAD_JTAG				y	y	y	y	y	y	y	y	y		
+SOC_EFUSE_DIS_DIRECT_BOOT			y	y	y	y	y	y	y	y	y	y	y	
 SOC_SECURE_BOOT_V2_ECC				y		y	y	y	y	y	y	y		
 SOC_FLASH_ENCRYPTION_XTS_AES		y	y	y	y	y	y	y	y	y	y	y	y	
 SOC_FLASH_ENCRYPTION_XTS_AES_OPTIONS		y	y	y								y	y	
@@ -391,9 +391,9 @@ SOC_SHA_SUPPORT_DMA		y	y		y	y	y	y	y	y		y
 SOC_SHA_GDMA			y		y	y	y	y	y	y		y		
 SOC_TWAI_BRP_MAX		32768	16384		16384	255	32768		32768			32768		
 SOC_TWAI_SUPPORTS_RX_STATUS		y	y		y	y	y		y			y		
-SOC_EFUSE_DIS_USB_JTAG			y		y		y	y	y	y	y	y	y	
-SOC_EFUSE_SOFT_DIS_JTAG		y	y		y		y	n	y	y	n	y	y	
-SOC_EFUSE_DIS_ICACHE		y	y		y		y	y	y	y	n		y	
+SOC_EFUSE_DIS_USB_JTAG			y		y	y	y	y	y	y	y	y	y	
+SOC_EFUSE_SOFT_DIS_JTAG		y	y		y	y	y	n	y	y	n	y	y	
+SOC_EFUSE_DIS_ICACHE		y	y		y	y	y	y	y	y	n		y	
 SOC_EFUSE_BLOCK9_KEY_PURPOSE_QUIRK			y		y		y		y	y	y			
 SOC_SECURE_BOOT_V2_RSA		y	y		y	y	y	n	y	y	y	y	y	
 SOC_EFUSE_REVOKE_BOOT_KEY_DIGESTS		y	y		y	y	y	y	y	y	y	y	y	
@@ -524,9 +524,16 @@ SOC_TWAI_CLK_SUPPORT_XTAL						y	y		y			y
 SOC_TWAI_SUPPORT_FD						y								
 SOC_TWAI_SUPPORT_TIMESTAMP						y								
 SOC_EFUSE_ECDSA_KEY						y		y	y	y	y	y		
+SOC_EFUSE_ECDSA_KEY_P192						y								
+SOC_EFUSE_ECDSA_KEY_P384						y								
 SOC_KEY_MANAGER_ECDSA_KEY_DEPLOY						y						y		
 SOC_KEY_MANAGER_FE_KEY_DEPLOY						y						y		
+SOC_FLASH_ENCRYPTION_XTS_AES_256		y	y			y						y	y	
 SOC_FLASH_ENCRYPTION_XTS_AES_SUPPORT_PSEUDO_ROUND						y		y	y	y				
+SOC_PSRAM_ENCRYPTION_XTS_AES_128						y								
+SOC_PSRAM_ENCRYPTION_XTS_AES_256						y								
+SOC_RECOVERY_BOOTLOADER_SUPPORTED						n								
+SOC_BOOTLOADER_ANTI_ROLLBACK_SUPPORTED						n								
 SOC_APM_CTRL_FILTER_SUPPORTED						y	y	y	y	y	y			
 SOC_APM_LP_APM0_SUPPORTED						y	y							
 SOC_CRYPTO_DPA_PROTECTION_SUPPORTED						y	y	y	y	y				
@@ -726,7 +733,6 @@ SOC_TOUCH_PROXIMITY_CHANNEL_NUM		3	3									3
 SOC_TOUCH_PROXIMITY_MEAS_DONE_SUPPORTED			y									y		
 SOC_TOUCH_SUPPORT_FREQ_HOP												y		
 SOC_EFUSE_DIS_DOWNLOAD_MSPI												y		
-SOC_FLASH_ENCRYPTION_XTS_AES_256		y	y									y	y	
 SOC_LP_I2S_SUPPORT_VAD												y		
 SOC_PM_EXT1_WAKEUP_BY_PMU												y		
 SOC_PM_SUPPORT_CNNT_PD												y		
