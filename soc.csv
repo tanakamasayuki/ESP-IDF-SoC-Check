@@ -6,10 +6,10 @@ SOC_UART_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y
 SOC_MCPWM_SUPPORTED	y		y			y	y		y			y		
 SOC_GPTIMER_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_SDMMC_HOST_SUPPORTED	y		y									y		
-SOC_BT_SUPPORTED	y		y	y	y	y	y	y	y					
+SOC_BT_SUPPORTED	y		y	y	y	y	y		y					
 SOC_PCNT_SUPPORTED	y	y	y			y	y		y			y		
-SOC_PHY_SUPPORTED	y	y	y	y	y	y	y	y	y					
-SOC_WIFI_SUPPORTED	y	y	y	y	y	y	y	y						
+SOC_PHY_SUPPORTED	y	y	y	y	y	y	y		y					
+SOC_WIFI_SUPPORTED	y	y	y	y	y	y	y							
 SOC_SDIO_SLAVE_SUPPORTED	y					y	y							
 SOC_TWAI_SUPPORTED	y	y	y		y	y	y		y			y		
 SOC_EFUSE_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y	
@@ -36,7 +36,7 @@ SOC_BOD_SUPPORTED	y	y	y	y	y	y	y	y	y			y
 SOC_ULP_FSM_SUPPORTED	y	y	y											
 SOC_CLK_TREE_SUPPORTED	y	y	y	y	y	y	y	y	y			y		
 SOC_MPU_SUPPORTED	y	y	y											
-SOC_WDT_SUPPORTED	y	y	y	y	y	y	y	y	y	y		y		
+SOC_WDT_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_SPI_FLASH_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_RNG_SUPPORTED	y	y	y	y	y	y	y	y	y			y		
 SOC_LIGHT_SLEEP_SUPPORTED	y	y	y	y	y	y	y	y	y			y		
@@ -235,19 +235,19 @@ SOC_CLK_LP_FAST_SUPPORT_XTAL_D4	y	y
 SOC_SDMMC_USE_IOMUX	y											y		
 SOC_SDMMC_NUM_SLOTS	2		2									2		
 SOC_SDMMC_DATA_WIDTH_MAX	8		8									8		
-SOC_WIFI_WAPI_SUPPORT	y	y	y		y	y	y	y						
-SOC_WIFI_CSI_SUPPORT	y	y	y		y	y	y	y						
-SOC_WIFI_MESH_SUPPORT	y	y	y		y	y	y	y						
+SOC_WIFI_WAPI_SUPPORT	y	y	y		y	y	y							
+SOC_WIFI_CSI_SUPPORT	y	y	y		y	y	y							
+SOC_WIFI_MESH_SUPPORT	y	y	y		y	y	y							
 SOC_WIFI_SUPPORT_VARIABLE_BEACON_WINDOW	y	y	y	y	y									
-SOC_WIFI_NAN_SUPPORT	y	y				y		y						
-SOC_BLE_SUPPORTED	y		y	y	y	y	y	y	y					
-SOC_BLE_MESH_SUPPORTED	y		y	n	y		y	y	y					
+SOC_WIFI_NAN_SUPPORT	y	y				y								
+SOC_BLE_SUPPORTED	y		y	y	y	y	y		y					
+SOC_BLE_MESH_SUPPORTED	y		y	n	y		y		y					
 SOC_BT_CLASSIC_SUPPORTED	y													
-SOC_BLE_DEVICE_PRIVACY_SUPPORTED	n		y	y	y	y	y	y	y					
-SOC_BLUFI_SUPPORTED	y		y	y	y		y	y						
+SOC_BLE_DEVICE_PRIVACY_SUPPORTED	n		y	y	y	y	y		y					
+SOC_BLUFI_SUPPORTED	y		y	y	y		y							
 SOC_BT_H2C_ENC_KEY_CTRL_ENH_VSC_SUPPORTED	y													
 SOC_ULP_HAS_ADC	y	y	y											
-SOC_PHY_COMBO_MODULE	y	n	y	y	y		y	y						
+SOC_PHY_COMBO_MODULE	y	n	y	y	y		y							
 SOC_EMAC_RMII_CLK_OUT_INTERNAL_LOOPBACK	y													
 SOC_DEDICATED_GPIO_SUPPORTED		y	y	y	y	y	y	y	y			y		
 SOC_GDMA_SUPPORTED			y	y	y	y	y	y	y	y	y	y		
@@ -346,12 +346,12 @@ SOC_PM_SUPPORT_WIFI_WAKEUP		y	y	y	y	y	y	y				y
 SOC_PM_SUPPORT_BT_WAKEUP			y	y	y	y	y	y	y	y	y			
 SOC_CLK_OSC_SLOW_SUPPORTED				y		y	y	y	y	y	y			
 SOC_CLK_LP_FAST_SUPPORT_XTAL_D2			y	y	y	y	y	y	y					
-SOC_WIFI_HW_TSF		y	y	y	y	y	y	y						
-SOC_WIFI_FTM_SUPPORT		y	y	y	y	y	y	n						
+SOC_WIFI_HW_TSF		y	y	y	y	y	y							
+SOC_WIFI_FTM_SUPPORT		y	y	y	y	y	y							
 SOC_WIFI_PHY_NEEDS_USB_WORKAROUND			y	y	y									
-SOC_ESP_NIMBLE_CONTROLLER				y		y	y	y	y					
-SOC_BLE_50_SUPPORTED			y	y	y	y	y	y	y					
-SOC_BLE_PERIODIC_ADV_ENH_SUPPORTED				y		y	y	y	y					
+SOC_ESP_NIMBLE_CONTROLLER				y		y	y		y					
+SOC_BLE_50_SUPPORTED			y	y	y	y	y		y					
+SOC_BLE_PERIODIC_ADV_ENH_SUPPORTED				y		y	y		y					
 SOC_PHY_IMPROVE_RX_11B				y										
 SOC_UHCI_SUPPORTED			y		y	y	y		y			y		
 SOC_USB_SERIAL_JTAG_SUPPORTED			y		y	y	y	y	y			y		
@@ -409,7 +409,7 @@ SOC_PM_CPU_RETENTION_BY_RTCCNTL			y		y
 SOC_PM_MODEM_RETENTION_BY_BACKUPDMA			y		y									
 SOC_TEMPERATURE_SENSOR_SUPPORT_FAST_RC		y	y		y	y	y	y	y					
 SOC_TEMPERATURE_SENSOR_SUPPORT_XTAL					y	y	y	y	y					
-SOC_WIFI_GCMP_SUPPORT			y		y	y	y	y						
+SOC_WIFI_GCMP_SUPPORT			y		y	y	y							
 SOC_ANA_CMPR_SUPPORTED						y		y	y			y		
 SOC_ETM_SUPPORTED						y	y	y	y			y		
 SOC_PARLIO_SUPPORTED						y	y		y			y		
@@ -427,6 +427,7 @@ SOC_LP_I2C_SUPPORTED						y	y					y
 SOC_ULP_LP_UART_SUPPORTED						y	y					y		
 SOC_ECDSA_SUPPORTED						y		y	y	y		n		
 SOC_MODEM_CLOCK_SUPPORTED						y	y	y	y	y				
+SOC_CLOCK_TREE_MANAGEMENT_SUPPORTED						y								
 SOC_BITSCRAMBLER_SUPPORTED						y						y		
 SOC_XTAL_SUPPORT_48M						y								
 SOC_XTAL_CLOCK_PATH_DEPENDS_ON_TOP_DOMAIN						y	y	y	y	y	y			
@@ -446,6 +447,7 @@ SOC_DMA_CAN_ACCESS_FLASH						y		y			y	y
 SOC_GDMA_SUPPORT_ETM						y	y	y	y			y		
 SOC_GDMA_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y		
 SOC_AHB_GDMA_SUPPORT_PSRAM			y			y					y			
+SOC_GDMA_SUPPORT_WEIGHTED_ARBITRATION						y								
 SOC_ETM_GROUPS						1	1	1	1	1		1		
 SOC_ETM_CHANNELS_PER_GROUP						50	50	50	50	50		50		
 SOC_ETM_SUPPORT_SLEEP_RETENTION						y	y	y	y			y		
@@ -502,7 +504,7 @@ SOC_PARLIO_SUPPORT_I80_LCD						y						y
 SOC_ECC_CONSTANT_TIME_POINT_MUL						y		y	y	y				
 SOC_ECDSA_SUPPORT_EXPORT_PUBKEY						y		y		y		y		
 SOC_ECDSA_SUPPORT_DETERMINISTIC_MODE						y		y	y	y		y		
-SOC_ECDSA_SUPPORT_HW_DETERMINISTIC_LOOP						y			y					
+SOC_ECDSA_SUPPORT_HW_DETERMINISTIC_LOOP						y			y	y				
 SOC_SDM_CLK_SUPPORT_PLL_F80M						y	y					y		
 SOC_SDM_CLK_SUPPORT_XTAL						y	y		y			y		
 SOC_SPI_SUPPORT_SLEEP_RETENTION						y	y	y	y			y		
@@ -569,14 +571,15 @@ SOC_PM_RETENTION_MODULE_NUM						32	32	32	32	32		64
 SOC_MODEM_CLOCK_IS_INDEPENDENT						y	y	y	y	y	y			
 SOC_CLK_LP_FAST_SUPPORT_XTAL						y		y				y		
 SOC_RCC_IS_INDEPENDENT						y	y	y	y	y	y			
+SOC_CLK_ANA_I2C_MST_DEPENDS_ON_MODEM_APB						y								
 SOC_TEMPERATURE_SENSOR_INTR_SUPPORT						y	y	y	y			y		
 SOC_TEMPERATURE_SENSOR_SUPPORT_SLEEP_RETENTION						y	y	y	y			y		
 SOC_TEMPERATURE_SENSOR_UNDER_PD_TOP_DOMAIN						y	y	y	y					
-SOC_WIFI_HE_SUPPORT						y	y	y						
+SOC_WIFI_HE_SUPPORT						y	y							
 SOC_WIFI_SUPPORT_5G						y								
-SOC_WIFI_MAC_VERSION_NUM						3	2	3						
-SOC_BLE_POWER_CONTROL_SUPPORTED						y	y	y	y					
-SOC_BLE_MULTI_CONN_OPTIMIZATION						y	y	y	y					
+SOC_WIFI_MAC_VERSION_NUM						3	2							
+SOC_BLE_POWER_CONTROL_SUPPORTED						y	y		y					
+SOC_BLE_MULTI_CONN_OPTIMIZATION						y	y		y					
 SOC_LP_CORE_SINGLE_INTERRUPT_VECTOR						y	y							
 SOC_LP_CORE_SUPPORT_ETM						y	y					y		
 SOC_LP_CORE_SUPPORT_STORE_LOAD_EXCEPTIONS						y						y		
@@ -599,7 +602,6 @@ SOC_DEBUG_HAVE_OCD_STUB_BINS							y		y
 SOC_REG_I2C_SUPPORTED								y		y				
 SOC_I2S_SUPPORTS_PLL_F120M								y						
 SOC_SPI_SUPPORT_CLK_PLL								y						
-SOC_BLE_CTE_SUPPORTED								y	y					
 SOC_IEEE802154_BLE_ONLY									y					
 SOC_VBAT_SUPPORTED									y			y		
 SOC_XTAL_SUPPORT_32M									y	y	y			
@@ -617,6 +619,7 @@ SOC_ECDSA_USES_MPI									y			y
 SOC_ECDSA_P192_CURVE_DEFAULT_DISABLED									y	y				
 SOC_PM_RETENTION_SW_TRIGGER_REGDMA									y					
 SOC_CLK_LP_FAST_SUPPORT_LP_PLL									y	y		y		
+SOC_BLE_CTE_SUPPORTED									y					
 SOC_CPU_HAS_FPU_EXT_ILL_BUG											n	y		
 SOC_CPU_COPROC_NUM											2	3		
 SOC_PM_SUPPORT_TOUCH_WAKEUP											y			
