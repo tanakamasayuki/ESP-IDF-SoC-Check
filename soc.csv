@@ -11,7 +11,7 @@ SOC_PCNT_SUPPORTED	y	y	y			y	y		y	y		y
 SOC_PHY_SUPPORTED	y	y	y	y	y	y	y	y	y					
 SOC_WIFI_SUPPORTED	y	y	y	y	y	y	y	y						
 SOC_SDIO_SLAVE_SUPPORTED	y					y	y	y						
-SOC_TWAI_SUPPORTED	y	y	y		y	y	y		y	y		y		
+SOC_TWAI_SUPPORTED	y	y	y		y	y	y		y	y	y	y		
 SOC_EFUSE_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y	
 SOC_EMAC_SUPPORTED	y											y		
 SOC_ULP_SUPPORTED	y	y	y			y	y					y		
@@ -174,9 +174,9 @@ SOC_TOUCH_MIN_CHAN_ID	0	1	1									1
 SOC_TOUCH_MAX_CHAN_ID	9	14	14									14		
 SOC_TOUCH_SUPPORT_SLEEP_WAKEUP	y	y	y									y		
 SOC_TOUCH_SAMPLE_CFG_NUM	1	1	1									3		
-SOC_TWAI_CONTROLLER_NUM	1	1	1		1	2	2		1	1		3		
-SOC_TWAI_MASK_FILTER_NUM	1	1	1		1	3	1		1	1		1		
-SOC_TWAI_BRP_MIN	2	2	2		2	1	2		2	2		2		
+SOC_TWAI_CONTROLLER_NUM	1	1	1		1	2	2		1	1	1	3		
+SOC_TWAI_MASK_FILTER_NUM	1	1	1		1	3	1		1	1	3	1		
+SOC_TWAI_BRP_MIN	2	2	2		2	1	2		2	2	1	2		
 SOC_TWAI_CLK_SUPPORT_APB	y	y	y		y									
 SOC_TWAI_SUPPORT_MULTI_ADDRESS_LAYOUT	y													
 SOC_UART_NUM	3	2	3	2	2	3	3	3	2	2	2	6		
@@ -380,8 +380,8 @@ SOC_SLEEP_TGWDT_STOP_WORKAROUND					y							y
 SOC_SHA_DMA_MAX_BUFFER_SIZE		3968	3968		3968	3968	3968	3968	3968	3968		3968		
 SOC_SHA_SUPPORT_DMA		y	y		y	y	y	y	y	y		y		
 SOC_SHA_GDMA			y		y	y	y	y	y	y		y		
-SOC_TWAI_BRP_MAX		32768	16384		16384	255	32768		32768	32768		32768		
-SOC_TWAI_SUPPORTS_RX_STATUS		y	y		y	y	y		y	y		y		
+SOC_TWAI_BRP_MAX		32768	16384		16384	255	32768		32768	32768	255	32768		
+SOC_TWAI_SUPPORTS_RX_STATUS		y	y		y	y	y		y	y	y	y		
 SOC_EFUSE_DIS_USB_JTAG			y		y	y	y	y	y	y	y	y	y	
 SOC_EFUSE_SOFT_DIS_JTAG		y	y		y	y	y	n	y	y	n	y	y	
 SOC_EFUSE_DIS_ICACHE		y	y		y	y	y	y	y	y	n		y	
@@ -519,10 +519,10 @@ SOC_SYSTIMER_SUPPORT_ETM						y	y	y	y		y	y
 SOC_TIMER_SUPPORT_ETM						y	y	y	y		y	y		
 SOC_TIMER_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y		
 SOC_MWDT_SUPPORT_SLEEP_RETENTION						y	y	y	y	y		y		
-SOC_TWAI_RANGE_FILTER_NUM						1								
-SOC_TWAI_CLK_SUPPORT_XTAL						y	y		y	y		y		
-SOC_TWAI_SUPPORT_FD						y								
-SOC_TWAI_SUPPORT_TIMESTAMP						y								
+SOC_TWAI_RANGE_FILTER_NUM						1					1			
+SOC_TWAI_CLK_SUPPORT_XTAL						y	y		y	y	y	y		
+SOC_TWAI_SUPPORT_FD						y					y			
+SOC_TWAI_SUPPORT_TIMESTAMP						y					y			
 SOC_EFUSE_ECDSA_KEY						y		y	y	y	y	y		
 SOC_EFUSE_ECDSA_KEY_P192						y								
 SOC_EFUSE_ECDSA_KEY_P384						y								

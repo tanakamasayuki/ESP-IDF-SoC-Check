@@ -34,7 +34,7 @@
       <tr><td>SOC_PHY_SUPPORTED</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_WIFI_SUPPORTED</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_SDIO_SLAVE_SUPPORTED</td><td>y</td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td></tr>
-      <tr><td>SOC_TWAI_SUPPORTED</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
+      <tr><td>SOC_TWAI_SUPPORTED</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_EFUSE_SUPPORTED</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr>
       <tr><td>SOC_EMAC_SUPPORTED</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_ULP_SUPPORTED</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
@@ -197,9 +197,9 @@
       <tr><td>SOC_TOUCH_MAX_CHAN_ID</td><td>9</td><td>14</td><td>14</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>14</td><td></td></tr>
       <tr><td>SOC_TOUCH_SUPPORT_SLEEP_WAKEUP</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_TOUCH_SAMPLE_CFG_NUM</td><td>1</td><td>1</td><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>3</td><td></td></tr>
-      <tr><td>SOC_TWAI_CONTROLLER_NUM</td><td>1</td><td>1</td><td>1</td><td></td><td>1</td><td>2</td><td>2</td><td></td><td>1</td><td>1</td><td></td><td>3</td><td></td></tr>
-      <tr><td>SOC_TWAI_MASK_FILTER_NUM</td><td>1</td><td>1</td><td>1</td><td></td><td>1</td><td>3</td><td>1</td><td></td><td>1</td><td>1</td><td></td><td>1</td><td></td></tr>
-      <tr><td>SOC_TWAI_BRP_MIN</td><td>2</td><td>2</td><td>2</td><td></td><td>2</td><td>1</td><td>2</td><td></td><td>2</td><td>2</td><td></td><td>2</td><td></td></tr>
+      <tr><td>SOC_TWAI_CONTROLLER_NUM</td><td>1</td><td>1</td><td>1</td><td></td><td>1</td><td>2</td><td>2</td><td></td><td>1</td><td>1</td><td>1</td><td>3</td><td></td></tr>
+      <tr><td>SOC_TWAI_MASK_FILTER_NUM</td><td>1</td><td>1</td><td>1</td><td></td><td>1</td><td>3</td><td>1</td><td></td><td>1</td><td>1</td><td>3</td><td>1</td><td></td></tr>
+      <tr><td>SOC_TWAI_BRP_MIN</td><td>2</td><td>2</td><td>2</td><td></td><td>2</td><td>1</td><td>2</td><td></td><td>2</td><td>2</td><td>1</td><td>2</td><td></td></tr>
       <tr><td>SOC_TWAI_CLK_SUPPORT_APB</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_TWAI_SUPPORT_MULTI_ADDRESS_LAYOUT</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_UART_NUM</td><td>3</td><td>2</td><td>3</td><td>2</td><td>2</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>2</td><td>6</td><td></td></tr>
@@ -403,8 +403,8 @@
       <tr><td>SOC_SHA_DMA_MAX_BUFFER_SIZE</td><td></td><td>3968</td><td>3968</td><td></td><td>3968</td><td>3968</td><td>3968</td><td>3968</td><td>3968</td><td>3968</td><td></td><td>3968</td><td></td></tr>
       <tr><td>SOC_SHA_SUPPORT_DMA</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_SHA_GDMA</td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
-      <tr><td>SOC_TWAI_BRP_MAX</td><td></td><td>32768</td><td>16384</td><td></td><td>16384</td><td>255</td><td>32768</td><td></td><td>32768</td><td>32768</td><td></td><td>32768</td><td></td></tr>
-      <tr><td>SOC_TWAI_SUPPORTS_RX_STATUS</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
+      <tr><td>SOC_TWAI_BRP_MAX</td><td></td><td>32768</td><td>16384</td><td></td><td>16384</td><td>255</td><td>32768</td><td></td><td>32768</td><td>32768</td><td>255</td><td>32768</td><td></td></tr>
+      <tr><td>SOC_TWAI_SUPPORTS_RX_STATUS</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_EFUSE_DIS_USB_JTAG</td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr>
       <tr><td>SOC_EFUSE_SOFT_DIS_JTAG</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>n</td><td>y</td><td>y</td><td>n</td><td>y</td><td>y</td></tr>
       <tr><td>SOC_EFUSE_DIS_ICACHE</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>n</td><td></td><td>y</td></tr>
@@ -542,10 +542,10 @@
       <tr><td>SOC_TIMER_SUPPORT_ETM</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_TIMER_SUPPORT_SLEEP_RETENTION</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_MWDT_SUPPORT_SLEEP_RETENTION</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
-      <tr><td>SOC_TWAI_RANGE_FILTER_NUM</td><td></td><td></td><td></td><td></td><td></td><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-      <tr><td>SOC_TWAI_CLK_SUPPORT_XTAL</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
-      <tr><td>SOC_TWAI_SUPPORT_FD</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-      <tr><td>SOC_TWAI_SUPPORT_TIMESTAMP</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>SOC_TWAI_RANGE_FILTER_NUM</td><td></td><td></td><td></td><td></td><td></td><td>1</td><td></td><td></td><td></td><td></td><td>1</td><td></td><td></td></tr>
+      <tr><td>SOC_TWAI_CLK_SUPPORT_XTAL</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
+      <tr><td>SOC_TWAI_SUPPORT_FD</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
+      <tr><td>SOC_TWAI_SUPPORT_TIMESTAMP</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_EFUSE_ECDSA_KEY</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_EFUSE_ECDSA_KEY_P192</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_EFUSE_ECDSA_KEY_P384</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
