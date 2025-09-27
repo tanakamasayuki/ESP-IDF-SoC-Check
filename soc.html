@@ -216,9 +216,9 @@
       <tr><td>SOC_MPI_MEM_BLOCKS_NUM</td><td>4</td><td>4</td><td>4</td><td></td><td>4</td><td>4</td><td>4</td><td></td><td>4</td><td>4</td><td></td><td>4</td><td></td></tr>
       <tr><td>SOC_MPI_OPERATIONS_NUM</td><td>1</td><td>3</td><td>3</td><td></td><td>3</td><td>3</td><td>3</td><td></td><td>3</td><td>3</td><td></td><td>3</td><td></td></tr>
       <tr><td>SOC_RSA_MAX_BIT_LEN</td><td>4096</td><td>4096</td><td>4096</td><td></td><td>3072</td><td>3072</td><td>3072</td><td></td><td>3072</td><td>3072</td><td></td><td>4096</td><td></td></tr>
-      <tr><td>SOC_AES_SUPPORT_AES_128</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
+      <tr><td>SOC_AES_SUPPORT_AES_128</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_AES_SUPPORT_AES_192</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-      <tr><td>SOC_AES_SUPPORT_AES_256</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
+      <tr><td>SOC_AES_SUPPORT_AES_256</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_SECURE_BOOT_V1</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_EFUSE_SECURE_BOOT_KEY_DIGESTS</td><td>1</td><td>3</td><td>3</td><td>1</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td></tr>
       <tr><td>SOC_FLASH_ENCRYPTED_XTS_AES_BLOCK_MAX</td><td>32</td><td>64</td><td>64</td><td>32</td><td>32</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td></td></tr>
@@ -367,8 +367,8 @@
       <tr><td>SOC_HMAC_SUPPORTED</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_DIG_SIGN_SUPPORTED</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_MEMPROT_SUPPORTED</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-      <tr><td>SOC_AES_SUPPORT_DMA</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
-      <tr><td>SOC_AES_GDMA</td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
+      <tr><td>SOC_AES_SUPPORT_DMA</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
+      <tr><td>SOC_AES_GDMA</td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_ADC_ARBITER_SUPPORTED</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_APB_BACKUP_DMA</td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td>n</td><td>n</td><td>n</td><td>n</td><td>n</td><td>n</td><td></td></tr>
       <tr><td>SOC_CACHE_MEMORY_IBANK_SIZE</td><td></td><td></td><td></td><td></td><td>0x4000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -694,12 +694,13 @@
       <tr><td>SOC_I2S_SUPPORTS_PDM_RX_HP_FILTER</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_LP_I2S_NUM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td><td></td></tr>
       <tr><td>SOC_ISP_BF_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
+      <tr><td>SOC_ISP_BLC_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_ISP_CCM_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
+      <tr><td>SOC_ISP_COLOR_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_ISP_DEMOSAIC_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_ISP_DVP_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
-      <tr><td>SOC_ISP_SHARPEN_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
-      <tr><td>SOC_ISP_COLOR_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_ISP_LSC_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
+      <tr><td>SOC_ISP_SHARPEN_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_ISP_SHARE_CSI_BRG</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_ISP_NUMS</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td><td></td></tr>
       <tr><td>SOC_ISP_DVP_CTLR_NUMS</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td><td></td></tr>

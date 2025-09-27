@@ -193,9 +193,9 @@ SOC_SHA_SUPPORT_SHA512	y	y	y			y						y
 SOC_MPI_MEM_BLOCKS_NUM	4	4	4		4	4	4		4	4		4		
 SOC_MPI_OPERATIONS_NUM	1	3	3		3	3	3		3	3		3		
 SOC_RSA_MAX_BIT_LEN	4096	4096	4096		3072	3072	3072		3072	3072		4096		
-SOC_AES_SUPPORT_AES_128	y	y	y		y	y	y		y	y	y	y		
+SOC_AES_SUPPORT_AES_128	y	y	y		y	y	y		y	y		y		
 SOC_AES_SUPPORT_AES_192	y	y												
-SOC_AES_SUPPORT_AES_256	y	y	y		y	y	y		y	y	y	y		
+SOC_AES_SUPPORT_AES_256	y	y	y		y	y	y		y	y		y		
 SOC_SECURE_BOOT_V1	y													
 SOC_EFUSE_SECURE_BOOT_KEY_DIGESTS	1	3	3	1	3	3	3	3	3	3	3	3	3	
 SOC_FLASH_ENCRYPTED_XTS_AES_BLOCK_MAX	32	64	64	32	32	64	64	64	64	64	64	64		
@@ -344,8 +344,8 @@ SOC_EFUSE_HAS_EFUSE_RST_BUG					y
 SOC_HMAC_SUPPORTED		y	y		y	y	y		y	y		y		
 SOC_DIG_SIGN_SUPPORTED		y	y		y	y	y		y	y		y		
 SOC_MEMPROT_SUPPORTED		y	y		y									
-SOC_AES_SUPPORT_DMA		y	y		y	y	y		y	y	y	y		
-SOC_AES_GDMA			y		y	y	y		y	y	y	y		
+SOC_AES_SUPPORT_DMA		y	y		y	y	y		y	y		y		
+SOC_AES_GDMA			y		y	y	y		y	y		y		
 SOC_ADC_ARBITER_SUPPORTED		y	y		y									
 SOC_APB_BACKUP_DMA			y		y		n	n	n	n	n	n		
 SOC_CACHE_MEMORY_IBANK_SIZE					0x4000									
@@ -671,12 +671,13 @@ SOC_DEBUG_PROBE_MAX_OUTPUT_WIDTH												16
 SOC_I2S_SUPPORTS_PDM_RX_HP_FILTER												y		
 SOC_LP_I2S_NUM												1		
 SOC_ISP_BF_SUPPORTED												y		
+SOC_ISP_BLC_SUPPORTED												y		
 SOC_ISP_CCM_SUPPORTED												y		
+SOC_ISP_COLOR_SUPPORTED												y		
 SOC_ISP_DEMOSAIC_SUPPORTED												y		
 SOC_ISP_DVP_SUPPORTED												y		
-SOC_ISP_SHARPEN_SUPPORTED												y		
-SOC_ISP_COLOR_SUPPORTED												y		
 SOC_ISP_LSC_SUPPORTED												y		
+SOC_ISP_SHARPEN_SUPPORTED												y		
 SOC_ISP_SHARE_CSI_BRG												y		
 SOC_ISP_NUMS												1		
 SOC_ISP_DVP_CTLR_NUMS												1		
