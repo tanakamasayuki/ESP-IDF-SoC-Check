@@ -570,7 +570,7 @@
       <tr><td>SOC_PM_SUPPORT_DEEPSLEEP_CHECK_STUB_ONLY</td><td></td><td></td><td>y</td><td></td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_PM_CPU_RETENTION_BY_SW</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_PM_MODEM_RETENTION_BY_REGDMA</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr>
-      <tr><td>SOC_EXT_MEM_CACHE_TAG_IN_CPU_DOMAIN</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>SOC_EXT_MEM_CACHE_TAG_IN_CPU_DOMAIN</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_PM_TOP_PD_NOT_ALLOWED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_PM_PAU_LINK_NUM</td><td></td><td></td><td></td><td></td><td></td><td>5</td><td>4</td><td>4</td><td>4</td><td>5</td><td>4</td><td>4</td><td></td></tr>
       <tr><td>SOC_PM_PAU_REGDMA_LINK_CONFIGURABLE</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td></td></tr>
@@ -625,6 +625,7 @@
       <tr><td>SOC_ECDSA_P192_CURVE_DEFAULT_DISABLED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td></td><td></td></tr>
       <tr><td>SOC_PM_RETENTION_SW_TRIGGER_REGDMA</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_CLK_LP_FAST_SUPPORT_LP_PLL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td>y</td><td></td></tr>
+      <tr><td>SOC_USB_OTG_SUPPORTED</td><td></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_CPU_HAS_FPU_EXT_ILL_BUG</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>n</td><td>y</td><td></td></tr>
       <tr><td>SOC_CPU_HAS_DSP</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_CPU_COPROC_NUM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2</td><td>3</td><td></td></tr>
@@ -636,6 +637,7 @@
       <tr><td>SOC_I2S_SUPPORTS_TX_FIFO_SYNC</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_PM_SUPPORT_TOUCH_WAKEUP</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_PM_MODEM_CLK_CONF_RETENTION</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
+      <tr><td>SOC_USB_OTG_PERIPH_NUM</td><td></td><td>1</td><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td></td></tr>
       <tr><td>SOC_AXI_GDMA_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_DW_GDMA_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_DMA2D_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
@@ -645,7 +647,6 @@
       <tr><td>SOC_LCDCAM_RGB_LCD_SUPPORTED</td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_MIPI_CSI_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_MIPI_DSI_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
-      <tr><td>SOC_USB_OTG_SUPPORTED</td><td></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_WIRELESS_HOST_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_ISP_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_PMU_PVT_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
@@ -728,7 +729,6 @@
       <tr><td>SOC_LCDCAM_RGB_NUM_PANELS</td><td></td><td></td><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td><td></td></tr>
       <tr><td>SOC_LCDCAM_RGB_DATA_WIDTH</td><td></td><td></td><td>16</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>24</td><td></td></tr>
       <tr><td>SOC_LCD_SUPPORT_RGB_YUV_CONV</td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
-      <tr><td>SOC_USB_OTG_PERIPH_NUM</td><td></td><td>1</td><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2</td><td></td></tr>
       <tr><td>SOC_USB_UTMI_PHY_NUM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td><td></td></tr>
       <tr><td>SOC_USB_UTMI_PHY_NO_POWER_OFF_ISO</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_SDMMC_USE_GPIO_MATRIX</td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
