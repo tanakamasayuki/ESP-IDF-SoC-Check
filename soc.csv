@@ -3,7 +3,7 @@ SOC_CAPS_ECO_VER_MAX	301								102
 SOC_ADC_SUPPORTED	y	y	y	y	y	y	y	y	y			y		
 SOC_DAC_SUPPORTED	y	y												
 SOC_UART_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y		
-SOC_MCPWM_SUPPORTED	y		y			y	y		y			y		
+SOC_MCPWM_SUPPORTED	y		y			y	y		y		y	y		
 SOC_GPTIMER_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_SDMMC_HOST_SUPPORTED	y		y									y		
 SOC_BT_SUPPORTED	y		y	y	y	y	y	y	y					
@@ -19,7 +19,7 @@ SOC_CCOMP_TIMER_SUPPORTED	y	y	y
 SOC_RTC_FAST_MEM_SUPPORTED	y	y	y		y	y	y		y	y		y		
 SOC_RTC_SLOW_MEM_SUPPORTED	y	y	y											
 SOC_RTC_MEM_SUPPORTED	y	y	y		y	y	y		y	y		y		
-SOC_I2S_SUPPORTED	y	y	y		y	y	y	y	y		y	y		
+SOC_I2S_SUPPORTED	y	y	y		y	y	y	y	y	y	y	y		
 SOC_I2S_I80_LCD_SUPPORTED	y	y												
 SOC_LCD_I80_SUPPORTED	y	y	y									y		
 SOC_RMT_SUPPORTED	y	y	y		y	y	y		y	y	y	y		
@@ -98,12 +98,12 @@ SOC_I2C_SUPPORT_10BIT_ADDR	y		y	y	y	y	y	y	y	y	y	y	y
 SOC_I2C_STOP_INDEPENDENT	y													
 SOC_I2S_HW_VERSION_1	y	y												
 SOC_I2S_SUPPORTS_APLL	y	y										y		
-SOC_I2S_SUPPORTS_PDM	y		y		y	y	y	y	y		y	y		
-SOC_I2S_SUPPORTS_PDM_TX	y		y		y	y	y	y	y		y	y		
+SOC_I2S_SUPPORTS_PDM	y		y		y	y	y	y	y	y	y	y		
+SOC_I2S_SUPPORTS_PDM_TX	y		y		y	y	y	y	y	y	y	y		
 SOC_I2S_SUPPORTS_PCM2PDM	y		y		y	y	y	y	y		y	y		
 SOC_I2S_SUPPORTS_PDM_RX	y		y		y	y	y	y	y		y	y		
 SOC_I2S_SUPPORTS_PDM2PCM	y		y									y		
-SOC_I2S_PDM_MAX_TX_LINES	1		2		2	2	2	2	2		2	2		
+SOC_I2S_PDM_MAX_TX_LINES	1		2		2	2	2	2	2	2	2	2		
 SOC_I2S_PDM_MAX_RX_LINES	1		4		1	1	1	1	1		1	4		
 SOC_LEDC_HAS_TIMER_SPECIFIC_MUX	y	y												
 SOC_LEDC_SUPPORT_APB_CLOCK	y	y	y		y									
@@ -333,9 +333,9 @@ SOC_DS_KEY_CHECK_MAX_WAIT_US			1100		1100	1100	1100		1100	1100		1100
 SOC_I2C_SLAVE_SUPPORT_BROADCAST			y		y	y	y	y	y	y	y	y		
 SOC_I2C_SLAVE_CAN_GET_STRETCH_CAUSE		y	y		y	y	y	y	y	y	y	y		
 SOC_I2C_SLAVE_SUPPORT_I2CRAM_ACCESS			y		y	y	y	y	y	y	y	y		
-SOC_I2S_HW_VERSION_2			y		y	y	y	y	y		y	y		
-SOC_I2S_SUPPORTS_PCM			y		y	y	y	y	y		y	y		
-SOC_I2S_SUPPORTS_TDM			y		y	y	y	y	y		y	y		
+SOC_I2S_HW_VERSION_2			y		y	y	y	y	y	y	y	y		
+SOC_I2S_SUPPORTS_PCM			y		y	y	y	y	y	y	y	y		
+SOC_I2S_SUPPORTS_TDM			y		y	y	y	y	y	y	y	y		
 SOC_RMT_SUPPORT_RX_PINGPONG			y		y	y	y		y	y	y	y		
 SOC_RMT_SUPPORT_RX_DEMODULATION		y	y		y	y	y		y	y	y	y		
 SOC_RMT_SUPPORT_ASYNC_STOP		y	y		y	y	y		y	y	y	y		
@@ -429,7 +429,7 @@ SOC_I2C_SLAVE_SUPPORT_SLAVE_UNMATCH						y	y	y	y	y	y	y
 SOC_I2C_SUPPORT_SLEEP_RETENTION						y	y	y	y		y	y		
 SOC_LP_I2C_NUM						1	1					1		
 SOC_LP_I2C_FIFO_LEN						16	16					16		
-SOC_I2S_SUPPORTS_ETM						y	y	y	y		y	y		
+SOC_I2S_SUPPORTS_ETM						y	y	y	y	y	y	y		
 SOC_I2S_SUPPORTS_TX_SYNC_CNT						y		y			y	y		
 SOC_LEDC_GAMMA_CURVE_FADE_SUPPORTED						y	y	y	y	y		y		
 SOC_LEDC_GAMMA_CURVE_FADE_RANGE_MAX						16	16	16	16	16		16		
@@ -442,11 +442,11 @@ SOC_PCNT_SUPPORT_CLEAR_SIGNAL						y				y	y	y
 SOC_PCNT_SUPPORT_STEP_NOTIFY						y			y	y	y			
 SOC_RMT_SUPPORT_TX_LOOP_AUTO_STOP			y			y	y		y	y	y	y		
 SOC_RMT_SUPPORT_SLEEP_RETENTION						y	y		y	y	y	y		
-SOC_MCPWM_SWSYNC_CAN_PROPAGATE			y			y	y		y			y		
-SOC_MCPWM_SUPPORT_ETM						y	y		y			y		
-SOC_MCPWM_SUPPORT_EVENT_COMPARATOR						y						y		
-SOC_MCPWM_CAPTURE_CLK_FROM_GROUP						y	y		y			y		
-SOC_MCPWM_SUPPORT_SLEEP_RETENTION						y	y		y			y		
+SOC_MCPWM_SWSYNC_CAN_PROPAGATE			y			y	y		y		y	y		
+SOC_MCPWM_SUPPORT_ETM						y	y		y		y	y		
+SOC_MCPWM_SUPPORT_EVENT_COMPARATOR						y					y	y		
+SOC_MCPWM_CAPTURE_CLK_FROM_GROUP						y	y		y		y	y		
+SOC_MCPWM_SUPPORT_SLEEP_RETENTION						y	y		y		y	y		
 SOC_PARLIO_GROUPS						1	1		1			1		
 SOC_PARLIO_TX_UNITS_PER_GROUP						1	1		1			1		
 SOC_PARLIO_RX_UNITS_PER_GROUP						1	1		1			1		
@@ -540,7 +540,7 @@ SOC_PM_PAU_LINK_NUM						5	4	4	4	5	4	4
 SOC_PM_PAU_REGDMA_LINK_CONFIGURABLE						y				y	y			
 SOC_PM_PAU_REGDMA_LINK_IDX_WIFIMAC						4								
 SOC_PM_PMU_MIN_SLP_SLOW_CLK_CYCLE_FIXED						y	y	y						
-SOC_PM_RETENTION_MODULE_NUM						32	32	32	32	32	32	64		
+SOC_PM_RETENTION_MODULE_NUM						32	32	32	32	32	64	64		
 SOC_MODEM_CLOCK_IS_INDEPENDENT						y	y	y	y	y	y			
 SOC_RNG_CLOCK_IS_INDEPENDENT						y	y		y					
 SOC_CLK_LP_FAST_SUPPORT_XTAL						y		y				y		
@@ -648,6 +648,7 @@ SOC_ISP_DEMOSAIC_SUPPORTED												y
 SOC_ISP_DVP_SUPPORTED												y		
 SOC_ISP_LSC_SUPPORTED												y		
 SOC_ISP_SHARPEN_SUPPORTED												y		
+SOC_ISP_WBG_SUPPORTED												y		
 SOC_ISP_SHARE_CSI_BRG												y		
 SOC_ISP_NUMS												1		
 SOC_ISP_DVP_CTLR_NUMS												1		
@@ -703,6 +704,7 @@ SOC_EFUSE_DIS_DOWNLOAD_MSPI												y
 SOC_FLASH_ENCRYPTION_XTS_AES_256		y	y									y	y	
 SOC_LP_I2S_SUPPORT_VAD												y		
 SOC_PM_EXT1_WAKEUP_BY_PMU												y		
+SOC_PM_SUPPORT_LP_UART_WAKEUP												y		
 SOC_PM_SUPPORT_CNNT_PD												y		
 SOC_PM_CACHE_RETENTION_BY_PAU												y		
 SOC_PAU_IN_TOP_DOMAIN												y		
