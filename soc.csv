@@ -372,7 +372,7 @@ SOC_TEMPERATURE_SENSOR_SUPPORT_FAST_RC		y	y		y	y	y	y	y
 SOC_TEMPERATURE_SENSOR_SUPPORT_XTAL					y	y	y	y	y					
 SOC_WIFI_GCMP_SUPPORT			y		y	y	y	y						
 SOC_ANA_CMPR_SUPPORTED						y		y	y			y		
-SOC_ETM_SUPPORTED						y	y	y	y		y	y		
+SOC_ETM_SUPPORTED						y	y	y	y	y	y	y		
 SOC_PARLIO_SUPPORTED						y	y		y			y		
 SOC_PARLIO_LCD_SUPPORTED						y			y			y		
 SOC_LP_CORE_SUPPORTED						y	y					y		
@@ -408,13 +408,13 @@ SOC_CPU_PMP_REGION_GRANULARITY						128	4	128	4	4		128
 SOC_CPU_HAS_LOCKUP_RESET						y		y			y	y		
 SOC_CPU_ZCMP_WORKAROUND						y		y			y			
 SOC_DMA_CAN_ACCESS_FLASH						y		y			y	y		
-SOC_GDMA_SUPPORT_ETM						y	y	y	y		y	y		
+SOC_GDMA_SUPPORT_ETM						y	y	y	y	y	y	y		
 SOC_GDMA_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y		
 SOC_GDMA_SUPPORT_WEIGHTED_ARBITRATION						y		y						
 SOC_GDMA_EXT_MEM_ENC_ALIGNMENT						16		16				16		
 SOC_GPIO_FLEX_GLITCH_FILTER_NUM						8	8		8			8		
 SOC_GPIO_SUPPORT_PIN_HYS_FILTER						y		y	y	y		y		
-SOC_GPIO_SUPPORT_ETM						y	y	y	y		y	y		
+SOC_GPIO_SUPPORT_ETM						y	y	y	y	y	y	y		
 SOC_GPIO_SUPPORT_RTC_INDEPENDENT		y	y			y	y	y	y	y	y	y		
 SOC_LP_IO_CLOCK_IS_INDEPENDENT		y	y			y	y	y	y	y	y	y		
 SOC_GPIO_SUPPORT_HOLD_SINGLE_IO_IN_DSLP						y	y	y	y	y	y	y		
@@ -483,8 +483,8 @@ SOC_SPI_MEM_SUPPORT_TSUS_TRES_SEPERATE_CTR						y		y				y
 SOC_MEMSPI_TIMING_TUNING_BY_MSPI_DELAY			y			y		y						
 SOC_MEMSPI_SRC_FREQ_120M_SUPPORTED			y			y						y		
 SOC_SYSTIMER_SUPPORT_RC_FAST						y	y	y	y	y	y	y		
-SOC_SYSTIMER_SUPPORT_ETM						y	y	y	y		y	y		
-SOC_TIMER_SUPPORT_ETM						y	y	y	y		y	y		
+SOC_SYSTIMER_SUPPORT_ETM						y	y	y	y	y	y	y		
+SOC_TIMER_SUPPORT_ETM						y	y	y	y	y	y	y		
 SOC_TIMER_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y		
 SOC_MWDT_SUPPORT_SLEEP_RETENTION						y	y	y	y	y		y		
 SOC_TWAI_RANGE_FILTER_NUM						1					1			
@@ -645,6 +645,7 @@ SOC_ISP_BF_SUPPORTED												y
 SOC_ISP_BLC_SUPPORTED												y		
 SOC_ISP_CCM_SUPPORTED												y		
 SOC_ISP_COLOR_SUPPORTED												y		
+SOC_ISP_CROP_SUPPORTED												y		
 SOC_ISP_DEMOSAIC_SUPPORTED												y		
 SOC_ISP_DVP_SUPPORTED												y		
 SOC_ISP_LSC_SUPPORTED												y		
