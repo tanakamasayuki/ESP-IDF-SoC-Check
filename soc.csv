@@ -3,7 +3,7 @@ SOC_CAPS_ECO_VER_MAX	301								102
 SOC_ADC_SUPPORTED	y	y	y	y	y	y	y	y	y			y		
 SOC_DAC_SUPPORTED	y	y												
 SOC_UART_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y		
-SOC_MCPWM_SUPPORTED	y		y			y	y		y		y	y		
+SOC_MCPWM_SUPPORTED	y		y			y	y		y	y	y	y		
 SOC_GPTIMER_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_SDMMC_HOST_SUPPORTED	y		y									y		
 SOC_BT_SUPPORTED	y		y	y	y	y	y	y	y					
@@ -223,7 +223,7 @@ SOC_SUPPORTS_SECURE_DL_MODE		y	y	y	y	y	y	y	y			y
 SOC_EFUSE_KEY_PURPOSE_FIELD		y	y	n	y	y	y	y	y	y	y	y	y	
 SOC_EFUSE_CONSISTS_OF_ONE_KEY_BLOCK				y										
 SOC_TEMP_SENSOR_SUPPORTED		y	y	y	y	y	y	y	y			y		
-SOC_ECC_SUPPORTED				y		y	y	y	y	y		y		
+SOC_ECC_SUPPORTED				y		y	y	y	y	y	y	y		
 SOC_SYSTIMER_SUPPORTED		y	y	y	y	y	y	y	y	y	y	y		
 SOC_ASSIST_DEBUG_SUPPORTED				y	y	y	y	y	y			y		
 SOC_ADC_DIG_IIR_FILTER_SUPPORTED		y	y	y	y	y	y	y	y					
@@ -310,6 +310,7 @@ SOC_CLK_OSC_SLOW_SUPPORTED				y		y	y	y	y	y	y
 SOC_CLK_LP_FAST_SUPPORT_XTAL_D2			y	y	y	y	y	y	y	y	y			
 SOC_WIFI_HW_TSF		y	y	y	y	y	y	y						
 SOC_WIFI_FTM_SUPPORT		y	y	y	y	y	y	y						
+SOC_WIFI_TXOP_SUPPORT			y	y	y	y	y	y						
 SOC_WIFI_PHY_NEEDS_USB_WORKAROUND			y	y	y									
 SOC_ESP_NIMBLE_CONTROLLER				y		y	y	y	y					
 SOC_BLE_50_SUPPORTED			y	y	y	y	y	y	y					
@@ -377,7 +378,7 @@ SOC_PARLIO_SUPPORTED						y	y		y			y
 SOC_PARLIO_LCD_SUPPORTED						y			y			y		
 SOC_LP_CORE_SUPPORTED						y	y					y		
 SOC_RSA_SUPPORTED						y								
-SOC_ECC_EXTENDED_MODES_SUPPORTED						y		y	y	y		y		
+SOC_ECC_EXTENDED_MODES_SUPPORTED						y		y	y	y	y	y		
 SOC_IEEE802154_SUPPORTED						y	y		y					
 SOC_APM_SUPPORTED						y	y	y	y			y		
 SOC_PMU_SUPPORTED						y	y	y	y	y	y	y		
@@ -445,11 +446,11 @@ SOC_PCNT_SUPPORT_CLEAR_SIGNAL						y				y	y	y
 SOC_PCNT_SUPPORT_STEP_NOTIFY						y			y	y	y			
 SOC_RMT_SUPPORT_TX_LOOP_AUTO_STOP			y			y	y		y	y	y	y		
 SOC_RMT_SUPPORT_SLEEP_RETENTION						y	y		y	y	y	y		
-SOC_MCPWM_SWSYNC_CAN_PROPAGATE			y			y	y		y		y	y		
-SOC_MCPWM_SUPPORT_ETM						y	y		y		y	y		
+SOC_MCPWM_SWSYNC_CAN_PROPAGATE			y			y	y		y	y	y	y		
+SOC_MCPWM_SUPPORT_ETM						y	y		y	y	y	y		
 SOC_MCPWM_SUPPORT_EVENT_COMPARATOR						y					y	y		
-SOC_MCPWM_CAPTURE_CLK_FROM_GROUP						y	y		y		y	y		
-SOC_MCPWM_SUPPORT_SLEEP_RETENTION						y	y		y		y	y		
+SOC_MCPWM_CAPTURE_CLK_FROM_GROUP						y	y		y	y	y	y		
+SOC_MCPWM_SUPPORT_SLEEP_RETENTION						y	y		y	y	y	y		
 SOC_PARLIO_GROUPS						1	1		1			1		
 SOC_PARLIO_TX_UNITS_PER_GROUP						1	1		1			1		
 SOC_PARLIO_RX_UNITS_PER_GROUP						1	1		1			1		
@@ -466,7 +467,7 @@ SOC_PARLIO_SUPPORT_I80_LCD						y						y
 SOC_SHA_SUPPORT_SHA512_224		y	y			y						y		
 SOC_SHA_SUPPORT_SHA512_256		y	y			y						y		
 SOC_SHA_SUPPORT_SHA512_T		y	y			y						y		
-SOC_ECC_CONSTANT_TIME_POINT_MUL						y		y	y	y		y		
+SOC_ECC_CONSTANT_TIME_POINT_MUL						y		y	y	y	y	y		
 SOC_ECC_SUPPORT_CURVE_P384						y						y		
 SOC_ECDSA_SUPPORT_EXPORT_PUBKEY						y		y		y		y		
 SOC_ECDSA_SUPPORT_DETERMINISTIC_MODE						y		y	y	y		y		
