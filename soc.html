@@ -74,8 +74,8 @@
       <tr><td>SOC_ADC_RTC_CTRL_SUPPORTED</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_ADC_DIG_CTRL_SUPPORTED</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_ADC_DMA_SUPPORTED</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td><td></td></tr>
-      <tr><td>SOC_ADC_PERIPH_NUM</td><td>2</td><td>2</td><td>2</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td></td><td></td></tr>
-      <tr><td>SOC_ADC_MAX_CHANNEL_NUM</td><td>10</td><td>10</td><td>10</td><td>5</td><td>5</td><td>6</td><td>7</td><td>4</td><td>5</td><td>5</td><td>7</td><td>8</td><td></td><td></td></tr>
+      <tr><td>SOC_ADC_PERIPH_NUM</td><td>2</td><td>2</td><td>2</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>2</td><td>2</td><td></td></tr>
+      <tr><td>SOC_ADC_MAX_CHANNEL_NUM</td><td>10</td><td>10</td><td>10</td><td>5</td><td>5</td><td>6</td><td>7</td><td>4</td><td>5</td><td>5</td><td>7</td><td>8</td><td>10</td><td></td></tr>
       <tr><td>SOC_ADC_ATTEN_NUM</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td></td><td></td></tr>
       <tr><td>SOC_ADC_DIGI_CONTROLLER_NUM</td><td>2</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td></td><td>2</td><td></td><td></td></tr>
       <tr><td>SOC_ADC_PATT_LEN_MAX</td><td>16</td><td>32</td><td>24</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td></td><td>16</td><td></td><td></td></tr>
@@ -167,9 +167,6 @@
       <tr><td>SOC_TOUCH_SAMPLE_CFG_NUM</td><td>1</td><td>1</td><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>3</td><td></td><td></td></tr>
       <tr><td>SOC_TWAI_CONTROLLER_NUM</td><td>1</td><td>1</td><td>1</td><td></td><td>1</td><td>2</td><td>2</td><td></td><td>1</td><td>1</td><td>1</td><td>3</td><td></td><td></td></tr>
       <tr><td>SOC_TWAI_MASK_FILTER_NUM</td><td>1</td><td>1</td><td>1</td><td></td><td>1</td><td>3</td><td>1</td><td></td><td>1</td><td>1</td><td>3</td><td>1</td><td></td><td></td></tr>
-      <tr><td>SOC_TWAI_BRP_MIN</td><td>2</td><td>2</td><td>2</td><td></td><td>2</td><td>1</td><td>2</td><td></td><td>2</td><td>2</td><td>1</td><td>2</td><td></td><td></td></tr>
-      <tr><td>SOC_TWAI_CLK_SUPPORT_APB</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-      <tr><td>SOC_TWAI_SUPPORT_MULTI_ADDRESS_LAYOUT</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_UART_NUM</td><td>3</td><td>2</td><td>3</td><td>2</td><td>2</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>2</td><td>6</td><td>4</td><td></td></tr>
       <tr><td>SOC_UART_HP_NUM</td><td>3</td><td>2</td><td>3</td><td>2</td><td>2</td><td>2</td><td>2</td><td>3</td><td>2</td><td>2</td><td>2</td><td>5</td><td>4</td><td></td></tr>
       <tr><td>SOC_UART_SUPPORT_APB_CLK</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -254,7 +251,6 @@
       <tr><td>SOC_ECC_SUPPORT_POINT_VERIFY_QUIRK</td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_AHB_GDMA_VERSION</td><td></td><td></td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td><td>1</td><td>2</td><td>2</td><td></td><td></td></tr>
       <tr><td>SOC_GPIO_SUPPORT_PIN_GLITCH_FILTER</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr>
-      <tr><td>SOC_GPIO_FILTER_CLK_SUPPORT_APB</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_GPIO_SUPPORT_FORCE_HOLD</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_GPIO_SUPPORT_DEEPSLEEP_WAKEUP</td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_GPIO_DEEP_SLEEP_WAKE_VALID_GPIO_MASK</td><td></td><td></td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td>0</td><td>0</td><td>0</td><td></td></tr>
@@ -360,8 +356,6 @@
       <tr><td>SOC_SHA_DMA_MAX_BUFFER_SIZE</td><td></td><td>3968</td><td>3968</td><td></td><td>3968</td><td>3968</td><td>3968</td><td>3968</td><td>3968</td><td>3968</td><td></td><td>3968</td><td></td><td></td></tr>
       <tr><td>SOC_SHA_SUPPORT_DMA</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_SHA_GDMA</td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td><td></td></tr>
-      <tr><td>SOC_TWAI_BRP_MAX</td><td></td><td>32768</td><td>16384</td><td></td><td>16384</td><td>255</td><td>32768</td><td></td><td>32768</td><td>32768</td><td>255</td><td>32768</td><td></td><td></td></tr>
-      <tr><td>SOC_TWAI_SUPPORTS_RX_STATUS</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_EFUSE_DIS_USB_JTAG</td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr>
       <tr><td>SOC_EFUSE_SOFT_DIS_JTAG</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>n</td><td>y</td><td>y</td><td>n</td><td>y</td><td>y</td><td>y</td></tr>
       <tr><td>SOC_EFUSE_DIS_ICACHE</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>n</td><td></td><td></td><td>y</td></tr>
@@ -383,6 +377,7 @@
       <tr><td>SOC_TEMPERATURE_SENSOR_SUPPORT_XTAL</td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_WIFI_GCMP_SUPPORT</td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_ANA_CMPR_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td><td></td></tr>
+      <tr><td>SOC_TWAI_FD_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td></tr>
       <tr><td>SOC_ETM_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_PARLIO_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_PARLIO_LCD_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td>y</td><td></td><td></td><td>y</td><td></td><td></td></tr>
@@ -428,11 +423,9 @@
       <tr><td>SOC_GPIO_FLEX_GLITCH_FILTER_NUM</td><td></td><td></td><td></td><td></td><td></td><td>8</td><td>8</td><td></td><td>8</td><td>8</td><td>8</td><td>8</td><td></td><td></td></tr>
       <tr><td>SOC_GPIO_SUPPORT_PIN_HYS_FILTER</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_GPIO_SUPPORT_ETM</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr>
-      <tr><td>SOC_GPIO_SUPPORT_RTC_INDEPENDENT</td><td></td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_LP_IO_CLOCK_IS_INDEPENDENT</td><td></td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_GPIO_SUPPORT_HOLD_SINGLE_IO_IN_DSLP</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_CLOCKOUT_HAS_SOURCE_GATE</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td></tr>
-      <tr><td>SOC_RTCIO_EDGE_WAKE_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_SDM_SUPPORT_SLEEP_RETENTION</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td><td>y</td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_ETM_SUPPORT_SLEEP_RETENTION</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_ANA_CMPR_NUM</td><td></td><td></td><td></td><td></td><td></td><td>1</td><td></td><td>1</td><td>1</td><td>1</td><td></td><td>2</td><td></td><td></td></tr>
@@ -495,9 +488,6 @@
       <tr><td>SOC_TIMER_SUPPORT_SLEEP_RETENTION</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_MWDT_SUPPORT_SLEEP_RETENTION</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_TWAI_RANGE_FILTER_NUM</td><td></td><td></td><td></td><td></td><td></td><td>1</td><td></td><td></td><td></td><td></td><td>1</td><td></td><td></td><td></td></tr>
-      <tr><td>SOC_TWAI_CLK_SUPPORT_XTAL</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr>
-      <tr><td>SOC_TWAI_SUPPORT_FD</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td></tr>
-      <tr><td>SOC_TWAI_SUPPORT_TIMESTAMP</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td></tr>
       <tr><td>SOC_EFUSE_ECDSA_KEY</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>n</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_EFUSE_ECDSA_KEY_P192</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_EFUSE_ECDSA_KEY_P384</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -758,6 +748,7 @@
       <tr><td>SOC_SPI_MEM_SUPPORT_FLASH_OPI_MODE</td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_MEMSPI_CORE_CLK_SHARED_WITH_PSRAM</td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_SDMMC_SUPPORT_XTAL_CLOCK</td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>SOC_GPIO_SUPPORT_RTC_INDEPENDENT</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_MEMSPI_FLASH_PSRAM_INDEPENDENT</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_UART_SUPPORT_PLL_F80M_CLK</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_CLK_ANA_I2C_MST_HAS_ROOT_GATE</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
