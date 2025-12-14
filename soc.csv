@@ -45,6 +45,7 @@ SOC_LIGHT_SLEEP_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y
 SOC_DEEP_SLEEP_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y			
 SOC_LP_PERIPH_SHARE_INTERRUPT	y	y	y	y	y										
 SOC_PM_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y			
+SOC_SPI_EXTERNAL_NOR_FLASH_SUPPORTED	y	y	y	y	y	y	y	y	y			y			
 SOC_DPORT_WORKAROUND_DIS_INTERRUPT_LVL	5														
 SOC_XTAL_SUPPORT_26M	y			y											
 SOC_XTAL_SUPPORT_40M	y	y	y	y	y	y	y	y				y	y		
@@ -184,8 +185,8 @@ SOC_PM_MODEM_PD_BY_SW	y	y	y		y
 SOC_CLK_APLL_SUPPORTED	y	y										y	y		
 SOC_CLK_RC_FAST_D256_SUPPORTED	y	y	y	y	y										
 SOC_RTC_SLOW_CLK_SUPPORT_RC_FAST_D256	y	y	y	y	y										
-SOC_CLK_RC_FAST_SUPPORT_CALIBRATION	y	y	y	y	y	y	y	y	y	y	y	y	y		
-SOC_CLK_XTAL32K_SUPPORTED	y	y	y		y	y	y	y	y	y	y	y	y		
+SOC_CLK_RC_FAST_SUPPORT_CALIBRATION	y	y	y	y	y	y	y	y	y	y	y	y			
+SOC_CLK_XTAL32K_SUPPORTED	y	y	y		y	y	y	y	y	y	y	y			
 SOC_CLK_LP_FAST_SUPPORT_XTAL_D4	y	y													
 SOC_SDMMC_USE_IOMUX	y											y			
 SOC_SDMMC_NUM_SLOTS	2		2									2			
@@ -515,6 +516,7 @@ SOC_PM_TOP_PD_NOT_ALLOWED						y
 SOC_PM_PAU_LINK_NUM						5	4	4	4	5	4	4			
 SOC_PM_PAU_REGDMA_LINK_CONFIGURABLE						y				y	y				
 SOC_PM_PAU_REGDMA_LINK_IDX_WIFIMAC						4									
+SOC_PM_PAU_REGDMA_COMMON_PHY_LINK_ENTRY						y									
 SOC_PM_PMU_MIN_SLP_SLOW_CLK_CYCLE_FIXED						y	y	y							
 SOC_PM_RETENTION_MODULE_NUM						32	32	32	32	32	64	64			
 SOC_MODEM_CLOCK_IS_INDEPENDENT						y	y	y	y	y	y		y		
@@ -628,12 +630,8 @@ SOC_ISP_LSC_SUPPORTED												y
 SOC_ISP_SHARPEN_SUPPORTED												y			
 SOC_ISP_WBG_SUPPORTED												y			
 SOC_ISP_SHARE_CSI_BRG												y			
-SOC_ISP_NUMS												1			
-SOC_ISP_DVP_CTLR_NUMS												1			
-SOC_ISP_AE_CTLR_NUMS												1			
 SOC_ISP_AE_BLOCK_X_NUMS												5			
 SOC_ISP_AE_BLOCK_Y_NUMS												5			
-SOC_ISP_AF_CTLR_NUMS												1			
 SOC_ISP_AF_WINDOW_NUMS												3			
 SOC_ISP_AWB_WINDOW_X_NUMS												5			
 SOC_ISP_AWB_WINDOW_Y_NUMS												5			
@@ -643,7 +641,6 @@ SOC_ISP_CCM_DIMENSION												3
 SOC_ISP_DEMOSAIC_GRAD_RATIO_INT_BITS												2			
 SOC_ISP_DEMOSAIC_GRAD_RATIO_DEC_BITS												4			
 SOC_ISP_DEMOSAIC_GRAD_RATIO_RES_BITS												26			
-SOC_ISP_DVP_DATA_WIDTH_MAX												16			
 SOC_ISP_SHARPEN_TEMPLATE_X_NUMS												3			
 SOC_ISP_SHARPEN_TEMPLATE_Y_NUMS												3			
 SOC_ISP_SHARPEN_H_FREQ_COEF_INT_BITS												3			
@@ -652,7 +649,6 @@ SOC_ISP_SHARPEN_H_FREQ_COEF_RES_BITS												24
 SOC_ISP_SHARPEN_M_FREQ_COEF_INT_BITS												3			
 SOC_ISP_SHARPEN_M_FREQ_COEF_DEC_BITS												5			
 SOC_ISP_SHARPEN_M_FREQ_COEF_RES_BITS												24			
-SOC_ISP_HIST_CTLR_NUMS												1			
 SOC_ISP_HIST_BLOCK_X_NUMS												5			
 SOC_ISP_HIST_BLOCK_Y_NUMS												5			
 SOC_ISP_HIST_SEGMENT_NUMS												16			
