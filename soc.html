@@ -97,8 +97,8 @@
       <tr><td>SOC_CPU_INTR_NUM</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td></td></tr>
       <tr><td>SOC_CPU_HAS_FPU</td><td>y</td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_HP_CPU_HAS_MULTIPLE_CORES</td><td>y</td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td></tr>
-      <tr><td>SOC_CPU_BREAKPOINTS_NUM</td><td>2</td><td>2</td><td>2</td><td>2</td><td>8</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td></td></tr>
-      <tr><td>SOC_CPU_WATCHPOINTS_NUM</td><td>2</td><td>2</td><td>2</td><td>2</td><td>8</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td></td></tr>
+      <tr><td>SOC_CPU_BREAKPOINTS_NUM</td><td>2</td><td>2</td><td>2</td><td>2</td><td>8</td><td>3</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td></td></tr>
+      <tr><td>SOC_CPU_WATCHPOINTS_NUM</td><td>2</td><td>2</td><td>2</td><td>2</td><td>8</td><td>3</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td></td></tr>
       <tr><td>SOC_CPU_WATCHPOINT_MAX_REGION_SIZE</td><td>0x40</td><td>0x40</td><td>0x40</td><td>0x80000000</td><td>0x80000000</td><td>0x100</td><td>0x80000000</td><td>0x80000000</td><td>0x80000000</td><td>0x80000000</td><td>0x80000000</td><td>0x100</td><td>0x100</td><td></td></tr>
       <tr><td>SOC_DAC_CHAN_NUM</td><td>2</td><td>2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_DAC_RESOLUTION</td><td>8</td><td>8</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -234,7 +234,7 @@
       <tr><td>SOC_TEMP_SENSOR_SUPPORTED</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_ECC_SUPPORTED</td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_SYSTIMER_SUPPORTED</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
-      <tr><td>SOC_ASSIST_DEBUG_SUPPORTED</td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td><td></td></tr>
+      <tr><td>SOC_ASSIST_DEBUG_SUPPORTED</td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_ADC_DIG_IIR_FILTER_SUPPORTED</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_ADC_MONITOR_SUPPORTED</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_ADC_DIGI_IIR_FILTER_NUM</td><td></td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td></td><td>2</td><td></td><td></td></tr>
@@ -464,6 +464,7 @@
       <tr><td>SOC_SPI_MEM_SUPPORT_CACHE_32BIT_ADDR_MAP</td><td></td><td></td><td>y</td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_SPI_MEM_SUPPORT_TIMING_TUNING</td><td></td><td></td><td>y</td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_SPI_MEM_SUPPORT_TSUS_TRES_SEPERATE_CTR</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
+      <tr><td>SOC_SPI_MEM_PSRAM_FREQ_AXI_CONSTRAINED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_MEMSPI_TIMING_TUNING_BY_MSPI_DELAY</td><td></td><td></td><td>y</td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_MEMSPI_SRC_FREQ_120M_SUPPORTED</td><td></td><td></td><td>y</td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_SYSTIMER_SUPPORT_RC_FAST</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
