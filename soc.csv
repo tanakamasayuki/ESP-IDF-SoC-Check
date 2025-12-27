@@ -274,7 +274,6 @@ SOC_UART_SUPPORT_WAKEUP_INT		y	y	y	y	y	y	y	y	y	y	y	y
 SOC_UART_SUPPORT_PLL_F40M_CLK				y											
 SOC_UART_SUPPORT_RTC_CLK			y	y	y	y	y	y	y	y	y	y	y		
 SOC_UART_SUPPORT_XTAL_CLK			y	y	y	y	y	y	y	y	y	y	y		
-SOC_UART_SUPPORT_FSM_TX_WAIT_SEND			y	y	y	y	y	y	y	y	y	y	y		
 SOC_COEX_HW_PTI		y	y	y	y	y	y	y	y	y	y	y			
 SOC_EXTERNAL_COEX_ADVANCE		n	n	y	n	y	y	y	y	y	y				
 SOC_EXTERNAL_COEX_LEADER_TX_LINE		y	y	n	n	n	n	n	n	n	n				
@@ -705,5 +704,4 @@ SOC_MEMSPI_CORE_CLK_SHARED_WITH_PSRAM			y
 SOC_SDMMC_SUPPORT_XTAL_CLOCK			y												
 SOC_GPIO_SUPPORT_RTC_INDEPENDENT													y		
 SOC_MEMSPI_FLASH_PSRAM_INDEPENDENT													y		
-SOC_UART_SUPPORT_PLL_F80M_CLK													y		
 SOC_CLK_ANA_I2C_MST_HAS_ROOT_GATE													y		
