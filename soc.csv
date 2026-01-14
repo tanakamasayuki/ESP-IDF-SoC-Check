@@ -4,7 +4,7 @@ SOC_ADC_SUPPORTED	y	y	y	y	y	y	y	y	y			y
 SOC_DAC_SUPPORTED	y	y													
 SOC_UART_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_MCPWM_SUPPORTED	y		y			y	y		y	y	y	y			
-SOC_GPTIMER_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y			
+SOC_GPTIMER_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_SDMMC_HOST_SUPPORTED	y		y									y			
 SOC_BT_SUPPORTED	y		y	y	y	y	y	y	y						
 SOC_PCNT_SUPPORTED	y	y	y			y	y		y	y	y	y			
@@ -91,11 +91,9 @@ SOC_GPIO_CLOCKOUT_BY_IO_MUX	y	y	y
 SOC_GPIO_CLOCKOUT_CHANNEL_NUM	3	3	3	3	3	3	3	3	3		3	2			
 SOC_I2C_NUM	2	2	2	1	1	2	2	1	2	2	2	3			
 SOC_HP_I2C_NUM	2	2	2	1	1	1	1	1	2	2	2	2			
-SOC_I2C_FIFO_LEN	32	32	32	16	32	32	32	32	32	32	32	32			
-SOC_I2C_CMD_REG_NUM	16	16	8	8	8	8	8	8	8	8	8	8			
-SOC_I2C_SUPPORT_SLAVE	y	y	y		y	y	y	y	y	y	y	y		y	
 SOC_I2C_SUPPORT_APB	y	y													
 SOC_I2C_SUPPORT_10BIT_ADDR	y		y	y	y	y	y	y	y	y	y	y		y	
+SOC_I2C_SUPPORT_SLAVE	y	y	y		y	y	y	y	y	y	y	y		y	
 SOC_I2C_STOP_INDEPENDENT	y														
 SOC_I2S_HW_VERSION_1	y	y													
 SOC_I2S_SUPPORTS_APLL	y	y										y			
@@ -230,7 +228,6 @@ SOC_GPIO_SUPPORT_DEEPSLEEP_WAKEUP				y	y	y	y	y			y	y	y
 SOC_GPIO_DEEP_SLEEP_WAKE_VALID_GPIO_MASK				0	0	0	0	0			0	0	0		
 SOC_GPIO_DEEP_SLEEP_WAKE_SUPPORTED_PIN_CNT				6	6	7	8	7			6	16	8		
 SOC_GPIO_CLOCKOUT_BY_GPIO_MATRIX				y	y	y	y	y	y		y	y			
-SOC_I2C_SUPPORT_HW_CLR_BUS		y	y	y	y		y		y	y	y	y			
 SOC_I2C_SUPPORT_XTAL			y	y	y	y	y	y	y	y	y	y			
 SOC_I2C_SUPPORT_RTC			y	y	y	y	y	y	y	y	y	y			
 SOC_LEDC_SUPPORT_PLL_DIV_CLOCK				y		y	y	y	y	y	y	y			
@@ -308,7 +305,6 @@ SOC_DS_KEY_PARAM_MD_IV_LENGTH			16		16	16	16		16	16		16
 SOC_DS_KEY_CHECK_MAX_WAIT_US			1100		1100	1100	1100		1100	1100		1100			
 SOC_I2C_SLAVE_SUPPORT_BROADCAST			y		y	y	y	y	y	y	y	y			
 SOC_I2C_SLAVE_CAN_GET_STRETCH_CAUSE		y	y		y	y	y	y	y	y	y	y			
-SOC_I2C_SLAVE_SUPPORT_I2CRAM_ACCESS			y		y	y	y	y	y	y	y	y			
 SOC_I2S_HW_VERSION_2			y		y	y	y	y	y	y	y	y			
 SOC_I2S_SUPPORTS_PCM			y		y	y	y	y	y	y	y	y			
 SOC_I2S_SUPPORTS_TDM			y		y	y	y	y	y	y	y	y			
@@ -394,11 +390,8 @@ SOC_ETM_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y
 SOC_ANA_CMPR_NUM						1		1	1	1		2			
 SOC_ANA_CMPR_CAN_DISTINGUISH_EDGE						y		y				y			
 SOC_ANA_CMPR_SUPPORT_ETM						y		y				y			
-SOC_I2C_SUPPORT_HW_FSM_RST						y	y	y	y	y	y	y			
-SOC_I2C_SLAVE_SUPPORT_SLAVE_UNMATCH						y	y	y	y	y	y	y			
-SOC_I2C_SUPPORT_SLEEP_RETENTION						y	y	y	y		y	y			
 SOC_LP_I2C_NUM						1	1					1			
-SOC_LP_I2C_FIFO_LEN						16	16					16			
+SOC_I2C_SUPPORT_SLEEP_RETENTION						y	y	y	y		y	y			
 SOC_I2S_SUPPORTS_ETM						y	y	y	y	y	y	y			
 SOC_I2S_SUPPORTS_TX_SYNC_CNT						y		y			y	y			
 SOC_LEDC_GAMMA_CURVE_FADE_SUPPORTED						y	y	y	y	y		y			
@@ -446,8 +439,8 @@ SOC_MEMSPI_TIMING_TUNING_BY_MSPI_DELAY			y			y		y
 SOC_MEMSPI_SRC_FREQ_120M_SUPPORTED			y			y						y			
 SOC_SYSTIMER_SUPPORT_RC_FAST						y	y	y	y	y	y	y	y		
 SOC_SYSTIMER_SUPPORT_ETM						y	y	y	y	y	y	y			
-SOC_TIMER_SUPPORT_ETM						y	y	y	y	y	y	y			
-SOC_TIMER_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y			
+SOC_TIMER_SUPPORT_ETM						y	y	y	y	y	y	y	y		
+SOC_TIMER_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y	y		
 SOC_MWDT_SUPPORT_SLEEP_RETENTION						y	y	y	y	y		y	y		
 SOC_TWAI_RANGE_FILTER_NUM						1					1				
 SOC_EFUSE_ECDSA_KEY						y		y	y	y	n	y	y		
@@ -462,7 +455,7 @@ SOC_KEY_MANAGER_FE_KEY_DEPLOY_XTS_AES_256						y						y
 SOC_KEY_MANAGER_HMAC_KEY_DEPLOY						y						y			
 SOC_KEY_MANAGER_DS_KEY_DEPLOY						y						y			
 SOC_FLASH_ENCRYPTION_XTS_AES_256		y	y			y						y		y	
-SOC_FLASH_ENCRYPTION_XTS_AES_SUPPORT_PSEUDO_ROUND						y		y	y	y					
+SOC_FLASH_ENCRYPTION_XTS_AES_SUPPORT_PSEUDO_ROUND						y		y	y	y		y			
 SOC_PSRAM_ENCRYPTION_XTS_AES_128						y									
 SOC_RECOVERY_BOOTLOADER_SUPPORTED						y		y							
 SOC_BOOTLOADER_ANTI_ROLLBACK_SUPPORTED						y		y							
@@ -496,7 +489,6 @@ SOC_PM_SUPPORT_DEEPSLEEP_CHECK_STUB_ONLY			y			y	y		y	y		y
 SOC_PM_CPU_RETENTION_BY_SW						y	y	y	y	y	y	y			
 SOC_PM_MODEM_RETENTION_BY_REGDMA						y	y	y	y	y	y				
 SOC_EXT_MEM_CACHE_TAG_IN_CPU_DOMAIN						y		y	y		y				
-SOC_PM_TOP_PD_NOT_ALLOWED						y									
 SOC_PM_PAU_LINK_NUM						5	4	4	4	5	4	4			
 SOC_PM_PAU_REGDMA_LINK_CONFIGURABLE						y				y	y				
 SOC_PM_PAU_REGDMA_LINK_IDX_WIFIMAC						4									
@@ -516,6 +508,7 @@ SOC_WIFI_SUPPORT_5G						y
 SOC_WIFI_MAC_VERSION_NUM						3	2	3							
 SOC_BLE_POWER_CONTROL_SUPPORTED						y	y	y	y						
 SOC_BLE_CTE_SUPPORTED						y		y	y						
+SOC_BLE_SUBRATE_SUPPORTED						y	y	y	y						
 SOC_BLE_PERIODIC_ADV_WITH_RESPONSE						y	y	y	y						
 SOC_PHY_CALIBRATION_CLOCK_IS_INDEPENDENT						y		y							
 SOC_LP_CORE_SINGLE_INTERRUPT_VECTOR						y	y								
@@ -580,6 +573,8 @@ SOC_MIPI_CSI_SUPPORTED												y
 SOC_MIPI_DSI_SUPPORTED												y			
 SOC_WIRELESS_HOST_SUPPORTED												y			
 SOC_ISP_SUPPORTED												y			
+SOC_PVT_EN_WITH_SLEEP												y			
+SOC_PVT_RETENTION_BY_REGDMA												y			
 SOC_DCDC_SUPPORTED												y			
 SOC_LP_GPIO_MATRIX_SUPPORTED												y			
 SOC_LP_I2S_SUPPORTED												y			
@@ -666,7 +661,7 @@ SOC_PM_CACHE_RETENTION_BY_PAU												y
 SOC_PAU_IN_TOP_DOMAIN												y			
 SOC_CLK_MPLL_SUPPORTED												y			
 SOC_CLK_SDIO_PLL_SUPPORTED												y	y		
-SOC_PERIPH_CLK_CTRL_SHARED												y			
+SOC_PERIPH_CLK_CTRL_SHARED												y	y		
 SOC_TSENS_IS_INDEPENDENT_FROM_ADC												y			
 SOC_MEM_TCM_SUPPORTED												y			
 SOC_ASYNCHRONOUS_BUS_ERROR_MODE												y			
