@@ -32,7 +32,7 @@ SOC_SUPPORT_COEXISTENCE	y	n	y	y	y	y	y		y
 SOC_AES_SUPPORTED	y	y	y		y	y	y		y	y		y			
 SOC_MPI_SUPPORTED	y	y	y		y	y	y		y	y		y			
 SOC_SHA_SUPPORTED	y	y	y	y	y	y	y	y	y	y		y			
-SOC_FLASH_ENC_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
+SOC_FLASH_ENC_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y			
 SOC_SECURE_BOOT_SUPPORTED	y	y	y	y	y	y	y	y	y	y		y			
 SOC_TOUCH_SENSOR_SUPPORTED	y	y	y								y	y			
 SOC_BOD_SUPPORTED	y	y	y	y	y	y	y	y	y			y			
@@ -201,9 +201,9 @@ SOC_ULP_HAS_ADC	y	y	y
 SOC_PHY_COMBO_MODULE	y	n	y	y	y		y	y							
 SOC_EMAC_RMII_CLK_OUT_INTERNAL_LOOPBACK	y														
 SOC_DEDICATED_GPIO_SUPPORTED		y	y	y	y	y	y	y	y	y	y	y			
-SOC_GDMA_SUPPORTED			y	y	y	y	y	y	y	y	y	y			
-SOC_AHB_GDMA_SUPPORTED			y	y	y	y	y	y	y	y	y	y			
-SOC_ASYNC_MEMCPY_SUPPORTED		y	y	y	y	y	y	y	y	y	y	y			
+SOC_GDMA_SUPPORTED			y	y	y	y	y	y	y	y	y	y	y		
+SOC_AHB_GDMA_SUPPORTED			y	y	y	y	y	y	y	y	y	y	y		
+SOC_ASYNC_MEMCPY_SUPPORTED		y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_SUPPORTS_SECURE_DL_MODE		y	y	y	y	y	y	y	y			y			
 SOC_EFUSE_KEY_PURPOSE_FIELD		y	y	n	y	y	y	y	y	y	y	y	y	y	
 SOC_EFUSE_CONSISTS_OF_ONE_KEY_BLOCK				y											
@@ -221,7 +221,7 @@ SOC_CPU_HAS_FLEXIBLE_INTC				y	y	y	y	y	y	y	y	y	y
 SOC_CPU_HAS_CSR_PC				y	y		y		y	y					
 SOC_CPU_IDRAM_SPLIT_USING_PMP				y		y	y	y	y	y	y	y	y		
 SOC_ECC_SUPPORT_POINT_VERIFY_QUIRK				y											
-SOC_AHB_GDMA_VERSION			1	1	1	2	1	2	1	1	2	2			
+SOC_AHB_GDMA_VERSION			1	1	1	2	1	2	1	1	2	2	2		
 SOC_GPIO_SUPPORT_PIN_GLITCH_FILTER		y	y	y	y	y	y	y	y	y	y	y			
 SOC_GPIO_SUPPORT_FORCE_HOLD		y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_GPIO_SUPPORT_DEEPSLEEP_WAKEUP				y	y	y	y	y			y	y	y		
@@ -374,11 +374,11 @@ SOC_CPU_HAS_LOCKUP_RESET						y		y			y	y	y
 SOC_CPU_ZCMP_WORKAROUND						y		y			y	y			
 SOC_CPU_ZCMP_PUSH_REVERSED						y		y			y	y			
 SOC_CPU_ZCMP_POPRET_ISSUE						y		y			y	y			
-SOC_DMA_CAN_ACCESS_FLASH						y		y			y	y			
-SOC_GDMA_SUPPORT_ETM						y	y	y	y	y	y	y			
-SOC_GDMA_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y			
+SOC_DMA_CAN_ACCESS_FLASH						y		y			y	y	y		
+SOC_GDMA_SUPPORT_ETM						y	y	y	y	y	y	y	y		
+SOC_GDMA_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y	y		
 SOC_GDMA_SUPPORT_WEIGHTED_ARBITRATION						y		y							
-SOC_GDMA_EXT_MEM_ENC_ALIGNMENT						16		16				16			
+SOC_GDMA_EXT_MEM_ENC_ALIGNMENT						16		16				16	16		
 SOC_GPIO_FLEX_GLITCH_FILTER_NUM						8	8		8	8	8	8			
 SOC_GPIO_SUPPORT_PIN_HYS_FILTER						y		y	y	y		y	y		
 SOC_GPIO_SUPPORT_ETM						y	y	y	y	y	y	y			
@@ -429,7 +429,7 @@ SOC_ECDSA_SUPPORT_CURVE_P384						y						y
 SOC_ECDSA_SUPPORT_CURVE_SPECIFIC_KEY_PURPOSES						y						y			
 SOC_SPI_SUPPORT_SLEEP_RETENTION						y	y	y	y			y			
 SOC_SPIRAM_XIP_SUPPORTED		y	y			y		y			y	y			
-SOC_PSRAM_DMA_CAPABLE		y	y			y		y			y	y			
+SOC_PSRAM_DMA_CAPABLE		y	y			y		y			y	y	y		
 SOC_SPI_MEM_SUPPORT_WB_MODE_INDEPENDENT_CONTROL						y									
 SOC_SPI_MEM_SUPPORT_CACHE_32BIT_ADDR_MAP			y			y						y			
 SOC_SPI_MEM_SUPPORT_TIMING_TUNING			y			y		y				y			
@@ -459,7 +459,7 @@ SOC_FLASH_ENCRYPTION_XTS_AES_SUPPORT_PSEUDO_ROUND						y		y	y	y		y
 SOC_PSRAM_ENCRYPTION_XTS_AES_128						y									
 SOC_RECOVERY_BOOTLOADER_SUPPORTED						y		y							
 SOC_BOOTLOADER_ANTI_ROLLBACK_SUPPORTED						y		y							
-SOC_APM_CTRL_FILTER_SUPPORTED						y	y	y	y	y	y				
+SOC_APM_CTRL_FILTER_SUPPORTED						y	y	y	y	y	y		y		
 SOC_APM_LP_APM0_SUPPORTED						y	y								
 SOC_APM_CPU_APM_SUPPORTED						y		y							
 SOC_APM_SUPPORT_LP_TEE_CTRL						y	y								
@@ -472,10 +472,10 @@ SOC_UART_LP_NUM						1	1					1
 SOC_LP_UART_FIFO_LEN						16	16					16	16		
 SOC_UART_HAS_LP_UART						y	y					y			
 SOC_UART_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y			
-SOC_UART_WAKEUP_CHARS_SEQ_MAX_LEN						5	5	5	5	5		5	5		
-SOC_UART_WAKEUP_SUPPORT_FIFO_THRESH_MODE						y	y	y	y	y		y			
-SOC_UART_WAKEUP_SUPPORT_START_BIT_MODE						y	y	y	y	y		y			
-SOC_UART_WAKEUP_SUPPORT_CHAR_SEQ_MODE						y	y	y	y	y		y			
+SOC_UART_WAKEUP_CHARS_SEQ_MAX_LEN						5	5	5	5	5	5	5	5		
+SOC_UART_WAKEUP_SUPPORT_FIFO_THRESH_MODE						y	y	y	y	y	y	y			
+SOC_UART_WAKEUP_SUPPORT_START_BIT_MODE						y	y	y	y	y	y	y			
+SOC_UART_WAKEUP_SUPPORT_CHAR_SEQ_MODE						y	y	y	y	y	y	y			
 SOC_RTC_MEM_SUPPORT_SPEED_MODE_SWITCH						y	y								
 SOC_PM_SUPPORT_BEACON_WAKEUP						y	y	y							
 SOC_PM_SUPPORT_EXT1_WAKEUP_MODE_PER_PIN						y	y	y	y	y	y	y			
@@ -484,7 +484,7 @@ SOC_PM_SUPPORT_RC32K_PD						y	y	y	y	y	y	y
 SOC_PM_SUPPORT_TOP_PD						y	y	y	y	y	y	y			
 SOC_PM_SUPPORT_HP_AON_PD						y	y	y			y				
 SOC_PM_SUPPORT_PMU_MODEM_STATE						y	y	y							
-SOC_PM_SUPPORT_PMU_CLK_ICG						y	y	y	y	y					
+SOC_PM_SUPPORT_PMU_CLK_ICG						y	y	y	y	y	y				
 SOC_PM_SUPPORT_DEEPSLEEP_CHECK_STUB_ONLY			y			y	y		y	y		y			
 SOC_PM_CPU_RETENTION_BY_SW						y	y	y	y	y	y	y			
 SOC_PM_MODEM_RETENTION_BY_REGDMA						y	y	y	y	y	y				
@@ -562,7 +562,7 @@ SOC_TOUCH_SUPPORT_WATERPROOF		y	y								y	y
 SOC_TOUCH_SUPPORT_PROX_SENSING		y	y								y	y			
 SOC_TOUCH_PROXIMITY_CHANNEL_NUM		3	3								3	3			
 SOC_USB_OTG_PERIPH_NUM		1	1								1	2			
-SOC_AXI_GDMA_SUPPORTED												y			
+SOC_AXI_GDMA_SUPPORTED												y	y		
 SOC_DW_GDMA_SUPPORTED												y			
 SOC_DMA2D_SUPPORTED												y			
 SOC_LCDCAM_CAM_SUPPORTED			y									y			
