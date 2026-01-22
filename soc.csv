@@ -29,9 +29,9 @@ SOC_GPSPI_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y
 SOC_LEDC_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y			
 SOC_I2C_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y			
 SOC_SUPPORT_COEXISTENCE	y	n	y	y	y	y	y		y						
-SOC_AES_SUPPORTED	y	y	y		y	y	y		y	y		y			
+SOC_AES_SUPPORTED	y	y	y		y	y	y		y	y	y	y			
 SOC_MPI_SUPPORTED	y	y	y		y	y	y		y	y		y			
-SOC_SHA_SUPPORTED	y	y	y	y	y	y	y	y	y	y		y			
+SOC_SHA_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y			
 SOC_FLASH_ENC_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y			
 SOC_SECURE_BOOT_SUPPORTED	y	y	y	y	y	y	y	y	y	y		y			
 SOC_TOUCH_SENSOR_SUPPORTED	y	y	y								y	y			
@@ -75,8 +75,8 @@ SOC_CPU_CORES_NUM	2	1	2	1	1	1	1	1	1	1	2	2	2	1
 SOC_CPU_INTR_NUM	32	32	32	32	32	32	32	32	32	32	32	32	32		
 SOC_CPU_HAS_FPU	y		y								y	y	y		
 SOC_HP_CPU_HAS_MULTIPLE_CORES	y		y								y	y	y		
-SOC_CPU_BREAKPOINTS_NUM	2	2	2	2	8	3	4	4	4	4	3	3	3		
-SOC_CPU_WATCHPOINTS_NUM	2	2	2	2	8	3	4	4	4	4	3	3	3		
+SOC_CPU_BREAKPOINTS_NUM	2	2	2	2	8	3	4	4	4	4	3	3	4		
+SOC_CPU_WATCHPOINTS_NUM	2	2	2	2	8	3	4	4	4	4	3	3	4		
 SOC_CPU_WATCHPOINT_MAX_REGION_SIZE	0x40	0x40	0x40	0x80000000	0x80000000	0x100	0x80000000	0x80000000	0x80000000	0x80000000	0x80000000	0x100	0x100		
 SOC_DAC_CHAN_NUM	2	2													
 SOC_DAC_RESOLUTION	8	8													
@@ -150,16 +150,16 @@ SOC_SPIRAM_SUPPORTED	y	y	y			y		y			y	y
 SOC_SPI_MEM_SUPPORT_CONFIG_GPIO_BY_EFUSE	y	y	y		y										
 SOC_SHA_SUPPORT_PARALLEL_ENG	y														
 SOC_SHA_ENDIANNESS_BE	y														
-SOC_SHA_SUPPORT_SHA1	y	y	y	y	y	y	y	y	y	y		y			
-SOC_SHA_SUPPORT_SHA256	y	y	y	y	y	y	y	y	y	y		y			
-SOC_SHA_SUPPORT_SHA384	y	y	y			y						y			
-SOC_SHA_SUPPORT_SHA512	y	y	y			y						y			
+SOC_SHA_SUPPORT_SHA1	y	y	y	y	y	y	y	y	y	y	y	y			
+SOC_SHA_SUPPORT_SHA256	y	y	y	y	y	y	y	y	y	y	y	y			
+SOC_SHA_SUPPORT_SHA384	y	y	y			y					y	y			
+SOC_SHA_SUPPORT_SHA512	y	y	y			y					y	y			
 SOC_MPI_MEM_BLOCKS_NUM	4	4	4		4	4	4		4	4		4			
 SOC_MPI_OPERATIONS_NUM	1	3	3		3	3	3		3	3		3			
 SOC_RSA_MAX_BIT_LEN	4096	4096	4096		3072	3072	3072		3072	3072		4096			
-SOC_AES_SUPPORT_AES_128	y	y	y		y	y	y		y	y		y			
+SOC_AES_SUPPORT_AES_128	y	y	y		y	y	y		y	y	y	y			
 SOC_AES_SUPPORT_AES_192	y	y													
-SOC_AES_SUPPORT_AES_256	y	y	y		y	y	y		y	y		y			
+SOC_AES_SUPPORT_AES_256	y	y	y		y	y	y		y	y	y	y			
 SOC_SECURE_BOOT_V1	y														
 SOC_EFUSE_SECURE_BOOT_KEY_DIGESTS	1	3	3	1	3	3	3	3	3	3	3	3	3	3	
 SOC_FLASH_ENCRYPTED_XTS_AES_BLOCK_MAX	32	64	64	32	32	64	64	64	64	64	64	64	64		
@@ -200,7 +200,7 @@ SOC_BLE_MULTI_CONN_OPTIMIZATION	y					y	y	y	y
 SOC_ULP_HAS_ADC	y	y	y												
 SOC_PHY_COMBO_MODULE	y	n	y	y	y		y	y							
 SOC_EMAC_RMII_CLK_OUT_INTERNAL_LOOPBACK	y														
-SOC_DEDICATED_GPIO_SUPPORTED		y	y	y	y	y	y	y	y	y	y	y			
+SOC_DEDICATED_GPIO_SUPPORTED		y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_GDMA_SUPPORTED			y	y	y	y	y	y	y	y	y	y	y		
 SOC_AHB_GDMA_SUPPORTED			y	y	y	y	y	y	y	y	y	y	y		
 SOC_ASYNC_MEMCPY_SUPPORTED		y	y	y	y	y	y	y	y	y	y	y	y		
@@ -236,8 +236,8 @@ SOC_LEDC_SUPPORT_FADE_STOP		y	y	y	y	y	y	y	y	y	y	y
 SOC_MMU_PAGE_SIZE_CONFIGURABLE				y			y	y	y	y	y				
 SOC_RTC_CNTL_CPU_PD_DMA_BUS_WIDTH			128	128	128										
 SOC_RTC_CNTL_CPU_PD_REG_FILE_NUM			549	108	108										
-SOC_SHA_SUPPORT_RESUME		y	y	y	y	y	y	y	y	y		y			
-SOC_SHA_SUPPORT_SHA224		y	y	y	y	y	y	y	y	y		y			
+SOC_SHA_SUPPORT_RESUME		y	y	y	y	y	y	y	y	y	y	y			
+SOC_SHA_SUPPORT_SHA224		y	y	y	y	y	y	y	y	y	y	y			
 SOC_SPI_SUPPORT_SLAVE_HD_VER2		y	y	y	y	y	y	y	y	y	y	y			
 SOC_SPI_MEM_SUPPORT_AUTO_WAIT_IDLE		y	y	y	y	y	y	y	y	y	y	y			
 SOC_SPI_MEM_SUPPORT_AUTO_SUSPEND			y	y	y	y	y	y	y	y	y	y			
@@ -295,8 +295,8 @@ SOC_EFUSE_HAS_EFUSE_RST_BUG					y
 SOC_HMAC_SUPPORTED		y	y		y	y	y		y	y		y			
 SOC_DIG_SIGN_SUPPORTED		y	y		y	y	y		y	y		y			
 SOC_MEMPROT_SUPPORTED		y	y		y										
-SOC_AES_SUPPORT_DMA		y	y		y	y	y		y	y		y			
-SOC_AES_GDMA			y		y	y	y		y	y		y			
+SOC_AES_SUPPORT_DMA		y	y		y	y	y		y	y	y	y			
+SOC_AES_GDMA			y		y	y	y		y	y	y	y			
 SOC_ADC_ARBITER_SUPPORTED		y	y		y										
 SOC_APB_BACKUP_DMA			y		y		n	n	n	n	n	n			
 SOC_CACHE_MEMORY_IBANK_SIZE					0x4000										
@@ -312,9 +312,9 @@ SOC_RMT_SUPPORT_RX_PINGPONG			y		y	y	y		y	y	y	y
 SOC_RMT_SUPPORT_TX_LOOP_COUNT		y	y		y	y	y		y	y	y	y			
 SOC_SLEEP_SYSTIMER_STALL_WORKAROUND					y							y			
 SOC_SLEEP_TGWDT_STOP_WORKAROUND					y							y			
-SOC_SHA_DMA_MAX_BUFFER_SIZE		3968	3968		3968	3968	3968	3968	3968	3968		3968			
-SOC_SHA_SUPPORT_DMA		y	y		y	y	y	y	y	y		y			
-SOC_SHA_GDMA			y		y	y	y	y	y	y		y			
+SOC_SHA_DMA_MAX_BUFFER_SIZE		3968	3968		3968	3968	3968	3968	3968	3968	3968	3968			
+SOC_SHA_SUPPORT_DMA		y	y		y	y	y	y	y	y	y	y			
+SOC_SHA_GDMA			y		y	y	y	y	y	y	y	y			
 SOC_EFUSE_DIS_USB_JTAG			y		y	y	y	y	y	y	y	y	y	y	
 SOC_EFUSE_SOFT_DIS_JTAG		y	y		y	y	y	n	y	y	n	y	y	y	
 SOC_EFUSE_DIS_ICACHE		y	y		y	y	y	y	y	y	n			y	
@@ -360,7 +360,7 @@ SOC_CLOCK_TREE_MANAGEMENT_SUPPORTED						y
 SOC_BITSCRAMBLER_SUPPORTED						y						y			
 SOC_XTAL_SUPPORT_48M						y									
 SOC_XTAL_CLOCK_PATH_DEPENDS_ON_TOP_DOMAIN						y	y	y	y	y	y				
-SOC_AES_SUPPORT_PSEUDO_ROUND_FUNCTION						y			y	y		y			
+SOC_AES_SUPPORT_PSEUDO_ROUND_FUNCTION						y			y	y	y	y			
 SOC_ADC_CALIB_CHAN_COMPENS_SUPPORTED						y	y	y	y			y			
 SOC_ADC_TEMPERATURE_SHARE_INTR						y	y	y	y						
 SOC_CACHE_WRITEBACK_SUPPORTED		y	y			y		y			y	y	y		
@@ -419,7 +419,7 @@ SOC_PARLIO_SUPPORT_SLEEP_RETENTION						y	y		y		y	y
 SOC_PARLIO_SUPPORT_I80_LCD						y					y	y			
 SOC_SHA_SUPPORT_SHA512_224		y	y			y						y			
 SOC_SHA_SUPPORT_SHA512_256		y	y			y						y			
-SOC_SHA_SUPPORT_SHA512_T		y	y			y						y			
+SOC_SHA_SUPPORT_SHA512_T		y	y			y					y	y			
 SOC_ECC_CONSTANT_TIME_POINT_MUL						y		y	y	y	y	y			
 SOC_ECC_SUPPORT_CURVE_P384						y						y			
 SOC_ECDSA_SUPPORT_EXPORT_PUBKEY						y		y		y		y			
@@ -514,7 +514,7 @@ SOC_PHY_CALIBRATION_CLOCK_IS_INDEPENDENT						y		y
 SOC_LP_CORE_SINGLE_INTERRUPT_VECTOR						y	y								
 SOC_LP_CORE_SUPPORT_ETM						y	y					y			
 SOC_LP_CORE_SUPPORT_STORE_LOAD_EXCEPTIONS						y						y			
-SOC_PMU_PVT_SUPPORTED							y					y			
+SOC_PMU_PVT_SUPPORTED							y	y				y			
 SOC_INT_PLIC_SUPPORTED							y	n	y	y	n				
 SOC_CPU_MISALIGNED_ACCESS_ON_PMP_MISMATCH_ISSUE							y		y	y					
 SOC_MMU_PAGE_SIZE_8KB_SUPPORTED							y	y	y	y	y				
@@ -660,7 +660,6 @@ SOC_PM_SUPPORT_CNNT_PD												y
 SOC_PM_CACHE_RETENTION_BY_PAU												y			
 SOC_PAU_IN_TOP_DOMAIN												y			
 SOC_CLK_MPLL_SUPPORTED												y			
-SOC_CLK_SDIO_PLL_SUPPORTED												y	y		
 SOC_PERIPH_CLK_CTRL_SHARED												y	y		
 SOC_TSENS_IS_INDEPENDENT_FROM_ADC												y			
 SOC_MEM_TCM_SUPPORTED												y			
