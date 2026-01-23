@@ -346,6 +346,7 @@ SOC_ECC_EXTENDED_MODES_SUPPORTED						y		y	y	y	y	y
 SOC_IEEE802154_SUPPORTED						y	y		y		y				
 SOC_APM_SUPPORTED						y	y	y	y			y			
 SOC_PMU_SUPPORTED						y	y	y	y	y	y	y			
+SOC_PMU_PVT_SUPPORTED						y	y	y				y			
 SOC_PAU_SUPPORTED						y	y	y	y	y	y	y			
 SOC_RTC_TIMER_V2_SUPPORTED						y	y	y	y	y	y	y			
 SOC_LP_AON_SUPPORTED						y	y	y	y	y	y				
@@ -514,7 +515,6 @@ SOC_PHY_CALIBRATION_CLOCK_IS_INDEPENDENT						y		y
 SOC_LP_CORE_SINGLE_INTERRUPT_VECTOR						y	y								
 SOC_LP_CORE_SUPPORT_ETM						y	y					y			
 SOC_LP_CORE_SUPPORT_STORE_LOAD_EXCEPTIONS						y						y			
-SOC_PMU_PVT_SUPPORTED							y	y				y			
 SOC_INT_PLIC_SUPPORTED							y	n	y	y	n				
 SOC_CPU_MISALIGNED_ACCESS_ON_PMP_MISMATCH_ISSUE							y		y	y					
 SOC_MMU_PAGE_SIZE_8KB_SUPPORTED							y	y	y	y	y				
