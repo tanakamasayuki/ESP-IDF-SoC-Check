@@ -19,7 +19,7 @@ SOC_CCOMP_TIMER_SUPPORTED	y	y	y
 SOC_RTC_FAST_MEM_SUPPORTED	y	y	y		y	y	y		y	y		y			
 SOC_RTC_SLOW_MEM_SUPPORTED	y	y	y												
 SOC_RTC_MEM_SUPPORTED	y	y	y		y	y	y		y	y		y			
-SOC_RTC_TIMER_V1_SUPPORTED	y	y	y	y	y										
+SOC_RTC_TIMER_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_I2S_SUPPORTED	y	y	y		y	y	y	y	y	y	y	y			
 SOC_I2S_I80_LCD_SUPPORTED	y	y													
 SOC_LCD_I80_SUPPORTED	y	y	y									y			
@@ -126,8 +126,9 @@ SOC_RTCIO_WAKE_SUPPORTED	y	y	y			y	y	y			y	y
 SOC_SPI_PERIPH_NUM	3	3	3	2	2	2	2	2	2	2	3	3	3		
 SOC_SPI_HD_BOTH_INOUT_SUPPORTED	y	y													
 SOC_SPI_MAXIMUM_BUFFER_SIZE	64	72	64	64	64	64	64	64	64	64	64	64	64		
-SOC_LP_TIMER_BIT_WIDTH_LO	32	32	32	32	32	32	32	32	32	32	32	32			
-SOC_LP_TIMER_BIT_WIDTH_HI	16	16	16	16	16	16	16	16	16	16	16	16			
+SOC_LP_TIMER_BIT_WIDTH_LO	32	32	32	32	32	32	32	32	32	32	32	32	32		
+SOC_LP_TIMER_BIT_WIDTH_HI	16	16	16	16	16	16	16	16	16	16	16	16	16		
+SOC_RTC_TIMER_V1	y	y	y	y	y										
 SOC_TOUCH_SENSOR_VERSION	1	2	2								3	3			
 SOC_TOUCH_MIN_CHAN_ID	0	1	1								0	1			
 SOC_TOUCH_MAX_CHAN_ID	9	14	14								14	14			
@@ -161,15 +162,15 @@ SOC_EFUSE_SECURE_BOOT_KEY_DIGESTS	1	3	3	1	3	3	3	3	3	3	3	3	3	3
 SOC_FLASH_ENCRYPTED_XTS_AES_BLOCK_MAX	32	64	64	32	32	64	64	64	64	64	64	64	64		
 SOC_PHY_DIG_REGS_MEM_SIZE	21	21	21	21	21		21	21	21	21	21	21			
 SOC_PM_SUPPORT_EXT0_WAKEUP	y	y	y												
-SOC_PM_SUPPORT_EXT1_WAKEUP	y	y	y			y	y	y	y	y	y	y			
+SOC_PM_SUPPORT_EXT1_WAKEUP	y	y	y			y	y	y	y	y	y	y	y		
 SOC_PM_SUPPORT_EXT_WAKEUP	y	y	y												
-SOC_PM_SUPPORT_TOUCH_SENSOR_WAKEUP	y	y	y									y			
-SOC_PM_SUPPORT_RTC_PERIPH_PD	y	y	y			y	y	y				y			
+SOC_PM_SUPPORT_TOUCH_SENSOR_WAKEUP	y	y	y									y	y		
+SOC_PM_SUPPORT_RTC_PERIPH_PD	y	y	y			y	y	y				y	y		
 SOC_PM_SUPPORT_RTC_FAST_MEM_PD	y	y													
 SOC_PM_SUPPORT_RTC_SLOW_MEM_PD	y	y													
-SOC_PM_SUPPORT_RC_FAST_PD	y	y	y	y	y	y	y	y	y	y	y	y			
-SOC_PM_SUPPORT_VDDSDIO_PD	y	y	y	y	y	y	y	y	y	y	y	y			
-SOC_PM_SUPPORT_MODEM_PD	y		y			y	y	y	y	y	y				
+SOC_PM_SUPPORT_RC_FAST_PD	y	y	y	y	y	y	y	y	y	y	y	y	y		
+SOC_PM_SUPPORT_VDDSDIO_PD	y	y	y	y	y	y	y	y	y	y	y	y	y		
+SOC_PM_SUPPORT_MODEM_PD	y		y			y	y	y	y	y	y		y		
 SOC_CONFIGURABLE_VDDSDIO_SUPPORTED	y	y	y												
 SOC_PM_MODEM_PD_BY_SW	y	y	y		y										
 SOC_CLK_APLL_SUPPORTED	y	y										y	y		
@@ -262,7 +263,7 @@ SOC_COEX_HW_PTI		y	y	y	y	y	y	y	y	y	y	y
 SOC_EXTERNAL_COEX_ADVANCE		n	n	y	n	y	y	y	y	y	y				
 SOC_EXTERNAL_COEX_LEADER_TX_LINE		y	y	n	n	n	n	n	n	n	n				
 SOC_WIFI_LIGHT_SLEEP_CLK_WIDTH		12	12	12	12	12	12	12				12			
-SOC_PM_SUPPORT_WIFI_WAKEUP		y	y	y	y	y	y	y				y			
+SOC_PM_SUPPORT_WIFI_WAKEUP		y	y	y	y	y	y	y					y		
 SOC_PM_SUPPORT_BT_WAKEUP			y	y	y	y	y	y	y	y					
 SOC_CLK_OSC_SLOW_SUPPORTED				y		y	y	y	y	y	y				
 SOC_CLK_LP_FAST_SUPPORT_XTAL_D2			y	y	y	y	y	y	y	y	y				
@@ -315,7 +316,7 @@ SOC_MAC_BB_PD_MEM_SIZE			192		192
 SOC_PM_SUPPORT_CPU_PD			y		y	y	y	y	y	y	y	y			
 SOC_PM_SUPPORT_WIFI_PD		y			y										
 SOC_PM_SUPPORT_BT_PD					y										
-SOC_PM_SUPPORT_MAC_BB_PD			y		y	y	y	y			y				
+SOC_PM_SUPPORT_MAC_BB_PD			y		y	y	y	y			y		y		
 SOC_PM_CPU_RETENTION_BY_RTCCNTL			y		y										
 SOC_PM_MODEM_RETENTION_BY_BACKUPDMA			y		y										
 SOC_TEMPERATURE_SENSOR_SUPPORT_FAST_RC		y	y		y	y	y	y	y						
@@ -331,10 +332,9 @@ SOC_RSA_SUPPORTED						y
 SOC_ECC_EXTENDED_MODES_SUPPORTED						y		y	y	y	y	y			
 SOC_IEEE802154_SUPPORTED						y	y		y		y				
 SOC_APM_SUPPORTED						y	y	y	y			y			
-SOC_PMU_SUPPORTED						y	y	y	y	y	y	y			
+SOC_PMU_SUPPORTED						y	y	y	y	y	y	y	y		
 SOC_PMU_PVT_SUPPORTED						y	y	y				y			
 SOC_PAU_SUPPORTED						y	y	y	y	y	y	y			
-SOC_RTC_TIMER_V2_SUPPORTED						y	y	y	y	y	y	y			
 SOC_LP_AON_SUPPORTED						y	y	y	y	y	y				
 SOC_LP_PERIPHERALS_SUPPORTED						y	y					y			
 SOC_LP_I2C_SUPPORTED						y	y					y			
@@ -423,6 +423,7 @@ SOC_SPI_MEM_SUPPORT_TSUS_TRES_SEPERATE_CTR						y		y				y
 SOC_MEMSPI_TIMING_TUNING_BY_MSPI_DELAY			y			y		y							
 SOC_SPI_MEM_FLASH_SUPPORT_HPM			y			y		y				y			
 SOC_SYSTIMER_SUPPORT_ETM						y	y	y	y	y	y	y			
+SOC_RTC_TIMER_V2						y	y	y	y	y	y	y			
 SOC_TIMER_SUPPORT_ETM						y	y	y	y	y	y	y	y		
 SOC_TIMER_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y	y		
 SOC_MWDT_SUPPORT_SLEEP_RETENTION						y	y	y	y	y		y	y		
@@ -461,25 +462,25 @@ SOC_UART_WAKEUP_SUPPORT_FIFO_THRESH_MODE						y	y	y	y	y	y	y
 SOC_UART_WAKEUP_SUPPORT_START_BIT_MODE						y	y	y	y	y	y	y			
 SOC_UART_WAKEUP_SUPPORT_CHAR_SEQ_MODE						y	y	y	y	y	y	y			
 SOC_RTC_MEM_SUPPORT_SPEED_MODE_SWITCH						y	y								
-SOC_PM_SUPPORT_BEACON_WAKEUP						y	y	y							
-SOC_PM_SUPPORT_EXT1_WAKEUP_MODE_PER_PIN						y	y	y	y	y	y	y			
-SOC_PM_SUPPORT_XTAL32K_PD						y	y	y	y	y	y	y			
-SOC_PM_SUPPORT_RC32K_PD						y	y	y	y	y	y	y			
-SOC_PM_SUPPORT_TOP_PD						y	y	y	y	y	y	y			
-SOC_PM_SUPPORT_HP_AON_PD						y	y	y			y				
+SOC_PM_SUPPORT_BEACON_WAKEUP						y	y	y					y		
+SOC_PM_SUPPORT_EXT1_WAKEUP_MODE_PER_PIN						y	y	y	y	y	y	y	y		
+SOC_PM_SUPPORT_XTAL32K_PD						y	y	y	y	y	y	y	y		
+SOC_PM_SUPPORT_RC32K_PD						y	y	y	y	y	y	y	y		
+SOC_PM_SUPPORT_TOP_PD						y	y	y	y	y	y	y	y		
+SOC_PM_SUPPORT_HP_AON_PD						y	y	y			y		y		
 SOC_PM_SUPPORT_PMU_MODEM_STATE						y	y	y							
 SOC_PM_SUPPORT_PMU_CLK_ICG						y	y	y	y	y	y				
 SOC_PM_SUPPORT_MODEM_CLOCK_DOMAIN_ICG						y	y	y			y				
-SOC_PM_SUPPORT_DEEPSLEEP_CHECK_STUB_ONLY			y			y	y		y	y		y			
-SOC_PM_CPU_RETENTION_BY_SW						y	y	y	y	y	y	y			
-SOC_PM_MODEM_RETENTION_BY_REGDMA						y	y	y	y	y	y				
-SOC_EXT_MEM_CACHE_TAG_IN_CPU_DOMAIN						y		y	y		y				
-SOC_PM_PAU_LINK_NUM						5	4	4	4	5	4	4			
-SOC_PM_PAU_REGDMA_LINK_CONFIGURABLE						y				y	y				
-SOC_PM_PAU_REGDMA_LINK_IDX_WIFIMAC						4									
+SOC_PM_SUPPORT_DEEPSLEEP_CHECK_STUB_ONLY			y			y	y		y	y		y	y		
+SOC_PM_CPU_RETENTION_BY_SW						y	y	y	y	y	y	y	y		
+SOC_PM_MODEM_RETENTION_BY_REGDMA						y	y	y	y	y	y		y		
+SOC_EXT_MEM_CACHE_TAG_IN_CPU_DOMAIN						y		y	y		y		y		
+SOC_PM_PAU_LINK_NUM						5	4	4	4	5	4	4	5		
+SOC_PM_PAU_REGDMA_LINK_CONFIGURABLE						y				y	y		y		
+SOC_PM_PAU_REGDMA_LINK_IDX_WIFIMAC						4							4		
 SOC_PM_PAU_REGDMA_COMMON_PHY_LINK_ENTRY						y									
 SOC_PM_PMU_MIN_SLP_SLOW_CLK_CYCLE_FIXED						y	y	y							
-SOC_PM_RETENTION_MODULE_NUM						32	32	32	32	32	64	64			
+SOC_PM_RETENTION_MODULE_NUM						32	32	32	32	32	64	64	64		
 SOC_MODEM_CLOCK_IS_INDEPENDENT						y	y	y	y	y	y		y		
 SOC_RNG_CLOCK_IS_INDEPENDENT						y	y		y						
 SOC_CLK_LP_FAST_SUPPORT_XTAL						y		y				y	y		
@@ -637,10 +638,10 @@ SOC_MSPI_HAS_INDEPENT_IOMUX												y	y
 SOC_EFUSE_DIS_DOWNLOAD_MSPI												y	y		
 SOC_EFUSE_XTS_AES_KEY_256		y	y									y			
 SOC_LP_I2S_SUPPORT_VAD												y			
-SOC_PM_EXT1_WAKEUP_BY_PMU												y			
+SOC_PM_EXT1_WAKEUP_BY_PMU												y	y		
 SOC_PM_SUPPORT_LP_UART_WAKEUP												y			
-SOC_PM_SUPPORT_CNNT_PD												y			
-SOC_PM_CACHE_RETENTION_BY_PAU												y			
+SOC_PM_SUPPORT_CNNT_PD												y	y		
+SOC_PM_CACHE_RETENTION_BY_PAU												y	y		
 SOC_PAU_IN_TOP_DOMAIN												y			
 SOC_CLK_MPLL_SUPPORTED												y			
 SOC_PERIPH_CLK_CTRL_SHARED												y			
@@ -681,3 +682,4 @@ SOC_GPIO_DEEP_SLEEP_WAKE_VALID_GPIO_MASK													0
 SOC_GPIO_DEEP_SLEEP_WAKE_SUPPORTED_PIN_CNT													8		
 SOC_MEMSPI_FLASH_PSRAM_INDEPENDENT													y		
 SOC_CLK_ANA_I2C_MST_HAS_ROOT_GATE													y		
+SOC_RTC_TIMER_V3													y		
