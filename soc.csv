@@ -35,9 +35,10 @@ SOC_SHA_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y
 SOC_FLASH_ENC_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y			
 SOC_SECURE_BOOT_SUPPORTED	y	y	y	y	y	y	y	y	y	y		y			
 SOC_TOUCH_SENSOR_SUPPORTED	y	y	y								y	y			
-SOC_BOD_SUPPORTED	y	y	y	y	y	y	y	y	y			y			
+SOC_BOD_SUPPORTED	y	y	y	y	y	y	y	y	y	y		y			
 SOC_ULP_FSM_SUPPORTED	y	y	y												
 SOC_CLK_TREE_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y			
+SOC_REGI2C_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_MPU_SUPPORTED	y	y	y												
 SOC_WDT_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_RTC_WDT_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
@@ -519,7 +520,6 @@ SOC_TEMPERATURE_SENSOR_SUPPORT_ETM							y		y			y
 SOC_BLE_USE_WIFI_PWR_CLK_WORKAROUND							y								
 SOC_CAPS_NO_RESET_BY_ANA_BOD							y								
 SOC_DEBUG_HAVE_OCD_STUB_BINS							y		y						
-SOC_REG_I2C_SUPPORTED								y		y	y				
 SOC_IEEE802154_BLE_ONLY									y		y				
 SOC_VBAT_SUPPORTED									y			y			
 SOC_XTAL_SUPPORT_32M									y	y	y				
