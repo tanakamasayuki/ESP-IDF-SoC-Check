@@ -124,9 +124,9 @@ SOC_MPU_REGION_RO_SUPPORTED	n	n	n	n	n		n	n	n			n
 SOC_MPU_REGION_WO_SUPPORTED	n	n	n	n	n		n	n	n			n			
 SOC_RMT_MEM_WORDS_PER_CHANNEL	64	64	48		48	48	48		48	48	48	48			
 SOC_RTCIO_PIN_COUNT	18	22	22	0	0	7	8	7	8	7	6	16	8		
-SOC_RTCIO_INPUT_OUTPUT_SUPPORTED	y	y	y			y	y	y			y	y			
-SOC_RTCIO_HOLD_SUPPORTED	y	y	y			y	y	y	y	y	y	y			
-SOC_RTCIO_WAKE_SUPPORTED	y	y	y			y	y	y			y	y			
+SOC_RTCIO_INPUT_OUTPUT_SUPPORTED	y	y	y			y	y	y			y	y	y		
+SOC_RTCIO_HOLD_SUPPORTED	y	y	y			y	y	y	y	y	y	y	y		
+SOC_RTCIO_WAKE_SUPPORTED	y	y	y			y	y	y			y	y	y		
 SOC_RTC_CNTL_NEEDS_ATOMIC_ACCESS	y	y	y	y	y										
 SOC_SPI_PERIPH_NUM	3	3	3	2	2	2	2	2	2	2	3	3	3		
 SOC_SPI_HD_BOTH_INOUT_SUPPORTED	y	y													
@@ -340,7 +340,7 @@ SOC_PMU_SUPPORTED						y	y	y	y	y	y	y	y
 SOC_PMU_PVT_SUPPORTED						y	y	y				y			
 SOC_PAU_SUPPORTED						y	y	y	y	y	y	y	y		
 SOC_LP_AON_SUPPORTED						y	y	y	y	y	y				
-SOC_LP_PERIPHERALS_SUPPORTED						y	y					y			
+SOC_LP_PERIPHERALS_SUPPORTED						y	y					y	y		
 SOC_LP_I2C_SUPPORTED						y	y					y			
 SOC_ULP_LP_UART_SUPPORTED						y	y					y			
 SOC_ECDSA_SUPPORTED						y		y	y	y		y			
@@ -565,7 +565,7 @@ SOC_ISP_SUPPORTED												y
 SOC_PVT_EN_WITH_SLEEP												y			
 SOC_PVT_RETENTION_BY_REGDMA												y			
 SOC_DCDC_SUPPORTED												y			
-SOC_LP_GPIO_MATRIX_SUPPORTED												y			
+SOC_LP_GPIO_MATRIX_SUPPORTED												y	y		
 SOC_LP_I2S_SUPPORTED												y			
 SOC_LP_SPI_SUPPORTED												y			
 SOC_LP_ADC_SUPPORTED												y			
