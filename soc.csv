@@ -20,7 +20,7 @@ SOC_RTC_FAST_MEM_SUPPORTED	y	y	y		y	y	y		y	y		y	y
 SOC_RTC_SLOW_MEM_SUPPORTED	y	y	y												
 SOC_RTC_MEM_SUPPORTED	y	y	y		y	y	y		y	y		y	y		
 SOC_RTC_TIMER_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
-SOC_I2S_SUPPORTED	y	y	y		y	y	y	y	y	y	y	y			
+SOC_I2S_SUPPORTED	y	y	y		y	y	y	y	y	y	y	y	y		
 SOC_I2S_I80_LCD_SUPPORTED	y	y													
 SOC_LCD_I80_SUPPORTED	y	y	y									y	y		
 SOC_RMT_SUPPORTED	y	y	y		y	y	y		y	y	y	y	y		
@@ -100,14 +100,14 @@ SOC_I2C_SUPPORT_10BIT_ADDR	y		y	y	y	y	y	y	y	y	y	y	y	y
 SOC_I2C_SUPPORT_SLAVE	y	y	y		y	y	y	y	y	y	y	y	y	y	
 SOC_I2C_STOP_INDEPENDENT	y														
 SOC_I2S_HW_VERSION_1	y	y													
-SOC_I2S_SUPPORTS_APLL	y	y										y			
-SOC_I2S_SUPPORTS_PDM	y		y		y	y	y	y	y	y	y	y			
-SOC_I2S_SUPPORTS_PDM_TX	y		y		y	y	y	y	y	y	y	y			
-SOC_I2S_SUPPORTS_PCM2PDM	y		y		y	y	y	y	y		y	y			
-SOC_I2S_SUPPORTS_PDM_RX	y		y		y	y	y	y	y		y	y			
-SOC_I2S_SUPPORTS_PDM2PCM	y		y									y			
-SOC_I2S_PDM_MAX_TX_LINES	1		2		2	2	2	2	2	2	2	2			
-SOC_I2S_PDM_MAX_RX_LINES	1		4		1	1	1	1	1		1	4			
+SOC_I2S_SUPPORTS_APLL	y	y										y	y		
+SOC_I2S_SUPPORTS_PDM	y		y		y	y	y	y	y	y	y	y	y		
+SOC_I2S_SUPPORTS_PDM_TX	y		y		y	y	y	y	y	y	y	y	y		
+SOC_I2S_SUPPORTS_PCM2PDM	y		y		y	y	y	y	y		y	y	y		
+SOC_I2S_SUPPORTS_PDM_RX	y		y		y	y	y	y	y		y	y	y		
+SOC_I2S_SUPPORTS_PDM2PCM	y		y									y	y		
+SOC_I2S_PDM_MAX_TX_LINES	1		2		2	2	2	2	2	2	2	2	2		
+SOC_I2S_PDM_MAX_RX_LINES	1		4		1	1	1	1	1		1	4	4		
 SOC_LEDC_HAS_TIMER_SPECIFIC_MUX	y	y													
 SOC_LEDC_SUPPORT_APB_CLOCK	y	y	y		y										
 SOC_LEDC_SUPPORT_REF_TICK	y	y													
@@ -180,7 +180,7 @@ SOC_PM_SUPPORT_MODEM_PD	y		y			y	y	y	y	y	y		y
 SOC_CONFIGURABLE_VDDSDIO_SUPPORTED	y	y	y												
 SOC_PM_MODEM_PD_BY_SW	y	y	y		y										
 SOC_PM_RTC_NOT_SUPPORT_UART2_WAKEUP	y		y												
-SOC_CLK_APLL_SUPPORTED	y	y										y			
+SOC_CLK_APLL_SUPPORTED	y	y										y	y		
 SOC_CLK_RC_FAST_D256_SUPPORTED	y	y	y	y	y										
 SOC_RTC_SLOW_CLK_SUPPORT_RC_FAST_D256	y	y	y	y	y										
 SOC_CLK_RC_FAST_SUPPORT_CALIBRATION	y	y	y	y	y	y	y	y	y	y	y	y	y		
@@ -297,9 +297,9 @@ SOC_DS_KEY_PARAM_MD_IV_LENGTH		16	16		16	16	16		16	16		16
 SOC_DS_KEY_CHECK_MAX_WAIT_US		1100	1100		1100	1100	1100		1100	1100		1100			
 SOC_I2C_SLAVE_SUPPORT_BROADCAST			y		y	y	y	y	y	y	y	y	y		
 SOC_I2C_SLAVE_CAN_GET_STRETCH_CAUSE		y	y		y	y	y	y	y	y	y	y	y		
-SOC_I2S_HW_VERSION_2			y		y	y	y	y	y	y	y	y			
-SOC_I2S_SUPPORTS_PCM			y		y	y	y	y	y	y	y	y			
-SOC_I2S_SUPPORTS_TDM			y		y	y	y	y	y	y	y	y			
+SOC_I2S_HW_VERSION_2			y		y	y	y	y	y	y	y	y	y		
+SOC_I2S_SUPPORTS_PCM			y		y	y	y	y	y	y	y	y	y		
+SOC_I2S_SUPPORTS_TDM			y		y	y	y	y	y	y	y	y	y		
 SOC_RMT_SUPPORT_RX_PINGPONG			y		y	y	y		y	y	y	y	y		
 SOC_RMT_SUPPORT_TX_LOOP_COUNT		y	y		y	y	y		y	y	y	y	y		
 SOC_SLEEP_SYSTIMER_STALL_WORKAROUND					y							y			
@@ -381,8 +381,8 @@ SOC_ETM_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y	y
 SOC_ANA_CMPR_SUPPORT_ETM						y		y				y			
 SOC_LP_I2C_NUM						1	1					1	1		
 SOC_I2C_SUPPORT_SLEEP_RETENTION						y	y	y	y		y	y	y		
-SOC_I2S_SUPPORTS_ETM						y	y	y	y	y	y	y			
-SOC_I2S_SUPPORTS_TX_SYNC_CNT						y		y			y	y			
+SOC_I2S_SUPPORTS_ETM						y	y	y	y	y	y	y	y		
+SOC_I2S_SUPPORTS_TX_SYNC_CNT						y		y			y	y	y		
 SOC_LEDC_GAMMA_CURVE_FADE_SUPPORTED						y	y	y	y	y		y	y		
 SOC_LEDC_GAMMA_CURVE_FADE_RANGE_MAX						16	16	16	16	16		16	16		
 SOC_LEDC_FADE_PARAMS_BIT_WIDTH						10	10	10	10	10	10	10	10		
@@ -507,6 +507,7 @@ SOC_LP_CORE_SINGLE_INTERRUPT_VECTOR						y	y
 SOC_LP_CORE_SUPPORT_ETM						y	y					y	y		
 SOC_LP_CORE_SUPPORT_STORE_LOAD_EXCEPTIONS						y						y			
 SOC_LP_CORE_SUPPORT_I2C						y	y					y			
+SOC_LP_CORE_HW_AUTO_CLRWAKEUPCAUSE						y	y					y	y		
 SOC_INT_PLIC_SUPPORTED							y	n	y	y	n				
 SOC_CPU_MISALIGNED_ACCESS_ON_PMP_MISMATCH_ISSUE							y		y	y					
 SOC_PARLIO_TX_RX_SHARE_INTERRUPT							y								
@@ -533,6 +534,7 @@ SOC_CLK_LP_FAST_SUPPORT_LP_PLL									y			y
 SOC_MODEM_CLOCK_BLE_RTC_TIMER_WORKAROUND									y						
 SOC_PM_MODEM_CLK_CONF_RETENTION										y	y				
 SOC_USB_OTG_SUPPORTED		y	y								y	y	y		
+SOC_CPU_LOCKUP_DEBUG_SUPPORTED											y		y		
 SOC_CPU_HAS_FPU_EXT_ILL_BUG											n	y	y		
 SOC_CPU_HAS_DSP											y				
 SOC_CPU_COPROC_NUM											2	3	3		
@@ -588,7 +590,7 @@ SOC_LP_IO_HAS_INDEPENDENT_WAKEUP_SOURCE												y	y
 SOC_CLOCKOUT_SUPPORT_CHANNEL_DIVIDER												y	y		
 SOC_DEBUG_PROBE_NUM_UNIT												1			
 SOC_DEBUG_PROBE_MAX_OUTPUT_WIDTH												16			
-SOC_I2S_SUPPORTS_PDM_RX_HP_FILTER												y			
+SOC_I2S_SUPPORTS_PDM_RX_HP_FILTER												y	y		
 SOC_LP_I2S_NUM												1			
 SOC_ISP_BF_SUPPORTED												y			
 SOC_ISP_BLC_SUPPORTED												y			
@@ -630,7 +632,6 @@ SOC_ISP_LSC_GRAD_RATIO_RES_BITS												22
 SOC_MMU_PER_EXT_MEM_TARGET												y	y		
 SOC_RMT_SUPPORT_DMA			y									y	y		
 SOC_USB_UTMI_PHY_NUM												1	1		
-SOC_USB_UTMI_PHY_NO_POWER_OFF_ISO												y			
 SOC_SDMMC_USE_GPIO_MATRIX			y									y			
 SOC_SDMMC_DELAY_PHASE_NUM			4									8			
 SOC_SDMMC_IO_POWER_EXTERNAL												y			
@@ -693,5 +694,10 @@ SOC_GPIO_DEEP_SLEEP_WAKE_VALID_GPIO_MASK													0
 SOC_GPIO_DEEP_SLEEP_WAKE_SUPPORTED_PIN_CNT													8		
 SOC_MODEM_CLOCK_SOC_PLL_SOURCE_CG_SUPPORTED													y		
 SOC_MODEM_CLOCK_WIFI_BB_80X1_AS_APB													y		
+SOC_CLK_ANA_I2C_MST_HAS_ROOT_GATE													y		
 SOC_LP_CORE_CONFIGURABLE_BOOT_ADDR													y		
 SOC_RTC_TIMER_V3													y		
+SOC_I2S_NUM													2		
+SOC_I2S_SUPPORTS_RTC_FAST													y		
+SOC_I2S_SUPPORTS_EXTERNAL													y		
+SOC_I2S_SUPPORTS_RX_RECOMB													y		
