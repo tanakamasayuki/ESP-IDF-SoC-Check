@@ -195,7 +195,7 @@ SOC_WIFI_MESH_SUPPORT	y	y	y		y	y	y	y					y
 SOC_WIFI_SUPPORT_VARIABLE_BEACON_WINDOW	y	y	y	y	y										
 SOC_WIFI_NAN_SUPPORT	y	y				y		y					y		
 SOC_BLE_SUPPORTED	y		y	y	y	y	y	y	y		y		y		
-SOC_BLE_MESH_SUPPORTED	y		y	n	y	y	y	y	y						
+SOC_BLE_MESH_SUPPORTED	y		y	n	y	y	y	y	y		y		y		
 SOC_BT_CLASSIC_SUPPORTED	y												y		
 SOC_BLE_DEVICE_PRIVACY_SUPPORTED	n		y	y	y	y	y	y	y		y		y		
 SOC_BLUFI_SUPPORTED	y		y	y	y	y	y	y					y		
@@ -432,8 +432,8 @@ SOC_MWDT_SUPPORT_SLEEP_RETENTION						y	y	y	y	y		y
 SOC_TWAI_RANGE_FILTER_NUM						1					1		1		
 SOC_TWAI_SUPPORT_SLEEP_RETENTION						y	y		y	y	y	y	y		
 SOC_EFUSE_ECDSA_KEY						y		y	y	y	y	y	y		
-SOC_EFUSE_ECDSA_KEY_P192						y						y			
-SOC_EFUSE_ECDSA_KEY_P384						y						y			
+SOC_EFUSE_ECDSA_KEY_P192						y						y	y		
+SOC_EFUSE_ECDSA_KEY_P384						y						y	y		
 SOC_HUK_MEM_NEEDS_RECHARGE						y									
 SOC_KEY_MANAGER_SUPPORT_KEY_DEPLOYMENT						y						y			
 SOC_KEY_MANAGER_ECDSA_KEY_DEPLOY						y						y	y		
@@ -546,6 +546,7 @@ SOC_I2S_SUPPORTS_TX_FIFO_SYNC											y
 SOC_EFUSE_XTS_AES_KEY_256		y	y								y	y			
 SOC_PM_SUPPORT_TOUCH_WAKEUP											y				
 SOC_PM_FPU_RETENTION_BY_SW											y	y			
+SOC_ASYNCHRONOUS_BUS_ERROR_MODE											y	y	y		
 SOC_TOUCH_SUPPORT_BENCHMARK		y	y								y	y	y		
 SOC_TOUCH_SUPPORT_WATERPROOF		y	y								y	y	y		
 SOC_TOUCH_SUPPORT_PROX_SENSING		y	y								y	y	y		
@@ -554,7 +555,7 @@ SOC_BLE_ISO_SUPPORTED											y		y
 SOC_BLE_AUDIO_SUPPORTED											y		y		
 SOC_USB_OTG_PERIPH_NUM		1	1								1	2	1		
 SOC_USB_FSLS_PHY_NUM		1	1								1	1	0		
-SOC_ASRC_SUPPORTED											y				
+SOC_ASRC_SUPPORTED											y		y		
 SOC_AXI_GDMA_SUPPORTED												y	y		
 SOC_DW_GDMA_SUPPORTED												y			
 SOC_DMA2D_SUPPORTED												y	y		
@@ -654,7 +655,6 @@ SOC_CLK_MPLL_SUPPORTED												y	y
 SOC_PERIPH_CLK_CTRL_SHARED												y			
 SOC_TSENS_IS_INDEPENDENT_FROM_ADC												y			
 SOC_MEM_SPM_SUPPORTED												y			
-SOC_ASYNCHRONOUS_BUS_ERROR_MODE												y	y		
 SOC_EMAC_IEEE1588V2_SUPPORTED												y			
 SOC_EMAC_USE_MULTI_IO_MUX												y			
 SOC_EMAC_MII_USE_GPIO_MATRIX												y			
@@ -697,7 +697,6 @@ SOC_MODEM_CLOCK_WIFI_BB_80X1_AS_APB													y
 SOC_CLK_ANA_I2C_MST_HAS_ROOT_GATE													y		
 SOC_LP_CORE_CONFIGURABLE_BOOT_ADDR													y		
 SOC_RTC_TIMER_V3													y		
-SOC_I2S_NUM													2		
 SOC_I2S_SUPPORTS_RC_FAST													y		
 SOC_I2S_SUPPORTS_EXTERNAL													y		
 SOC_I2S_SUPPORTS_RX_RECOMB													y		
