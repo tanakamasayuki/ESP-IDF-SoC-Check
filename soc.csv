@@ -577,7 +577,7 @@ SOC_LP_I2S_SUPPORTED												y
 SOC_LP_SPI_SUPPORTED												y	y		
 SOC_LP_ADC_SUPPORTED												y			
 SOC_LP_VAD_SUPPORTED												y			
-SOC_LP_MAILBOX_SUPPORTED												y			
+SOC_LP_MAILBOX_SUPPORTED												y	y		
 SOC_DEBUG_PROBE_SUPPORTED												y			
 SOC_GP_LDO_SUPPORTED												y			
 SOC_PPA_SUPPORTED												y	y		
