@@ -33,9 +33,9 @@ SOC_AES_SUPPORTED	y	y	y		y	y	y		y	y	y	y	y
 SOC_MPI_SUPPORTED	y	y	y		y	y	y		y	y		y	y		
 SOC_SHA_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_FLASH_ENC_SUPPORTED	y	y	y	y	y	y	y	y	y	y	n	y			
-SOC_SECURE_BOOT_SUPPORTED	y	y	y	y	y	y	y	y	y	y		y			
+SOC_SECURE_BOOT_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y			
 SOC_TOUCH_SENSOR_SUPPORTED	y	y	y								y	y	y		
-SOC_BOD_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y			
+SOC_BOD_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_ULP_FSM_SUPPORTED	y	y	y												
 SOC_CLK_TREE_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_REGI2C_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
@@ -43,7 +43,7 @@ SOC_MPU_SUPPORTED	y	y	y
 SOC_WDT_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_RTC_WDT_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_SPI_FLASH_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
-SOC_RNG_SUPPORTED	y	y	y	y	y	y	y	y	y			y			
+SOC_RNG_SUPPORTED	y	y	y	y	y	y	y	y	y			y	y		
 SOC_LIGHT_SLEEP_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_DEEP_SLEEP_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_LP_PERIPH_SHARE_INTERRUPT	y	y	y	y	y										
@@ -311,7 +311,7 @@ SOC_EFUSE_DIS_USB_JTAG			y		y	y	y	y	y	y	y	y	y	y
 SOC_EFUSE_SOFT_DIS_JTAG		y	y		y	y	y	n	y	y	n	y	y	y	
 SOC_EFUSE_DIS_ICACHE		y	y		y	y	y	y	y	y	n			y	
 SOC_EFUSE_BLOCK9_KEY_PURPOSE_QUIRK			y		y		y		y		y				
-SOC_SECURE_BOOT_V2_RSA		y	y		y	y	y	n	y	y	y	y		y	
+SOC_SECURE_BOOT_V2_RSA		y	y		y	y	y	n	y	y	n	y		y	
 SOC_EFUSE_REVOKE_BOOT_KEY_DIGESTS		y	y		y	y	y	y	y	y	y	y		y	
 SOC_SUPPORT_SECURE_BOOT_REVOKE_KEY		y	y		y	y	y	y	y	y	y	y		y	
 SOC_MEMPROT_CPU_PREFETCH_PAD_SIZE		16	16		16										
@@ -343,7 +343,7 @@ SOC_LP_AON_SUPPORTED						y	y	y	y	y	y
 SOC_LP_PERIPHERALS_SUPPORTED						y	y					y	y		
 SOC_LP_I2C_SUPPORTED						y	y					y	y		
 SOC_ULP_LP_UART_SUPPORTED						y	y					y	y		
-SOC_ECDSA_SUPPORTED						y		y	y	y		y			
+SOC_ECDSA_SUPPORTED						y		y	y	y	y	y			
 SOC_KEY_MANAGER_SUPPORTED						y						y			
 SOC_HUK_SUPPORTED						y						y			
 SOC_MODEM_CLOCK_SUPPORTED						y	y	y	y	y	y		y		
@@ -399,7 +399,7 @@ SOC_MCPWM_SWSYNC_CAN_PROPAGATE			y			y	y		y	y	y	y	y
 SOC_MCPWM_SUPPORT_ETM						y	y		y	y	y	y	y		
 SOC_MCPWM_SUPPORT_EVENT_COMPARATOR						y					y	y	y		
 SOC_MCPWM_CAPTURE_CLK_FROM_GROUP						y	y		y	y	y	y	y		
-SOC_MCPWM_SUPPORT_SLEEP_RETENTION						y	y		y	y	y	y			
+SOC_MCPWM_SUPPORT_SLEEP_RETENTION						y	y		y	y	y	y	y		
 SOC_PARLIO_TX_UNIT_MAX_DATA_WIDTH						8	16		8	8	8	16			
 SOC_PARLIO_RX_UNIT_MAX_DATA_WIDTH						8	16		8	8	8	16			
 SOC_PARLIO_TX_CLK_SUPPORT_GATING						y			y	y	y	y			
@@ -411,12 +411,12 @@ SOC_SHA_SUPPORT_SHA512_224		y	y			y						y	y
 SOC_SHA_SUPPORT_SHA512_256		y	y			y						y	y		
 SOC_SHA_SUPPORT_SHA512_T		y	y			y					y	y	y		
 SOC_ECC_CONSTANT_TIME_POINT_MUL						y		y	y	y	y	y	y		
-SOC_ECC_SUPPORT_CURVE_P384						y						y	y		
-SOC_ECDSA_SUPPORT_EXPORT_PUBKEY						y		y		y		y			
-SOC_ECDSA_SUPPORT_DETERMINISTIC_MODE						y		y	y	y		y			
-SOC_ECDSA_SUPPORT_HW_DETERMINISTIC_LOOP						y			y	y		y			
-SOC_ECDSA_SUPPORT_CURVE_P384						y						y			
-SOC_ECDSA_SUPPORT_CURVE_SPECIFIC_KEY_PURPOSES						y						y			
+SOC_ECC_SUPPORT_CURVE_P384						y					y	y	y		
+SOC_ECDSA_SUPPORT_EXPORT_PUBKEY						y		y		y	y	y			
+SOC_ECDSA_SUPPORT_DETERMINISTIC_MODE						y		y	y	y	y	y			
+SOC_ECDSA_SUPPORT_HW_DETERMINISTIC_LOOP						y			y	y	y	y			
+SOC_ECDSA_SUPPORT_CURVE_P384						y					y	y			
+SOC_ECDSA_SUPPORT_CURVE_SPECIFIC_KEY_PURPOSES						y					y	y			
 SOC_SPI_SUPPORT_SLEEP_RETENTION						y	y	y	y			y	y		
 SOC_SPIRAM_XIP_SUPPORTED		y	y			y		y			y	y	y		
 SOC_PSRAM_DMA_CAPABLE		y	y			y		y			y	y	y		
@@ -428,13 +428,13 @@ SOC_SPI_MEM_FLASH_SUPPORT_HPM			y			y		y				y
 SOC_SYSTIMER_SUPPORT_ETM						y	y	y	y	y	y	y	y		
 SOC_RTC_TIMER_V2						y	y	y	y	y	y	y			
 SOC_TIMER_SUPPORT_ETM						y	y	y	y	y	y	y	y		
-SOC_TIMER_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y			
+SOC_TIMER_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y	y		
 SOC_MWDT_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y	y		
 SOC_TWAI_RANGE_FILTER_NUM						1					1		1		
 SOC_TWAI_SUPPORT_SLEEP_RETENTION						y	y		y	y	y	y	y		
 SOC_EFUSE_ECDSA_KEY						y		y	y	y	y	y	y		
-SOC_EFUSE_ECDSA_KEY_P192						y						y	y		
-SOC_EFUSE_ECDSA_KEY_P384						y						y	y		
+SOC_EFUSE_ECDSA_KEY_P192						y					y	y	y		
+SOC_EFUSE_ECDSA_KEY_P384						y					y	y	y		
 SOC_HUK_MEM_NEEDS_RECHARGE						y									
 SOC_KEY_MANAGER_SUPPORT_KEY_DEPLOYMENT						y						y			
 SOC_KEY_MANAGER_ECDSA_KEY_DEPLOY						y						y	y		
@@ -449,8 +449,8 @@ SOC_FLASH_ENCRYPTION_PAGE_CONFIGURABLE						y	y	y	y			y
 SOC_PSRAM_ENCRYPTION_XTS_AES_128						y									
 SOC_PSRAM_ENCRYPTION_SEPARATE_KEY						y						y			
 SOC_PSRAM_ENCRYPTION_PAGE_CONFIGURABLE						y		y				y			
-SOC_RECOVERY_BOOTLOADER_SUPPORTED						y		y							
-SOC_BOOTLOADER_ANTI_ROLLBACK_SUPPORTED						y		y							
+SOC_RECOVERY_BOOTLOADER_SUPPORTED						y		y				y	y		
+SOC_BOOTLOADER_ANTI_ROLLBACK_SUPPORTED						y		y					y		
 SOC_APM_CTRL_FILTER_SUPPORTED						y	y	y	y	y	y		y		
 SOC_APM_LP_APM0_SUPPORTED						y	y								
 SOC_APM_CPU_APM_SUPPORTED						y		y							
@@ -509,7 +509,7 @@ SOC_PHY_CALIBRATION_CLOCK_IS_INDEPENDENT						y		y					y
 SOC_LP_CORE_SINGLE_INTERRUPT_VECTOR						y	y								
 SOC_LP_CORE_SUPPORT_ETM						y	y					y	y		
 SOC_LP_CORE_SUPPORT_STORE_LOAD_EXCEPTIONS						y						y			
-SOC_LP_CORE_SUPPORT_I2C						y	y					y			
+SOC_LP_CORE_SUPPORT_I2C						y	y					y	y		
 SOC_LP_CORE_HW_AUTO_CLRWAKEUPCAUSE						y	y					y	y		
 SOC_INT_PLIC_SUPPORTED							y	n	y	y	n				
 SOC_CPU_MISALIGNED_ACCESS_ON_PMP_MISMATCH_ISSUE							y		y	y					
@@ -704,6 +704,7 @@ SOC_MODEM_CLOCK_SOC_PLL_SOURCE_CG_SUPPORTED													y
 SOC_MODEM_CLOCK_WIFI_BB_80X1_AS_APB													y		
 SOC_CLK_ANA_I2C_MST_HAS_ROOT_GATE													y		
 SOC_LP_CORE_CONFIGURABLE_BOOT_ADDR													y		
+SOC_LP_CORE_HAS_PMP													y		
 SOC_RTC_TIMER_V3													y		
 SOC_I2S_SUPPORTS_RC_FAST													y		
 SOC_I2S_SUPPORTS_EXTERNAL													y		
