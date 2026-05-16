@@ -367,7 +367,7 @@ SOC_CPU_ZCMP_PUSH_REVERSED						y		y			y	y
 SOC_CPU_ZCMP_POPRET_ISSUE						y		y			y	y			
 SOC_DMA_CAN_ACCESS_FLASH						y		y			y	y	y		
 SOC_GDMA_SUPPORT_ETM						y	y	y	y	y	y	y	y		
-SOC_GDMA_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y			
+SOC_GDMA_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y	y		
 SOC_GDMA_SUPPORT_WEIGHTED_ARBITRATION						y		y							
 SOC_GDMA_EXT_MEM_ENC_ALIGNMENT						16		16				16	16		
 SOC_GPIO_FLEX_GLITCH_FILTER_NUM						8	8		8	8	8	8	8		
@@ -543,7 +543,7 @@ SOC_CPU_HAS_DSP											y
 SOC_CPU_COPROC_NUM											2	3	3		
 SOC_CPU_HAS_ZC_EXTENSIONS											y	y			
 SOC_CPU_HAS_ZB_EXTENSIONS											y				
-SOC_MODEM_SUPPORT_ETM											y				
+SOC_MODEM_SUPPORT_ETM											y		y		
 SOC_I2S_SUPPORTS_TX_FIFO_SYNC											y				
 SOC_EFUSE_XTS_AES_KEY_256		y	y								y	y			
 SOC_PM_SUPPORT_TOUCH_WAKEUP											y				
