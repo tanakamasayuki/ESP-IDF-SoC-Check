@@ -13,7 +13,7 @@ SOC_WIFI_SUPPORTED	y	y	y	y	y	y	y	y					y
 SOC_SDIO_SLAVE_SUPPORTED	y					y	y	y							
 SOC_TWAI_SUPPORTED	y	y	y		y	y	y		y	y	y	y	y		
 SOC_EFUSE_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y	y	
-SOC_EMAC_SUPPORTED	y											y			
+SOC_EMAC_SUPPORTED	y											y	y		
 SOC_ULP_SUPPORTED	y	y	y			y	y					y	y		
 SOC_CCOMP_TIMER_SUPPORTED	y	y	y												
 SOC_RTC_FAST_MEM_SUPPORTED	y	y	y		y	y	y		y	y		y	y		
@@ -43,7 +43,7 @@ SOC_MPU_SUPPORTED	y	y	y
 SOC_WDT_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_RTC_WDT_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_SPI_FLASH_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
-SOC_RNG_SUPPORTED	y	y	y	y	y	y	y	y	y			y	y		
+SOC_RNG_SUPPORTED	y	y	y	y	y	y	y	y	y		y	y	y		
 SOC_LIGHT_SLEEP_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_DEEP_SLEEP_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_LP_PERIPH_SHARE_INTERRUPT	y	y	y	y	y										
@@ -460,8 +460,6 @@ SOC_APM_SUPPORT_LP_TEE_CTRL						y	y
 SOC_APM_SUPPORT_CTRL_CFG_LOCK						y		y							
 SOC_APM_SUPPORT_TEE_PERI_ACCESS_CTRL						y									
 SOC_CRYPTO_DPA_PROTECTION_SUPPORTED						y	y	y	y	y					
-SOC_RNG_BUF_CHAIN_ENTROPY_SOURCE						y									
-SOC_RNG_RTC_TIMER_ENTROPY_SOURCE						y									
 SOC_UART_LP_NUM						1	1					1	1		
 SOC_LP_UART_FIFO_LEN						16	16					16	16		
 SOC_UART_HAS_LP_UART						y	y					y	y		
@@ -491,8 +489,9 @@ SOC_PM_PAU_REGDMA_COMMON_PHY_LINK_ENTRY						y
 SOC_PM_PAU_REGDMA_MODEM_WIFIMAC_WORKAROUND						y							y		
 SOC_PM_PMU_MIN_SLP_SLOW_CLK_CYCLE_FIXED						y	y	y							
 SOC_PM_RETENTION_MODULE_NUM						32	32	32	32	32	64	64	64		
+SOC_PM_FLASH_KEEP_POWER_IN_LSLP						y		y		y	y				
 SOC_MODEM_CLOCK_IS_INDEPENDENT						y	y	y	y	y	y		y		
-SOC_RNG_CLOCK_IS_INDEPENDENT						y	y		y						
+SOC_RNG_CLOCK_IS_INDEPENDENT						y	y		y		y				
 SOC_CLK_LP_FAST_SUPPORT_XTAL						y		y				y	y		
 SOC_RCC_IS_INDEPENDENT						y	y	y	y	y	y		y		
 SOC_CLK_ROOT_CLK_SWITCH_PROTECT						y									
@@ -537,7 +536,6 @@ SOC_ECDSA_P192_CURVE_DEFAULT_DISABLED									y	y
 SOC_PM_RETENTION_SW_TRIGGER_REGDMA									y						
 SOC_CLK_LP_FAST_SUPPORT_LP_PLL									y			y			
 SOC_MODEM_CLOCK_BLE_RTC_TIMER_WORKAROUND									y						
-SOC_PM_MODEM_CLK_CONF_RETENTION										y	y				
 SOC_USB_OTG_SUPPORTED		y	y								y	y	y		
 SOC_CPU_LOCKUP_DEBUG_SUPPORTED											y		y		
 SOC_ANA_CMPR_SUPPORT_ETM_SCAN											y		y		
@@ -551,6 +549,8 @@ SOC_I2S_SUPPORTS_TX_FIFO_SYNC											y
 SOC_EFUSE_XTS_AES_KEY_256		y	y								y	y			
 SOC_PM_SUPPORT_TOUCH_WAKEUP											y				
 SOC_PM_FPU_RETENTION_BY_SW											y	y	y		
+SOC_PM_BBPLL_PD_IN_MODEM_STATE											y				
+SOC_PM_MODEM_LOCK_CLK_WORKAROUND											y				
 SOC_ASYNCHRONOUS_BUS_ERROR_MODE											y	y	y		
 SOC_TOUCH_SUPPORT_BENCHMARK		y	y								y	y	y		
 SOC_TOUCH_SUPPORT_WATERPROOF		y	y								y	y	y		
@@ -581,7 +581,7 @@ SOC_LP_SPI_SUPPORTED												y	y
 SOC_LP_ADC_SUPPORTED												y			
 SOC_LP_VAD_SUPPORTED												y			
 SOC_LP_MAILBOX_SUPPORTED												y	y		
-SOC_DEBUG_PROBE_SUPPORTED												y			
+SOC_DEBUG_PROBE_SUPPORTED												y	y		
 SOC_GP_LDO_SUPPORTED												y	y		
 SOC_PPA_SUPPORTED												y	y		
 SOC_SIMD_INSTRUCTION_SUPPORTED			y									y	y		
@@ -595,8 +595,8 @@ SOC_SIMD_PREFERRED_DATA_ALIGNMENT			16									16	16
 SOC_GDMA_SUPPORT_CRC												y			
 SOC_LP_IO_HAS_INDEPENDENT_WAKEUP_SOURCE												y	y		
 SOC_CLOCKOUT_SUPPORT_CHANNEL_DIVIDER												y	y		
-SOC_DEBUG_PROBE_NUM_UNIT												2			
-SOC_DEBUG_PROBE_MAX_OUTPUT_WIDTH												16			
+SOC_DEBUG_PROBE_NUM_UNIT												2	2		
+SOC_DEBUG_PROBE_MAX_OUTPUT_WIDTH												16	16		
 SOC_I2S_SUPPORTS_PDM_RX_HP_FILTER												y	y		
 SOC_LP_I2S_NUM												1			
 SOC_ISP_BF_SUPPORTED												y			
@@ -663,9 +663,9 @@ SOC_CLK_MPLL_SUPPORTED												y	y
 SOC_PERIPH_CLK_CTRL_SHARED												y			
 SOC_TSENS_IS_INDEPENDENT_FROM_ADC												y	y		
 SOC_MEM_SPM_SUPPORTED												y			
-SOC_EMAC_IEEE1588V2_SUPPORTED												y			
-SOC_EMAC_USE_MULTI_IO_MUX												y			
-SOC_EMAC_MII_USE_GPIO_MATRIX												y			
+SOC_EMAC_IEEE1588V2_SUPPORTED												y	y		
+SOC_EMAC_USE_MULTI_IO_MUX												y	y		
+SOC_EMAC_MII_USE_GPIO_MATRIX												y	y		
 SOC_EMAC_SUPPORT_SLEEP_RETENTION												y			
 SOC_EMAC_REF_CLK_FROM_MPLL												y			
 SOC_JPEG_CODEC_SUPPORTED												y	y		
@@ -699,6 +699,8 @@ SOC_LP_AHB_GDMA_SUPPORTED													y
 SOC_LCDCAM_SUPPORTED													y		
 SOC_SPI_FLASH_HAS_DEDICATED_LDO													y		
 SOC_CORDIC_SUPPORTED													y		
+SOC_EMAC_SUPPORT_1000M													y		
+SOC_EMAC_DEDICATED_GPIO_CTRL_SUPPORTED													y		
 SOC_ADC_DIFF_SUPPORTED													y		
 SOC_GPIO_NEED_SOFT_ISOLATE_DURING_PD													y		
 SOC_SDMMC_IO_UHS_POWER_EXTERNAL													y		
