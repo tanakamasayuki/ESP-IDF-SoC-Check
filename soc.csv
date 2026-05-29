@@ -570,6 +570,7 @@ SOC_LCDCAM_RGB_LCD_SUPPORTED			y									y	y
 SOC_LCD_RGB_SUPPORTED			y									y	y		
 SOC_MIPI_CSI_SUPPORTED												y			
 SOC_MIPI_DSI_SUPPORTED												y			
+SOC_USB_DFU_SUPPORTED		y	y									y			
 SOC_WIRELESS_HOST_SUPPORTED												y			
 SOC_ISP_SUPPORTED												y			
 SOC_PVT_EN_WITH_SLEEP												y			
@@ -677,6 +678,7 @@ SOC_LCDCAM_LCD_SUPPORT_SLEEP_RETENTION												y
 SOC_LP_CORE_SUPPORT_LP_ADC												y			
 SOC_CP_DMA_SUPPORTED		y													
 SOC_RISCV_COPROC_SUPPORTED		y	y												
+SOC_USB_OTG_CONSOLE_SUPPORTED		y	y												
 SOC_CACHE_SUPPORT_WRAP		y	y												
 SOC_ADC_DIG_IIR_FILTER_UNIT_BINDED		y													
 SOC_CP_DMA_MAX_BUFFER_SIZE		4095													
