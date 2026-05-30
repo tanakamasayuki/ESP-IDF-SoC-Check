@@ -32,8 +32,8 @@ SOC_SUPPORT_COEXISTENCE	y	n	y	y	y	y	y		y
 SOC_AES_SUPPORTED	y	y	y		y	y	y		y	y	y	y	y		
 SOC_MPI_SUPPORTED	y	y	y		y	y	y		y	y		y	y		
 SOC_SHA_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
-SOC_FLASH_ENC_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y			
-SOC_SECURE_BOOT_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y			
+SOC_FLASH_ENC_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
+SOC_SECURE_BOOT_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_TOUCH_SENSOR_SUPPORTED	y	y	y								y	y	y		
 SOC_BOD_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_ULP_FSM_SUPPORTED	y	y	y												
@@ -254,11 +254,11 @@ SOC_MWDT_SUPPORT_XTAL				y	y		y		y	y	y	y	y
 SOC_EFUSE_DIS_DOWNLOAD_ICACHE		y	y	y	y		y	n			n			y	
 SOC_EFUSE_DIS_PAD_JTAG				y	y	y	y	y	y	y	y	y	y		
 SOC_EFUSE_DIS_DIRECT_BOOT			y	y	y	y	y	y	y	y	y	y	y	y	
-SOC_EFUSE_XTS_AES_KEY_128		y	y	y	y	y	y	y	y	y	y	y			
-SOC_SECURE_BOOT_V2_ECC				y		y	y	y	y	y	y	y			
+SOC_EFUSE_XTS_AES_KEY_128		y	y	y	y	y	y	y	y	y	y	y	y		
+SOC_SECURE_BOOT_V2_ECC				y		y	y	y	y	y	y	y	n		
 SOC_FLASH_ENCRYPTION_XTS_AES		y	y	y	y	y	y	y	y	y	y	y	y	y	
-SOC_FLASH_ENCRYPTION_XTS_AES_OPTIONS		y	y	y		y					y	y		y	
-SOC_FLASH_ENCRYPTION_XTS_AES_128		y	y	y	y	y	y	y	y	y	y	y		y	
+SOC_FLASH_ENCRYPTION_XTS_AES_OPTIONS		y	y	y		y					y	y	y	y	
+SOC_FLASH_ENCRYPTION_XTS_AES_128		y	y	y	y	y	y	y	y	y	y	y	y	y	
 SOC_FLASH_ENCRYPTION_XTS_AES_128_DERIVED				y											
 SOC_UART_SUPPORT_WAKEUP_INT		y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_UART_SUPPORT_PLL_F40M_CLK				y											
@@ -311,9 +311,9 @@ SOC_EFUSE_DIS_USB_JTAG			y		y	y	y	y	y	y	y	y	y	y
 SOC_EFUSE_SOFT_DIS_JTAG		y	y		y	y	y	n	y	y	n	y	y	y	
 SOC_EFUSE_DIS_ICACHE		y	y		y	y	y	y	y	y	n			y	
 SOC_EFUSE_BLOCK9_KEY_PURPOSE_QUIRK			y		y		y		y		y				
-SOC_SECURE_BOOT_V2_RSA		y	y		y	y	y	n	y	y	n	y		y	
-SOC_EFUSE_REVOKE_BOOT_KEY_DIGESTS		y	y		y	y	y	y	y	y	y	y		y	
-SOC_SUPPORT_SECURE_BOOT_REVOKE_KEY		y	y		y	y	y	y	y	y	y	y		y	
+SOC_SECURE_BOOT_V2_RSA		y	y		y	y	y	n	y	y	n	y	y	y	
+SOC_EFUSE_REVOKE_BOOT_KEY_DIGESTS		y	y		y	y	y	y	y	y	y	y	y	y	
+SOC_SUPPORT_SECURE_BOOT_REVOKE_KEY		y	y		y	y	y	y	y	y	y	y	y	y	
 SOC_MEMPROT_CPU_PREFETCH_PAD_SIZE		16	16		16										
 SOC_MEMPROT_MEM_ALIGN_SIZE		4	256		512										
 SOC_MAC_BB_PD_MEM_SIZE			192		192										
@@ -439,14 +439,14 @@ SOC_EFUSE_ECDSA_KEY_P384						y					y	y	y
 SOC_HUK_MEM_NEEDS_RECHARGE						y									
 SOC_KEY_MANAGER_SUPPORT_KEY_DEPLOYMENT						y						y	y		
 SOC_KEY_MANAGER_ECDSA_KEY_DEPLOY						y						y	y		
-SOC_KEY_MANAGER_FE_KEY_DEPLOY						y						y			
-SOC_KEY_MANAGER_FE_KEY_DEPLOY_XTS_AES_128						y						y			
-SOC_KEY_MANAGER_FE_KEY_DEPLOY_XTS_AES_256						y						y			
+SOC_KEY_MANAGER_FE_KEY_DEPLOY						y						y	y		
+SOC_KEY_MANAGER_FE_KEY_DEPLOY_XTS_AES_128						y						y	y		
+SOC_KEY_MANAGER_FE_KEY_DEPLOY_XTS_AES_256						y						y	y		
 SOC_KEY_MANAGER_HMAC_KEY_DEPLOY						y						y	y		
 SOC_KEY_MANAGER_DS_KEY_DEPLOY						y						y	y		
 SOC_EFUSE_SECURE_BOOT_P384_WR_DIS						y					y				
-SOC_FLASH_ENCRYPTION_XTS_AES_256		y	y			y					y	y		y	
-SOC_FLASH_ENCRYPTION_XTS_AES_SUPPORT_PSEUDO_ROUND						y		y	y	y	y	y			
+SOC_FLASH_ENCRYPTION_XTS_AES_256		y	y			y					y	y	y	y	
+SOC_FLASH_ENCRYPTION_XTS_AES_SUPPORT_PSEUDO_ROUND						y		y	y	y	y	y	y		
 SOC_FLASH_ENCRYPTION_PAGE_CONFIGURABLE						y	y	y	y			y			
 SOC_PSRAM_ENCRYPTION_XTS_AES_128						y									
 SOC_PSRAM_ENCRYPTION_SEPARATE_KEY						y						y			
@@ -497,8 +497,8 @@ SOC_RCC_IS_INDEPENDENT						y	y	y	y	y	y		y
 SOC_CLK_ROOT_CLK_SWITCH_PROTECT						y									
 SOC_CLK_ANA_I2C_MST_DEPENDS_ON_MODEM_APB						y									
 SOC_TEMPERATURE_SENSOR_INTR_SUPPORT						y	y	y	y		y	y	y		
-SOC_TEMPERATURE_SENSOR_SUPPORT_SLEEP_RETENTION						y	y	y	y			y	y		
-SOC_TEMPERATURE_SENSOR_UNDER_PD_TOP_DOMAIN						y	y	y	y						
+SOC_TEMPERATURE_SENSOR_SUPPORT_SLEEP_RETENTION						y	y	y	y		y	y	y		
+SOC_TEMPERATURE_SENSOR_UNDER_PD_TOP_DOMAIN						y	y	y	y		y				
 SOC_WIFI_HE_SUPPORT						y	y	y					y		
 SOC_WIFI_SUPPORT_5G						y									
 SOC_WIFI_MAC_VERSION_NUM						3	2	3					3		
@@ -546,7 +546,7 @@ SOC_CPU_HAS_ZC_EXTENSIONS											y	y
 SOC_CPU_HAS_ZB_EXTENSIONS											y				
 SOC_MODEM_SUPPORT_ETM											y		y		
 SOC_I2S_SUPPORTS_TX_FIFO_SYNC											y				
-SOC_EFUSE_XTS_AES_KEY_256		y	y								y	y			
+SOC_EFUSE_XTS_AES_KEY_256		y	y								y	y	y		
 SOC_PM_SUPPORT_TOUCH_WAKEUP											y				
 SOC_PM_FPU_RETENTION_BY_SW											y	y	y		
 SOC_PM_BBPLL_PD_IN_MODEM_STATE											y				
