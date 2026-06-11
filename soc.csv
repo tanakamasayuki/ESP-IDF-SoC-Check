@@ -33,7 +33,7 @@ SOC_AES_SUPPORTED	y	y	y		y	y	y		y	y	y	y	y
 SOC_MPI_SUPPORTED	y	y	y		y	y	y		y	y		y	y		
 SOC_SHA_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_FLASH_ENC_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
-SOC_SECURE_BOOT_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
+SOC_SECURE_BOOT_SUPPORTED	y	y	y	y	y	y	y	y	y	y	n	y	y		
 SOC_TOUCH_SENSOR_SUPPORTED	y	y	y								y	y	y		
 SOC_BOD_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_ULP_FSM_SUPPORTED	y	y	y												
@@ -248,7 +248,7 @@ SOC_EFUSE_DIS_DOWNLOAD_ICACHE		y	y	y	y		y	n			n			y
 SOC_EFUSE_DIS_PAD_JTAG				y	y	y	y	y	y	y	y	y	y		
 SOC_EFUSE_DIS_DIRECT_BOOT			y	y	y	y	y	y	y	y	y	y	y	y	
 SOC_EFUSE_XTS_AES_KEY_128		y	y	y	y	y	y	y	y	y	y	y	y		
-SOC_SECURE_BOOT_V2_ECC				y		y	y	y	y	y	y	y	n		
+SOC_SECURE_BOOT_V2_ECC				y		y	y	y	y	n	n	y	n		
 SOC_FLASH_ENCRYPTION_XTS_AES		y	y	y	y	y	y	y	y	y	y	y	y	y	
 SOC_FLASH_ENCRYPTION_XTS_AES_OPTIONS		y	y	y		y					y	y	y	y	
 SOC_FLASH_ENCRYPTION_XTS_AES_128		y	y	y	y	y	y	y	y	y	y	y	y	y	
@@ -564,7 +564,7 @@ SOC_LCDCAM_RGB_LCD_SUPPORTED			y									y	y
 SOC_LCD_RGB_SUPPORTED			y									y	y		
 SOC_MIPI_CSI_SUPPORTED												y			
 SOC_MIPI_DSI_SUPPORTED												y			
-SOC_USB_DFU_SUPPORTED		y	y									y			
+SOC_USB_DFU_SUPPORTED		y	y									y	y		
 SOC_WIRELESS_HOST_SUPPORTED												y			
 SOC_ISP_SUPPORTED												y			
 SOC_PVT_EN_WITH_SLEEP												y			
