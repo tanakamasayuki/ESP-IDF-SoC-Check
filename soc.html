@@ -371,13 +371,14 @@
       <tr><td>SOC_ADC_CALIB_CHAN_COMPENS_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_ADC_TEMPERATURE_SHARE_INTR</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td></tr>
       <tr><td>SOC_CACHE_WRITEBACK_SUPPORTED</td><td></td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td></tr>
-      <tr><td>SOC_CPU_SUPPORT_WFE</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>SOC_CPU_SUPPORT_WFE</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_INT_CLIC_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_INT_HW_NESTED_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_BRANCH_PREDICTOR_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_CPU_HAS_PMA</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_CPU_PMP_REGION_GRANULARITY</td><td></td><td></td><td></td><td></td><td></td><td>128</td><td>4</td><td>128</td><td>4</td><td>4</td><td></td><td>128</td><td>128</td><td></td></tr>
       <tr><td>SOC_CPU_HAS_LOCKUP_RESET</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td></tr>
+      <tr><td>SOC_CPU_HAS_ZC_EXTENSIONS</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td>y</td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_CPU_ZCMP_WORKAROUND</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td>y</td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_CPU_ZCMP_PUSH_REVERSED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td>y</td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_CPU_ZCMP_POPRET_ISSUE</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td>y</td><td>y</td><td></td><td></td></tr>
@@ -559,7 +560,6 @@
       <tr><td>SOC_CPU_HAS_FPU_EXT_ILL_BUG</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>n</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_CPU_HAS_DSP</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td></tr>
       <tr><td>SOC_CPU_COPROC_NUM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>2</td><td>3</td><td>3</td><td></td></tr>
-      <tr><td>SOC_CPU_HAS_ZC_EXTENSIONS</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_CPU_HAS_ZB_EXTENSIONS</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td></tr>
       <tr><td>SOC_MODEM_SUPPORT_ETM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_I2S_SUPPORTS_TX_FIFO_SYNC</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td></tr>
@@ -659,6 +659,7 @@
       <tr><td>SOC_RMT_SUPPORT_DMA</td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_USB_OTG_NEED_SOFTWARE_SUSPEND_BEFORE_SLEEP</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_USB_UTMI_PHY_NUM</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td><td>1</td><td></td></tr>
+      <tr><td>SOC_PM_SUPPORT_USB_WAKEUP</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td><td>1</td><td></td></tr>
       <tr><td>SOC_SDMMC_USE_GPIO_MATRIX</td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_SDMMC_DELAY_PHASE_NUM</td><td></td><td></td><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>8</td><td>8</td><td></td></tr>
       <tr><td>SOC_SDMMC_IO_POWER_EXTERNAL</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>

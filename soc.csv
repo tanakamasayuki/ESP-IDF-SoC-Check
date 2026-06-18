@@ -348,13 +348,14 @@ SOC_AES_SUPPORT_PSEUDO_ROUND_FUNCTION						y			y	y	y	y	y
 SOC_ADC_CALIB_CHAN_COMPENS_SUPPORTED						y	y	y	y			y			
 SOC_ADC_TEMPERATURE_SHARE_INTR						y	y	y	y	y	y				
 SOC_CACHE_WRITEBACK_SUPPORTED		y	y			y		y			y	y	y		
-SOC_CPU_SUPPORT_WFE						y		y							
+SOC_CPU_SUPPORT_WFE						y		y					y		
 SOC_INT_CLIC_SUPPORTED						y		y			y	y	y		
 SOC_INT_HW_NESTED_SUPPORTED						y		y			y	y	y		
 SOC_BRANCH_PREDICTOR_SUPPORTED						y		y			y	y	y		
 SOC_CPU_HAS_PMA						y	y	y	y	y	y	y	y		
 SOC_CPU_PMP_REGION_GRANULARITY						128	4	128	4	4		128	128		
 SOC_CPU_HAS_LOCKUP_RESET						y		y			y	y	y		
+SOC_CPU_HAS_ZC_EXTENSIONS						y		y			y	y			
 SOC_CPU_ZCMP_WORKAROUND						y		y			y	y			
 SOC_CPU_ZCMP_PUSH_REVERSED						y		y			y	y			
 SOC_CPU_ZCMP_POPRET_ISSUE						y		y			y	y			
@@ -536,7 +537,6 @@ SOC_ANA_CMPR_SUPPORT_ETM_SCAN											y		y
 SOC_CPU_HAS_FPU_EXT_ILL_BUG											n	y	y		
 SOC_CPU_HAS_DSP											y				
 SOC_CPU_COPROC_NUM											2	3	3		
-SOC_CPU_HAS_ZC_EXTENSIONS											y	y			
 SOC_CPU_HAS_ZB_EXTENSIONS											y				
 SOC_MODEM_SUPPORT_ETM											y		y		
 SOC_I2S_SUPPORTS_TX_FIFO_SYNC											y				
@@ -636,6 +636,7 @@ SOC_MMU_PER_EXT_MEM_TARGET												y	y
 SOC_RMT_SUPPORT_DMA			y									y	y		
 SOC_USB_OTG_NEED_SOFTWARE_SUSPEND_BEFORE_SLEEP												y			
 SOC_USB_UTMI_PHY_NUM												1	1		
+SOC_PM_SUPPORT_USB_WAKEUP												1	1		
 SOC_SDMMC_USE_GPIO_MATRIX			y									y			
 SOC_SDMMC_DELAY_PHASE_NUM			4									8	8		
 SOC_SDMMC_IO_POWER_EXTERNAL												y			
