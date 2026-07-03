@@ -258,8 +258,7 @@ SOC_UART_SUPPORT_PLL_F40M_CLK				y
 SOC_UART_SUPPORT_RTC_CLK			y	y	y	y	y	y	y	y	y	y	y		
 SOC_UART_SUPPORT_XTAL_CLK			y	y	y	y	y	y	y	y	y	y	y		
 SOC_COEX_HW_PTI		y	y	y	y	y	y	y	y	y	y	y	y		
-SOC_EXTERNAL_COEX_ADVANCE		n	n	y	n	y	y	y	y	y	y		y		
-SOC_EXTERNAL_COEX_LEADER_TX_LINE		y	y	n	n	n	n	n	n	n	n				
+SOC_EXTERNAL_COEX_ADVANCE				y		y	y	y	y	y	y		y		
 SOC_WIFI_LIGHT_SLEEP_CLK_WIDTH		12	12	12	12	12	12	12				12	12		
 SOC_PM_SUPPORT_WIFI_WAKEUP		y	y	y	y	y	y	y					y		
 SOC_PM_SUPPORT_BT_WAKEUP			y	y	y	y	y	y	y	y	y		y		
@@ -687,6 +686,7 @@ SOC_EFUSE_HARD_DIS_JTAG		y	y											y
 SOC_EFUSE_DIS_BOOT_REMAP		y													
 SOC_EFUSE_DIS_LEGACY_SPI_BOOT		y													
 SOC_AES_CRYPTO_DMA		y													
+SOC_EXTERNAL_COEX_LEADER_TX_LINE		y	y												
 SOC_APPCPU_HAS_CLOCK_GATING_BUG			y												
 SOC_CACHE_ACS_INVALID_STATE_ON_PANIC			y												
 SOC_RTC_CNTL_TAGMEM_PD_DMA_BUS_WIDTH			128												
