@@ -203,7 +203,7 @@ SOC_DEDICATED_GPIO_SUPPORTED		y	y	y	y	y	y	y	y	y	y	y	y
 SOC_GDMA_SUPPORTED			y	y	y	y	y	y	y	y	y	y	y		
 SOC_AHB_GDMA_SUPPORTED			y	y	y	y	y	y	y	y	y	y	y		
 SOC_ASYNC_MEMCPY_SUPPORTED		y	y	y	y	y	y	y	y	y	y	y	y		
-SOC_SUPPORTS_SECURE_DL_MODE		y	y	y	y	y	y	y	y			y			
+SOC_SUPPORTS_SECURE_DL_MODE		y	y	y	y	y	y	y	y			y	y		
 SOC_EFUSE_KEY_PURPOSE_FIELD		y	y	n	y	y	y	y	y	y	y	y	y	y	
 SOC_EFUSE_CONSISTS_OF_ONE_KEY_BLOCK				y											
 SOC_TEMP_SENSOR_SUPPORTED		y	y	y	y	y	y	y	y		y	y	y		
@@ -443,7 +443,7 @@ SOC_FLASH_ENCRYPTION_XTS_AES_SUPPORT_PSEUDO_ROUND						y		y	y	y	y	y	y
 SOC_FLASH_ENCRYPTION_PAGE_CONFIGURABLE						y	y	y	y			y			
 SOC_PSRAM_ENCRYPTION_XTS_AES_128						y									
 SOC_PSRAM_ENCRYPTION_SEPARATE_KEY						y						y			
-SOC_PSRAM_ENCRYPTION_PAGE_CONFIGURABLE						y		y				y			
+SOC_PSRAM_ENCRYPTION_PAGE_CONFIGURABLE						y		y				y	y		
 SOC_RECOVERY_BOOTLOADER_SUPPORTED						y		y				y	y		
 SOC_BOOTLOADER_ANTI_ROLLBACK_SUPPORTED						y		y					y		
 SOC_APM_CTRL_FILTER_SUPPORTED						y	y	y	y	y	y		y		
@@ -538,7 +538,7 @@ SOC_CPU_HAS_DSP											y
 SOC_CPU_COPROC_NUM											2	3	3		
 SOC_CPU_HAS_ZB_EXTENSIONS											y				
 SOC_MODEM_SUPPORT_ETM											y		y		
-SOC_I2S_SUPPORTS_TX_FIFO_SYNC											y				
+SOC_I2S_SUPPORTS_TX_FIFO_SYNC											y		y		
 SOC_EFUSE_XTS_AES_KEY_256		y	y								y	y	y		
 SOC_PM_SUPPORT_TOUCH_WAKEUP											y				
 SOC_PM_FPU_RETENTION_BY_SW											y	y	y		
@@ -580,7 +580,7 @@ SOC_GP_LDO_SUPPORTED												y	y
 SOC_PPA_SUPPORTED												y	y		
 SOC_SIMD_INSTRUCTION_SUPPORTED			y									y	y		
 SOC_I3C_MASTER_SUPPORTED												y			
-SOC_AES_SUPPORT_GCM		y										y			
+SOC_AES_SUPPORT_GCM		y										y	y		
 SOC_CACHE_INTERNAL_MEM_VIA_L1CACHE												y			
 SOC_CPU_HAS_HWLOOP												y	y		
 SOC_CPU_HAS_HWLOOP_STATE_BUG												y			
@@ -635,7 +635,7 @@ SOC_MMU_PER_EXT_MEM_TARGET												y	y
 SOC_RMT_SUPPORT_DMA			y									y	y		
 SOC_USB_OTG_NEED_SOFTWARE_SUSPEND_BEFORE_SLEEP												y			
 SOC_USB_UTMI_PHY_NUM												1	1		
-SOC_PM_SUPPORT_USB_WAKEUP												1	1		
+SOC_PM_SUPPORT_USB_WAKEUP												y	y		
 SOC_SDMMC_USE_GPIO_MATRIX			y									y			
 SOC_SDMMC_DELAY_PHASE_NUM			4									8	8		
 SOC_SDMMC_IO_POWER_EXTERNAL												y			
