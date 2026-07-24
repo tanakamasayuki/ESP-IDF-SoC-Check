@@ -359,7 +359,7 @@
       <tr><td>SOC_LP_I2C_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_ULP_LP_UART_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_ECDSA_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
-      <tr><td>SOC_KEY_MANAGER_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td></tr>
+      <tr><td>SOC_KEY_MANAGER_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>n</td><td></td><td></td><td></td><td></td><td></td><td>n</td><td>n</td><td></td></tr>
       <tr><td>SOC_HUK_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_MODEM_CLOCK_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_CLOCK_TREE_MANAGEMENT_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -491,6 +491,7 @@
       <tr><td>SOC_PM_SUPPORT_RC32K_PD</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_PM_SUPPORT_TOP_PD</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_PM_SUPPORT_HP_AON_PD</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td><td>y</td><td></td></tr>
+      <tr><td>SOC_PM_SUPPORT_REGDMA_TRIGGERED_PHY</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_PM_SUPPORT_PMU_MODEM_STATE</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_PM_SUPPORT_PMU_CLK_ICG</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_PM_SUPPORT_MODEM_CLOCK_DOMAIN_ICG</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td><td>y</td><td></td></tr>
@@ -500,11 +501,11 @@
       <tr><td>SOC_EXT_MEM_CACHE_TAG_IN_CPU_DOMAIN</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_PM_PAU_LINK_NUM</td><td></td><td></td><td></td><td></td><td></td><td>5</td><td>4</td><td>4</td><td>4</td><td>5</td><td>4</td><td>4</td><td>5</td><td></td></tr>
       <tr><td>SOC_PM_PAU_REGDMA_LINK_CONFIGURABLE</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
-      <tr><td>SOC_PM_PAU_REGDMA_LINK_IDX_WIFIMAC</td><td></td><td></td><td></td><td></td><td></td><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td>4</td><td></td></tr>
-      <tr><td>SOC_PM_PAU_REGDMA_COMMON_PHY_LINK_ENTRY</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>SOC_PM_PAU_REGDMA_COMMON_PHY_LINK_ENTRY</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_PM_PAU_REGDMA_MODEM_WIFIMAC_WORKAROUND</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
+      <tr><td>SOC_PM_PAU_REGDMA_LINK_IDX_PHY</td><td></td><td></td><td></td><td></td><td></td><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td>4</td><td></td></tr>
       <tr><td>SOC_PM_PMU_MIN_SLP_SLOW_CLK_CYCLE_FIXED</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td>y</td><td></td></tr>
-      <tr><td>SOC_PM_RETENTION_MODULE_NUM</td><td></td><td></td><td></td><td></td><td></td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>64</td><td>64</td><td>64</td><td></td></tr>
+      <tr><td>SOC_PM_RETENTION_MODULE_NUM</td><td></td><td></td><td></td><td></td><td></td><td>40</td><td>32</td><td>32</td><td>32</td><td>32</td><td>64</td><td>64</td><td>64</td><td></td></tr>
       <tr><td>SOC_PM_FLASH_KEEP_POWER_IN_LSLP</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td>y</td><td>y</td><td></td><td></td><td></td></tr>
       <tr><td>SOC_MODEM_CLOCK_IS_INDEPENDENT</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td><td>y</td><td></td></tr>
       <tr><td>SOC_RNG_CLOCK_IS_INDEPENDENT</td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td></td></tr>
@@ -535,7 +536,7 @@
       <tr><td>SOC_PM_RETENTION_HAS_CLOCK_BUG</td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_PM_MODEM_RF_FLAG_UPDATE_WORKAROUND</td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_PM_PAU_REGDMA_LINK_MULTI_ADDR</td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td><td></td></tr>
-      <tr><td>SOC_PM_PAU_REGDMA_LINK_WIFIMAC</td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>SOC_PM_PAU_REGDMA_LINK_MODEM</td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_PM_PAU_REGDMA_UPDATE_CACHE_BEFORE_WAIT_COMPARE</td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td>y</td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_PM_TOP_DEPENDS_ON_RTC_PERIPH</td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td><td>y</td><td></td><td></td><td></td></tr>
       <tr><td>SOC_CLK_RC32K_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td>y</td><td></td><td></td><td>y</td><td>y</td><td></td></tr>
@@ -604,6 +605,7 @@
       <tr><td>SOC_PPA_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_SIMD_INSTRUCTION_SUPPORTED</td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_I3C_MASTER_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
+      <tr><td>SOC_RISCV_TRACE_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_AES_SUPPORT_GCM</td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_CACHE_INTERNAL_MEM_VIA_L1CACHE</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_CPU_HAS_HWLOOP</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td></tr>
@@ -695,6 +697,9 @@
       <tr><td>SOC_LCDCAM_CAM_SUPPORT_RGB_YUV_CONV</td><td></td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td>y</td><td></td></tr>
       <tr><td>SOC_LCDCAM_LCD_SUPPORT_SLEEP_RETENTION</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_LP_CORE_SUPPORT_LP_ADC</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
+      <tr><td>SOC_RISCV_TRACE_HAS_CONFIG_REG</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
+      <tr><td>SOC_RISCV_TRACE_AHB_CONFIGURABLE</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
+      <tr><td>SOC_RISCV_TRACE_FILTER_SUPPORTED</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>y</td><td></td><td></td></tr>
       <tr><td>SOC_CP_DMA_SUPPORTED</td><td></td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_RISCV_COPROC_SUPPORTED</td><td></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
       <tr><td>SOC_USB_OTG_CONSOLE_SUPPORTED</td><td></td><td>y</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
