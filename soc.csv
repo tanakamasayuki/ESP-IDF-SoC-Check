@@ -28,7 +28,7 @@ SOC_SDM_SUPPORTED	y	y	y		y	y	y		y	y	y	y	y
 SOC_GPSPI_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_LEDC_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
 SOC_I2C_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
-SOC_SUPPORT_COEXISTENCE	y	n	y	y	y	y	y		y						
+SOC_SUPPORT_COEXISTENCE	y	n	y	y	y	y	y	y	y	y	y		y		
 SOC_AES_SUPPORTED	y	y	y		y	y	y		y	y	y	y	y		
 SOC_MPI_SUPPORTED	y	y	y		y	y	y		y	y		y	y		
 SOC_SHA_SUPPORTED	y	y	y	y	y	y	y	y	y	y	y	y	y		
@@ -354,7 +354,7 @@ SOC_BRANCH_PREDICTOR_SUPPORTED						y		y			y	y	y
 SOC_CPU_HAS_PMA						y	y	y	y	y	y	y	y		
 SOC_CPU_PMP_REGION_GRANULARITY						128	4	128	4	4		128	128		
 SOC_CPU_HAS_LOCKUP_RESET						y		y			y	y	y		
-SOC_CPU_HAS_ZC_EXTENSIONS						y		y			y	y			
+SOC_CPU_HAS_ZC_EXTENSIONS						y		y			y	y	y		
 SOC_CPU_ZCMP_WORKAROUND						y		y			y	y			
 SOC_CPU_ZCMP_PUSH_REVERSED						y		y			y	y			
 SOC_CPU_ZCMP_POPRET_ISSUE						y		y			y	y			
@@ -501,6 +501,7 @@ SOC_BLE_CTE_SUPPORTED						y		y	y	y	y		y
 SOC_BLE_SUBRATE_SUPPORTED						y	y	y	y	y	y		y		
 SOC_BLE_PERIODIC_ADV_WITH_RESPONSE						y	y	y	y	y	y		y		
 SOC_PHY_CALIBRATION_CLOCK_IS_INDEPENDENT						y		y					y		
+SOC_DEBUG_HAVE_OCD_STUB_BINS						y	y	y	y	y	y	y	y		
 SOC_LP_CORE_SINGLE_INTERRUPT_VECTOR						y	y								
 SOC_LP_CORE_SUPPORT_ETM						y	y					y	y		
 SOC_LP_CORE_SUPPORT_STORE_LOAD_EXCEPTIONS						y						y			
@@ -520,7 +521,6 @@ SOC_CLK_RC32K_SUPPORTED							y		y			y	y
 SOC_TEMPERATURE_SENSOR_SUPPORT_ETM							y		y	y		y	y		
 SOC_BLE_USE_WIFI_PWR_CLK_WORKAROUND							y								
 SOC_CAPS_NO_RESET_BY_ANA_BOD							y								
-SOC_DEBUG_HAVE_OCD_STUB_BINS							y		y						
 SOC_IEEE802154_BLE_ONLY									y	y	y				
 SOC_VBAT_SUPPORTED									y			y			
 SOC_XTAL_SUPPORT_32M									y	y	y				
