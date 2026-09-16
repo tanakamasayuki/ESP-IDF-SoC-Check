@@ -164,7 +164,7 @@ SOC_PHY_DIG_REGS_MEM_SIZE	21	21	21	21	21		21	21	21	21	21	21
 SOC_PM_SUPPORT_EXT0_WAKEUP	y	y	y												
 SOC_PM_SUPPORT_EXT1_WAKEUP	y	y	y			y	y	y	y	y	y	y	y		
 SOC_PM_SUPPORT_EXT_WAKEUP	y	y	y												
-SOC_PM_SUPPORT_TOUCH_SENSOR_WAKEUP	y	y	y									y	y		
+SOC_PM_SUPPORT_TOUCH_SENSOR_WAKEUP	y	y	y								y	y	y		
 SOC_PM_SUPPORT_RTC_PERIPH_PD	y	y	y			y	y	y			y	y	y		
 SOC_PM_SUPPORT_RTC_FAST_MEM_PD	y	y													
 SOC_PM_SUPPORT_RTC_SLOW_MEM_PD	y	y													
@@ -348,6 +348,8 @@ SOC_AES_SUPPORT_PSEUDO_ROUND_FUNCTION						y			y	y	y	y	y
 SOC_ADC_CALIB_CHAN_COMPENS_SUPPORTED						y	y	y	y			y			
 SOC_ADC_TEMPERATURE_SHARE_INTR						y	y	y	y	y	y				
 SOC_CACHE_WRITEBACK_SUPPORTED		y	y			y		y			y	y	y		
+SOC_CACHE_CNT_SUPPORTED						y	y	y	y	y	y	y	y		
+SOC_CACHE_CNT_UNITS_NUM						2	2	2	2	2	4	6	4		
 SOC_CPU_SUPPORT_WFE						y		y					y		
 SOC_INT_CLIC_SUPPORTED						y		y			y	y	y		
 SOC_INT_HW_NESTED_SUPPORTED						y		y			y	y	y		
@@ -364,7 +366,7 @@ SOC_GDMA_SUPPORT_ETM						y	y	y	y	y	y	y	y
 SOC_GDMA_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y	y		
 SOC_GDMA_SUPPORT_WEIGHTED_ARBITRATION						y		y							
 SOC_GPIO_FLEX_GLITCH_FILTER_NUM						8	8		8	8	8	8	8		
-SOC_GPIO_SUPPORT_PIN_HYS_FILTER						y		y	y	y		y	y		
+SOC_GPIO_SUPPORT_PIN_HYS_FILTER						y		y	y	y	y	y	y		
 SOC_GPIO_SUPPORT_ETM						y	y	y	y	y	y	y	y		
 SOC_RTC_GPIO_EDGE_WAKEUP_SUPPORTED						y	y	y			y	y			
 SOC_LP_IO_CLOCK_IS_INDEPENDENT		y	y			y	y	y	y	y	y	y	y		
@@ -375,7 +377,7 @@ SOC_ETM_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y	y
 SOC_ANA_CMPR_SUPPORT_ETM						y		y			y	y	y		
 SOC_ANA_CMPR_SUPPORT_AUTO_SCAN						y		y	y	y		y			
 SOC_LP_I2C_NUM						1	1					1	1		
-SOC_I2C_SUPPORT_SLEEP_RETENTION						y	y	y	y		y	y	y		
+SOC_I2C_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y	y		
 SOC_I2S_SUPPORTS_ETM						y	y	y	y	y	y	y	y		
 SOC_I2S_SUPPORTS_TX_SYNC_CNT						y		y			y	y	y		
 SOC_LEDC_GAMMA_CURVE_FADE_SUPPORTED						y	y	y	y	y		y	y		
@@ -404,10 +406,12 @@ SOC_PARLIO_SUPPORT_I80_LCD						y					y	y	y
 SOC_SHA_SUPPORT_SHA512_224		y	y			y						y	y		
 SOC_SHA_SUPPORT_SHA512_256		y	y			y						y	y		
 SOC_SHA_SUPPORT_SHA512_T		y	y			y					y	y	y		
+SOC_SHA_SUPPORT_SM3						y					y		y		
 SOC_ECC_CONSTANT_TIME_POINT_MUL						y		y	y	y	y	y	y		
 SOC_ECC_SUPPORT_CURVE_P384						y					y	y	y		
 SOC_ECDSA_SUPPORT_EXPORT_PUBKEY						y		y		y	y	y	y		
 SOC_ECDSA_SUPPORT_DETERMINISTIC_MODE						y		y	y	y	y	y	y		
+SOC_ECDSA_USES_MPI						y			y			y			
 SOC_ECDSA_SUPPORT_HW_DETERMINISTIC_LOOP						y			y	y	y	y	y		
 SOC_ECDSA_SUPPORT_CURVE_P384						y					y	y	y		
 SOC_ECDSA_SUPPORT_CURVE_SPECIFIC_KEY_PURPOSES						y					y	y	y		
@@ -532,7 +536,6 @@ SOC_VBAT_SUPPORTED									y			y
 SOC_XTAL_SUPPORT_32M									y	y	y				
 SOC_GPIO_SUPPORT_PIN_HYS_CTRL_BY_EFUSE									y						
 SOC_EFUSE_ECDSA_USE_HARDWARE_K									y						
-SOC_ECDSA_USES_MPI									y			y			
 SOC_ECDSA_P192_CURVE_DEFAULT_DISABLED									y	y					
 SOC_PM_RETENTION_SW_TRIGGER_REGDMA									y						
 SOC_CLK_LP_FAST_SUPPORT_LP_PLL									y			y			
@@ -548,7 +551,6 @@ SOC_CPU_HAS_ZB_EXTENSIONS											y
 SOC_MODEM_SUPPORT_ETM											y		y		
 SOC_I2S_SUPPORTS_TX_FIFO_SYNC											y		y		
 SOC_EFUSE_XTS_AES_KEY_256		y	y								y	y	y		
-SOC_PM_SUPPORT_TOUCH_WAKEUP											y				
 SOC_PM_FPU_RETENTION_BY_SW											y	y	y		
 SOC_PM_BBPLL_PD_IN_MODEM_STATE											y				
 SOC_PM_MODEM_LOCK_CLK_WORKAROUND											y				
