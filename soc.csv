@@ -329,7 +329,7 @@ SOC_ECC_EXTENDED_MODES_SUPPORTED						y		y	y	y	y	y	y
 SOC_IEEE802154_SUPPORTED						y	y		y	y	y		y		
 SOC_APM_SUPPORTED						y	y	y	y			y			
 SOC_PMU_SUPPORTED						y	y	y	y	y	y	y	y		
-SOC_PMU_PVT_SUPPORTED						y	y	y				y			
+SOC_PMU_PVT_SUPPORTED						y	y	y				y	y		
 SOC_PAU_SUPPORTED						y	y	y	y	y	y	y	y		
 SOC_LP_AON_SUPPORTED						y	y	y	y	y	y				
 SOC_LP_PERIPHERALS_SUPPORTED						y	y					y	y		
