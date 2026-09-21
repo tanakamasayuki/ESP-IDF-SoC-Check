@@ -193,7 +193,7 @@ SOC_BLE_MESH_SUPPORTED	y		y	n	y	y	y	y	y	y	y		y
 SOC_BT_CLASSIC_SUPPORTED	y												y		
 SOC_BLE_DEVICE_PRIVACY_SUPPORTED	n		y	y	y	y	y	y	y	y	y		y		
 SOC_BLUFI_SUPPORTED	y		y	y	y	y	y	y					y		
-SOC_BT_H2C_ENC_KEY_CTRL_ENH_VSC_SUPPORTED	y														
+SOC_BT_H2C_ENC_KEY_CTRL_ENH_VSC_SUPPORTED	y												y		
 SOC_BLE_MULTI_CONN_OPTIMIZATION	y					y	y	y	y	y	y		y		
 SOC_ULP_HAS_ADC	y	y	y												
 SOC_PHY_COMBO_MODULE	y	n	y	y	y		y	y							
@@ -472,20 +472,20 @@ SOC_PM_SUPPORT_XTAL32K_PD						y	y	y	y	y	y	y	y
 SOC_PM_SUPPORT_RC32K_PD						y	y	y	y	y	y	y	y		
 SOC_PM_SUPPORT_TOP_PD						y	y	y	y	y	y	y	y		
 SOC_PM_SUPPORT_HP_AON_PD						y	y	y			y		y		
-SOC_PM_SUPPORT_REGDMA_TRIGGERED_PHY						y	y	y					y		
-SOC_PM_SUPPORT_PMU_MODEM_STATE						y	y	y					y		
-SOC_PM_REGDMA_MODEM_LINK_PROTECT						y	y	y					y		
+SOC_PM_SUPPORT_REGDMA_TRIGGERED_PHY						y	y	y			y		y		
+SOC_PM_SUPPORT_PMU_MODEM_STATE						y	y	y			y		y		
+SOC_PM_REGDMA_MODEM_LINK_PROTECT						y	y	y			y		y		
 SOC_PM_SUPPORT_PMU_CLK_ICG						y	y	y	y	y	y	y	y		
 SOC_PM_SUPPORT_MODEM_CLOCK_DOMAIN_ICG						y	y	y			y		y		
 SOC_PM_SUPPORT_DEEPSLEEP_CHECK_STUB_ONLY			y			y	y		y	y		y	y		
 SOC_PM_CPU_RETENTION_BY_SW						y	y	y	y	y	y	y	y		
 SOC_PM_MODEM_RETENTION_BY_REGDMA						y	y	y	y	y	y		y		
 SOC_EXT_MEM_CACHE_TAG_IN_CPU_DOMAIN						y		y	y		y		y		
-SOC_PM_PAU_LINK_NUM						5	4	4	4	5	4	4	5		
+SOC_PM_PAU_LINK_NUM						5	4	4	4	5	5	4	5		
 SOC_PM_PAU_REGDMA_LINK_CONFIGURABLE						y				y	y		y		
 SOC_PM_PAU_REGDMA_COMMON_PHY_LINK_ENTRY						y							y		
 SOC_PM_PAU_REGDMA_MODEM_WIFIMAC_WORKAROUND						y							y		
-SOC_PM_PAU_REGDMA_LINK_IDX_PHY						4							4		
+SOC_PM_PAU_REGDMA_LINK_IDX_PHY						4					4		4		
 SOC_PM_PMU_MIN_SLP_SLOW_CLK_CYCLE_FIXED						y	y	y					y		
 SOC_PM_FLASH_KEEP_POWER_IN_LSLP						y		y		y	y				
 SOC_MODEM_CLOCK_IS_INDEPENDENT						y	y	y	y	y	y		y		
@@ -552,6 +552,7 @@ SOC_MODEM_SUPPORT_ETM											y		y
 SOC_I2S_SUPPORTS_TX_FIFO_SYNC											y		y		
 SOC_EFUSE_XTS_AES_KEY_256		y	y								y	y	y		
 SOC_PM_FPU_RETENTION_BY_SW											y	y	y		
+SOC_PM_RETENTION_MODULE_NUM											64				
 SOC_PM_BBPLL_PD_IN_MODEM_STATE											y				
 SOC_PM_MODEM_LOCK_CLK_WORKAROUND											y				
 SOC_PM_SUPPORT_BUS_CLK_AUTO_GATE											y		y		
