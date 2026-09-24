@@ -300,7 +300,7 @@ SOC_SHA_DMA_MAX_BUFFER_SIZE		3968	3968		3968	3968	3968	3968	3968	3968	3968	3968	
 SOC_SHA_SUPPORT_DMA		y	y		y	y	y	y	y	y	y	y	y		
 SOC_SHA_GDMA			y		y	y	y	y	y	y	y	y	y		
 SOC_EFUSE_DIS_USB_JTAG			y		y	y	y	y	y	y	y	y	y	y	
-SOC_EFUSE_SOFT_DIS_JTAG		y	y		y	y	y	n	y	y	n	y	y	y	
+SOC_EFUSE_SOFT_DIS_JTAG		y	y		y	y	y	n	y	y	y	y	y	y	
 SOC_EFUSE_DIS_ICACHE		y	y		y	y	y	y	y	y	n			y	
 SOC_EFUSE_BLOCK9_KEY_PURPOSE_QUIRK			y		y		y		y		y				
 SOC_SECURE_BOOT_V2_RSA		y	y		y	y	y	n	y	y	n	y	y	y	
@@ -430,6 +430,7 @@ SOC_TIMER_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y	y
 SOC_MWDT_SUPPORT_SLEEP_RETENTION						y	y	y	y	y	y	y	y		
 SOC_TWAI_RANGE_FILTER_NUM						1					1		1		
 SOC_TWAI_SUPPORT_SLEEP_RETENTION						y	y		y	y	y	y	y		
+SOC_EFUSE_DIS_DOWNLOAD_MSPI						y	y	y	y	y	y	y	y		
 SOC_EFUSE_ECDSA_KEY						y		y	y	y	y	y	y		
 SOC_EFUSE_ECDSA_KEY_P192						y					y	y	y		
 SOC_EFUSE_ECDSA_KEY_P384						y					y	y	y		
@@ -659,7 +660,6 @@ SOC_MEMSPI_TIMING_TUNING_BY_DQS												y	y
 SOC_MEMSPI_TIMING_TUNING_BY_FLASH_DELAY												y			
 SOC_MSPI_HAS_INDEPENT_IOMUX												y			
 SOC_PSRAM_MEMSPI_IS_INDEPENDENT												y	y		
-SOC_EFUSE_DIS_DOWNLOAD_MSPI												y	y		
 SOC_LP_I2S_SUPPORT_VAD												y			
 SOC_PM_EXT1_WAKEUP_BY_PMU												y	y		
 SOC_PM_SUPPORT_LP_UART_WAKEUP												y			
